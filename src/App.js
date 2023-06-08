@@ -1,9 +1,13 @@
 import Room from "./components/spline";
+import "./App.css";
 
 function App() {
   return (
     <>
-      <Room />
+      <div className="main-page-container">
+        <div>hello world</div>
+        <Room />
+      </div>
     </>
   );
 }
