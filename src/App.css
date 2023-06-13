@@ -1,8 +1,9 @@
 .main-page-container {
   display: grid;
-  grid-template-columns: 1.5fr 1fr;
+  grid-template-columns: 1fr 1fr;
   background-color: rgb(10, 26, 99);
   color: white;
+  height: 100%;
 }
 
 .line {
@@ -11,12 +12,18 @@
 }
 
 #home-text {
-  padding: 150px 80px 0px 90px;
+  padding: 0px 80px 0px 90px;
+  margin: 300px 0px;
 }
 
 .word {
-  font-size: 80px;
+  font-size: 75px;
   font-family: "Rubik", sans-serif;
   margin: 0rem;
   text-transform: uppercase;
+}
+
+.welcome {
+  display: flex;
+  justify-content: center;
 }

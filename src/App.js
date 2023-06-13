@@ -1,7 +1,7 @@
 import Room from "./components/spline";
 import "./App.css";
 
-function App() {
+const App = () => {
   return (
     <>
       <div className="main-page-container">
@@ -24,17 +24,12 @@ function App() {
           </div>
         </div>
         <Room />
-
-        <div>
-          {" "}
-          <img src="" alt="" />
-        </div>
       </div>
-      <div className="">
+      <div className="welcome">
         <p className="word">WELCOME TO MY HOME</p>
       </div>
     </>
   );
-}
+};
 
 export default App;
