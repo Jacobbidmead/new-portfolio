@@ -27,3 +27,13 @@
   display: flex;
   justify-content: center;
 }
+
+@media screen and (max-width: 601px) {
+  .main-page-container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .word {
+    font-size: 20px;
+  }
+}

@@ -23,6 +23,7 @@ const App = () => {
             </div>
           </div>
         </div>
+        {/* room goes here */}
         <Room />
       </div>
       <div className="welcome">
