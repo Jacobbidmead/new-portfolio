@@ -2,8 +2,8 @@ const Nav = () => {
   return (
     <>
       <div className="nav-bar">
-        <div>ABOUT\\</div>
-        <div>//PHOTOGRAPHY</div>
+        <div>PROJECTS</div>
+        <div>PHOTOGRAPHY</div>
       </div>
     </>
   );
