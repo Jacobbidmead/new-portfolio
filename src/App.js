@@ -1,8 +1,30 @@
 // import Room from "./components/spline";
+
 import Nav from "./components/Nav.js";
 import "./App.css";
+import { useState, useEffect } from "react";
+
+const colors = [
+  "rgb(10, 26, 99)",
+  "#FFC0CB",
+  "#FFDAB9",
+  "#FFFFE0",
+  "#E0FFFF",
+  "#D8BFD8",
+];
 
 const App = () => {
+  const [colorIndex, setColorIndex] = useState(0);
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setColorIndex((prevColorIndex) => (prevColorIndex + 1) % colors.length);
+    }, 5000);
+
+    return () => {
+      clearInterval(intervalId);
+    };
+  }, []);
   return (
     <>
       <Nav />
