@@ -1,0 +1,12 @@
+.text-container {
+  position: relative;
+}
+
+.text-container.blur .name-container {
+  filter: blur(4px);
+}
+
+.name-container.front {
+  position: relative;
+  z-index: 1;
+}
