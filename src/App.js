@@ -1,9 +1,11 @@
-import Room from "./components/spline";
+// import Room from "./components/spline";
+import Nav from "./components/Nav.js";
 import "./App.css";
 
 const App = () => {
   return (
     <>
+      <Nav />
       <div className="main-page-container">
         <div className="name-container">
           <div id="home-text">
@@ -23,8 +25,6 @@ const App = () => {
             </div>
           </div>
         </div>
-        {/* room goes here */}
-        <Room />
       </div>
       <div className="welcome">
         <p className="word">WELCOME TO MY HOME</p>
