@@ -1,15 +1,17 @@
 .main-page-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  background-color: rgb(10, 26, 99);
   color: white;
   height: 100%;
+  transition: background-color 1s ease-in-out;
+}
+.contents-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .nav-bar {
   display: flex;
   justify-content: space-between;
-  background-color: rgb(10, 26, 99);
+  transition: background-color 1s ease-in-out;
   color: white;
 }
 
