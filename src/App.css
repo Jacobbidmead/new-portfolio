@@ -31,9 +31,9 @@
 }
 
 .word {
-  font-size: 85px;
+  font-size: 55px;
   font-family: "Rubik", sans-serif;
-  margin: 0rem;
+  margin: 0.5rem;
   text-transform: uppercase;
 }
 
@@ -41,6 +41,7 @@
   font-size: 50px;
   font-family: "Rubik", sans-serif;
   text-transform: uppercase;
+  padding: 3em;
 }
 
 .welcome-container {
@@ -58,8 +59,9 @@
   position: sticky;
   top: 0;
   z-index: 3;
+  color: rgb(238, 45, 135);
 }
-
+/* 
 .highlight-1 {
   color: rgb(29, 233, 206);
   font-style: italic;
@@ -73,7 +75,7 @@
 .highlight-3 {
   color: rgb(29, 233, 206);
   font-style: italic;
-}
+} */
 
 /* text */
 

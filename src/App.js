@@ -37,14 +37,14 @@ const App = () => {
             <span className="highlight-2"> 3D imaging</span> and{" "}
             <span className="highlight-3"> photography.</span> I build web
             applications with JavaScript, TypeScript, React & Next.js. My
-            journey began with a curiosity about the digital world and has
-            evolved into a career, where I utilize my problem-solving skills to
-            create robust and maintainable software solutions. While I have a
-            strong foundation in the technical aspects of development, I'm
-            always ready to learn and adapt to the ever-changing landscape of
-            web technologies.
+            journey began with curiosity about the digital world and has evolved
+            into a career, where I utilize my problem-solving skills to create
+            intuative and responsive web applications.
           </p>
         </div>
+      </div>
+      <div className="">
+        <span>My Stack</span>
       </div>
     </>
   );
