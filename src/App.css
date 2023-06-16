@@ -18,6 +18,8 @@
   font-size: 35px;
 }
 
+/* text */
+
 .line {
   display: flex;
   justify-content: space-between;
@@ -32,6 +34,12 @@
   font-size: 85px;
   font-family: "Rubik", sans-serif;
   margin: 0rem;
+  text-transform: uppercase;
+}
+
+.about {
+  font-size: 50px;
+  font-family: "Rubik", sans-serif;
   text-transform: uppercase;
 }
 
@@ -51,6 +59,23 @@
   top: 0;
   z-index: 3;
 }
+
+.highlight-1 {
+  color: rgb(29, 233, 206);
+  font-style: italic;
+}
+
+.highlight-2 {
+  color: rgb(29, 233, 206);
+  font-style: italic;
+}
+
+.highlight-3 {
+  color: rgb(29, 233, 206);
+  font-style: italic;
+}
+
+/* text */
 
 @media screen and (max-width: 601px) {
   .main-page-container {
