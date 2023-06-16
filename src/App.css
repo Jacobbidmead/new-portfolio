@@ -16,6 +16,9 @@
   justify-content: space-around;
   transition: background-color 1s ease-in-out;
   font-size: 35px;
+  color: rgb(150, 141, 229);
+  padding: 20px;
+  cursor: pointer;
 }
 
 /* text */
@@ -35,13 +38,13 @@
   font-family: "Rubik", sans-serif;
   margin: 0.5rem;
   text-transform: uppercase;
+  color: rgb(150, 141, 229);
 }
 
 .about {
-  font-size: 50px;
+  font-size: 70px;
   font-family: "Rubik", sans-serif;
   text-transform: uppercase;
-  padding: 3em;
 }
 
 .welcome-container {
@@ -59,7 +62,15 @@
   position: sticky;
   top: 0;
   z-index: 3;
-  color: rgb(238, 45, 135);
+  color: rgb(213, 31, 234);
+  width: 100%;
+  box-sizing: border-box;
+  padding: 3em;
+}
+
+.my-stack {
+  background-color: black;
+  color: white;
 }
 /* 
 .highlight-1 {
@@ -82,9 +93,19 @@
 @media screen and (max-width: 601px) {
   .main-page-container {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
   .word {
+    font-size: 25px;
+  }
+
+  .about {
     font-size: 20px;
+  }
+
+  .nav-bar {
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
   }
 }

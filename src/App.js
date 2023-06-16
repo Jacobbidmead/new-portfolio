@@ -37,13 +37,15 @@ const App = () => {
             <span className="highlight-2"> 3D imaging</span> and{" "}
             <span className="highlight-3"> photography.</span> I build web
             applications with JavaScript, TypeScript, React & Next.js. My
-            journey began with curiosity about the digital world and has evolved
-            into a career, where I utilize my problem-solving skills to create
-            intuative and responsive web applications.
+            journey started with haiku academys full stack web development
+            bootcamp, which I completed in october 2022. since graduating, I
+            have learnt to utilize my problem-solving skills to create intuative
+            and responsive web applications. I have a creative background,
+            studying print & time based media at UAL.
           </p>
         </div>
       </div>
-      <div className="">
+      <div className="my-stack">
         <span>My Stack</span>
       </div>
     </>
