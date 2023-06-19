@@ -2,7 +2,7 @@ import { ReactComponent as Icon } from "../icons/react.svg";
 
 const ReactIconComponent = () => {
   return (
-    <div style={{ padding: "30px" }}>
+    <div style={{ paddingTop: "20px" }}>
       <Icon />
     </div>
   );

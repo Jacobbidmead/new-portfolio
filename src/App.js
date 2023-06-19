@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
+import { motion } from "framer-motion";
 import Nav from "./components/Nav.js";
 import TextBlur from "./components/TextBlur.js";
 import VueIconComponent from "./components/VueIcon";
@@ -9,6 +10,19 @@ import NextIconComponent from "./components/NextIcon";
 import ReactIconComponent from "./components/ReactIcon";
 import TsIconComponent from "./components/TsIcon";
 import NodeIconComponent from "./components/NodeIcon";
+
+const boxAnimate = {
+  offscreen: { y: 100, opacity: 0 },
+  onscreen: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      type: "tween",
+      bounce: 0.5,
+      duration: 1,
+    },
+  },
+};
 
 const colors = ["#FFC0CB", "#FFDAB9", "#FFFFE0", "#E0FFFF", "#D8BFD8"];
 
@@ -52,16 +66,22 @@ const App = () => {
         </div>
       </div>
       <div className="my-stack">
-        <div className="stack-header">My Stack</div>
-        <div className="icons">
+        {/* <div className="stack-header">My Stack</div> */}
+        <motion.div
+          initial={"offscreen"}
+          whileInView={"onscreen"}
+          variants={boxAnimate}
+          viewport={{ once: true, amount: 0.3 }}
+          className="icons"
+        >
           <JsIconComponet />
           <TsIconComponent />
-          <ReactIconComponent />
           <NextIconComponent />
-          <VueIconComponent />
+          <ReactIconComponent />
           <NodeIconComponent />
+          <VueIconComponent />
           <MongoDbIconComponent />
-        </div>
+        </motion.div>
       </div>
     </>
   );

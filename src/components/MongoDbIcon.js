@@ -2,7 +2,7 @@ import { ReactComponent as Icon } from "../icons/mongodb.svg";
 
 const MongoDbIconComponent = () => {
   return (
-    <div>
+    <div style={{ paddingTop: "48px" }}>
       <Icon />
     </div>
   );

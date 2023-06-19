@@ -2,7 +2,7 @@ import { ReactComponent as Icon } from "../icons/vue.svg";
 
 const VueIconComponent = () => {
   return (
-    <div>
+    <div style={{ paddingTop: "28px" }}>
       <Icon />
     </div>
   );
