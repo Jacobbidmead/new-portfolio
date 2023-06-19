@@ -7,6 +7,8 @@ import JsIconComponet from "./components/JsIcon";
 import MongoDbIconComponent from "./components/MongoDbIcon";
 import NextIconComponent from "./components/NextIcon";
 import ReactIconComponent from "./components/ReactIcon";
+import TsIconComponent from "./components/TsIcon";
+import NodeIconComponent from "./components/NodeIcon";
 
 const colors = ["#FFC0CB", "#FFDAB9", "#FFFFE0", "#E0FFFF", "#D8BFD8"];
 
@@ -53,10 +55,12 @@ const App = () => {
         <div className="stack-header">My Stack</div>
         <div className="icons">
           <JsIconComponet />
+          <TsIconComponent />
           <ReactIconComponent />
-          <VueIconComponent />
-          <MongoDbIconComponent />
           <NextIconComponent />
+          <VueIconComponent />
+          <NodeIconComponent />
+          <MongoDbIconComponent />
         </div>
       </div>
     </>
