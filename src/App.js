@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import { motion } from "framer-motion";
-import Nav from "./components/Nav.js";
 import TextBlur from "./components/TextBlur.js";
 import VueIconComponent from "./components/VueIcon";
 import JsIconComponet from "./components/JsIcon";
@@ -11,12 +10,25 @@ import ReactIconComponent from "./components/ReactIcon";
 import TsIconComponent from "./components/TsIcon";
 import NodeIconComponent from "./components/NodeIcon";
 import ThreejsIconComponent from "./components/Threejs";
+import SimpleAccordion from "./components/Accordion";
 
 const boxAnimate = {
-  offscreen: { y: 100, opacity: 0 },
+  offscreen: { y: 200, opacity: 0 },
   onscreen: {
     y: 0,
     opacity: 1,
+    transition: {
+      type: "tween",
+      bounce: 0.5,
+      duration: 1,
+    },
+  },
+};
+
+const textAnimate = {
+  offscreen: { y: 50 },
+  onscreen: {
+    y: 0,
     transition: {
       type: "tween",
       bounce: 0.5,
@@ -46,9 +58,15 @@ const App = () => {
         className="main-page-container"
         style={{ backgroundColor: colors[colorIndex] }}
       >
-        <div className="contents-container">
+        <motion.div
+          initial={"offscreen"}
+          whileInView={"onscreen"}
+          variants={textAnimate}
+          viewport={{ once: true, amount: 0.1 }}
+          className="contents-container"
+        >
           <TextBlur />
-        </div>
+        </motion.div>
       </div>
       <div className="welcome-container">
         <div className="welcome">
@@ -84,6 +102,9 @@ const App = () => {
           <MongoDbIconComponent />
           <ThreejsIconComponent />
         </motion.div>
+      </div>
+      <div>
+        <SimpleAccordion />
       </div>
     </>
   );
