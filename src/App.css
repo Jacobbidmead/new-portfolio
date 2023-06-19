@@ -71,6 +71,14 @@
 .my-stack {
   background-color: black;
   color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.stack-header {
+  font-size: 80px;
+  text-align: center;
+  padding: 20px;
 }
 /* 
 .highlight-1 {
