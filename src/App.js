@@ -2,6 +2,11 @@ import React, { useState, useEffect } from "react";
 import "./App.css";
 import Nav from "./components/Nav.js";
 import TextBlur from "./components/TextBlur.js";
+import VueIconComponent from "./components/VueIcon";
+import JsIconComponet from "./components/JsIcon";
+import MongoDbIconComponent from "./components/MongoDbIcon";
+import NextIconComponent from "./components/NextIcon";
+import ReactIconComponent from "./components/ReactIcon";
 
 const colors = ["#FFC0CB", "#FFDAB9", "#FFFFE0", "#E0FFFF", "#D8BFD8"];
 
@@ -45,7 +50,14 @@ const App = () => {
         </div>
       </div>
       <div className="my-stack">
-        <span className="stack-header">My Stack</span>
+        <div className="stack-header">My Stack</div>
+        <div className="icons">
+          <JsIconComponet />
+          <ReactIconComponent />
+          <VueIconComponent />
+          <MongoDbIconComponent />
+          <NextIconComponent />
+        </div>
       </div>
     </>
   );

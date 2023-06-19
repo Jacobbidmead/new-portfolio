@@ -1,9 +1,9 @@
-import { ReactComponent as VueIcon } from "./icons/vue.svg";
+import { ReactComponent as Icon } from "../icons/vue.svg";
 
 const VueIconComponent = () => {
   return (
     <div>
-      <VueIcon />
+      <Icon />
     </div>
   );
 };
