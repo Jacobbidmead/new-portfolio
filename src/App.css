@@ -43,7 +43,8 @@
   font-family: "Rubik", sans-serif;
   margin: 0.5rem;
   text-transform: uppercase;
-  color: rgb(150, 141, 229);
+  color: white;
+  background-color: rgba(244, 5, 5, 0.1);
 }
 
 .about {
@@ -74,7 +75,7 @@
 }
 
 .my-stack {
-  background-color: black;
+  background-color: rgba(244, 5, 5, 0.1);
   color: white;
 }
 
@@ -89,6 +90,7 @@
   flex-direction: row;
   padding: 40px;
   justify-content: space-around;
+  z-index: 3;
 }
 /* 
 .highlight-1 {

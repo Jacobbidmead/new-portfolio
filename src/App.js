@@ -26,7 +26,7 @@ const boxAnimate = {
 };
 
 const textAnimate = {
-  offscreen: { y: 50 },
+  offscreen: { y: 100 },
   onscreen: {
     y: 0,
     transition: {
@@ -70,7 +70,13 @@ const App = () => {
       </div>
       <div className="welcome-container">
         <div className="welcome">
-          <p className="about">
+          <motion.div
+            initial={"offscreen"}
+            whileInView={"onscreen"}
+            variants={textAnimate}
+            viewport={{ once: true, amount: 0.1 }}
+            className="about"
+          >
             Im creative front end developer with an interest in{" "}
             <span className="highlight-1">UX/UI design,</span>
             <span className="highlight-2"> 3D imaging</span> and{" "}
@@ -81,7 +87,7 @@ const App = () => {
             utilise my problem-solving skills to create intuative and responsive
             web applications. I have a creative background, studying print &
             time based media at UAL.
-          </p>
+          </motion.div>
         </div>
       </div>
       <div className="my-stack">
