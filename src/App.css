@@ -1,3 +1,8 @@
+.body {
+  padding: none;
+  margin: none;
+}
+
 .main-page-container {
   height: 100vh;
   transition: background-color 1s ease-in-out;
@@ -120,5 +125,16 @@
     font-size: 20px;
     display: flex;
     justify-content: space-between;
+  }
+
+  .icons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 80px;
+  }
+
+  .mongodb-icon {
+    width: 80%;
+    padding-right: 20px;
   }
 }

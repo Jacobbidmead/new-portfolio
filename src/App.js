@@ -10,6 +10,7 @@ import NextIconComponent from "./components/NextIcon";
 import ReactIconComponent from "./components/ReactIcon";
 import TsIconComponent from "./components/TsIcon";
 import NodeIconComponent from "./components/NodeIcon";
+import ThreejsIconComponent from "./components/Threejs";
 
 const boxAnimate = {
   offscreen: { y: 100, opacity: 0 },
@@ -81,6 +82,7 @@ const App = () => {
           <NodeIconComponent />
           <VueIconComponent />
           <MongoDbIconComponent />
+          <ThreejsIconComponent />
         </motion.div>
       </div>
     </>
