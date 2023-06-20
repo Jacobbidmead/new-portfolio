@@ -1,19 +1,17 @@
 import { useState } from "react";
-import webstoreImg from "../imageData/webstoreImg";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 
-const HomeSwiper = ({ images }) => {
+const ImageSwiper = ({ images }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const previousImage = () => {
-    const newIndex =
-      (currentImageIndex - 1 + webstoreImg.length) % webstoreImg.length;
+    const newIndex = (currentImageIndex - 1 + images.length) % images.length;
     setCurrentImageIndex(newIndex);
   };
 
   const nextImage = () => {
-    const newIndex = (currentImageIndex + 1) % webstoreImg.length;
+    const newIndex = (currentImageIndex + 1) % images.length;
     setCurrentImageIndex(newIndex);
   };
 
@@ -21,21 +19,17 @@ const HomeSwiper = ({ images }) => {
     <>
       <div className="image-slider">
         <img
-          src={webstoreImg[currentImageIndex]}
+          src={images[currentImageIndex]}
           alt="slider"
           className="swiper-img"
         />
         <div className="swiper-buttons">
-          <ArrowBackIcon className="back-arrow" onClick={previousImage}>
-            Previous
-          </ArrowBackIcon>
-          <ArrowForwardIcon className="forward-arrow" onClick={nextImage}>
-            Next
-          </ArrowForwardIcon>
+          <ArrowBackIcon className="back-arrow" onClick={previousImage} />
+          <ArrowForwardIcon className="forward-arrow" onClick={nextImage} />
         </div>
       </div>
     </>
   );
 };
 
-export default HomeSwiper;
+export default ImageSwiper;

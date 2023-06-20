@@ -4,6 +4,8 @@ import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import ImageSwiper from "./Swiper";
+import webstoreImg from "../imageData/webstoreImg";
 
 export default function SimpleAccordion() {
   return (
@@ -28,8 +30,7 @@ export default function SimpleAccordion() {
           <Typography>E-COMMERCE STORE</Typography>
         </AccordionSummary>
         <AccordionDetails sx={{ border: "none", boxShadow: "none" }}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-          malesuada lacus ex, sit amet blandit leo lobortis eget.
+          <ImageSwiper images={webstoreImg} />
         </AccordionDetails>
       </Accordion>
       <Accordion
