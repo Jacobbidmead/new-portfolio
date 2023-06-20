@@ -92,6 +92,27 @@
   justify-content: space-around;
   z-index: 3;
 }
+
+.accordion-container {
+  background-color: black;
+}
+
+.latest-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+}
+
+.latest-work {
+  color: white;
+  font-size: 50px;
+  text-align: center;
+  border: 1px white solid;
+  border-radius: 50px;
+  width: 10em;
+  padding: 10px;
+  margin-bottom: 100px;
+}
 /* 
 .highlight-1 {
   color: rgb(29, 233, 206);

@@ -7,23 +7,41 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 export default function SimpleAccordion() {
   return (
-    <div>
-      <Accordion>
+    <div className="accordion-container">
+      <div className="latest-container">
+        <div className="latest-work">Latest work</div>
+      </div>
+      <Accordion
+        sx={{
+          border: "none",
+          boxShadow: "none",
+          backgroundColor: "black",
+          color: "white",
+        }}
+      >
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1a-content"
           id="panel1a-header"
+          sx={{ backgroundColor: "" }}
         >
           <Typography>Accordion 1</Typography>
         </AccordionSummary>
-        <AccordionDetails>
+        <AccordionDetails sx={{ border: "none", boxShadow: "none" }}>
           <Typography>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
             malesuada lacus ex, sit amet blandit leo lobortis eget.
           </Typography>
         </AccordionDetails>
       </Accordion>
-      <Accordion>
+      <Accordion
+        sx={{
+          border: "none",
+          boxShadow: "none",
+          backgroundColor: "black",
+          color: "white",
+        }}
+      >
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel2a-content"
