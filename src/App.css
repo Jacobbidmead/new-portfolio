@@ -34,7 +34,7 @@
 }
 
 #home-text {
-  padding: 0px 80px 0px 0px;
+  padding: 0px 80px 0px 90px;
   margin: 300px 0px;
 }
 
@@ -99,18 +99,16 @@
 
 .latest-container {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   padding-top: 100px;
+  text-align: right;
 }
 
 .latest-work {
-  color: white;
-  font-size: 50px;
-  text-align: center;
-  border: 1px white solid;
-  border-radius: 50px;
+  color: rgb(234, 143, 143);
+  font-size: 80px;
   width: 10em;
-  padding: 10px;
+  padding-right: 80px;
   margin-bottom: 100px;
 }
 /* 
@@ -137,6 +135,8 @@
   position: relative;
   width: 100%;
   max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .swiper-img {
@@ -144,13 +144,17 @@
   height: 400px;
   object-fit: contain;
   border: 1px solid black;
+  position: relative;
 }
 
 .swiper-buttons {
   position: absolute;
-  top: 50%;
+  top: 60%;
   transform: translateY(-50%);
   padding: 30px;
+  right: 8%;
+  height: 100px;
+  width: 78%;
 }
 
 .back-arrow,
@@ -160,15 +164,24 @@
 
 .back-arrow {
   position: absolute;
-  left: 10%;
+  left: 0%;
 }
 
 .forward-arrow {
   position: absolute;
-  right: 10%;
+  right: 0%;
 }
 
 /* /swiper */
+
+.project {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.project-header {
+  font-size: 80px;
+}
 
 @media screen and (max-width: 601px) {
   .main-page-container {
@@ -198,5 +211,27 @@
   .mongodb-icon {
     width: 80%;
     padding-right: 20px;
+  }
+
+  .latest-work {
+    font-size: 30px;
+  }
+
+  .back-arrow {
+    margin-top: 125px;
+    left: 10%;
+  }
+
+  .forward-arrow {
+    margin-top: 125px;
+  }
+
+  .project {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project-header {
+    font-size: 2em;
   }
 }

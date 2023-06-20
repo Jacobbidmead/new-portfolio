@@ -11,7 +11,7 @@ export default function SimpleAccordion() {
   return (
     <div className="accordion-container">
       <div className="latest-container">
-        <div className="latest-work">Latest work</div>
+        <div className="latest-work">LATEST WORK</div>
       </div>
       <Accordion
         sx={{
@@ -27,10 +27,13 @@ export default function SimpleAccordion() {
           id="panel1a-header"
           sx={{ backgroundColor: "" }}
         >
-          <Typography>E-COMMERCE STORE</Typography>
+          <div className="project-header"> E-COMMERCE STORE</div>
         </AccordionSummary>
         <AccordionDetails sx={{ border: "none", boxShadow: "none" }}>
-          <ImageSwiper images={webstoreImg} />
+          <div className="project">
+            <div>hello</div>
+            <ImageSwiper images={webstoreImg} />
+          </div>
         </AccordionDetails>
       </Accordion>
       <Accordion
