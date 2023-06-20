@@ -25,13 +25,11 @@ export default function SimpleAccordion() {
           id="panel1a-header"
           sx={{ backgroundColor: "" }}
         >
-          <Typography>Accordion 1</Typography>
+          <Typography>E-COMMERCE STORE</Typography>
         </AccordionSummary>
         <AccordionDetails sx={{ border: "none", boxShadow: "none" }}>
-          <Typography>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget.
-          </Typography>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+          malesuada lacus ex, sit amet blandit leo lobortis eget.
         </AccordionDetails>
       </Accordion>
       <Accordion
