@@ -58,6 +58,7 @@ const App = () => {
         className="main-page-container"
         style={{ backgroundColor: colors[colorIndex] }}
       >
+        <div></div>
         <motion.div
           initial={"offscreen"}
           whileInView={"onscreen"}

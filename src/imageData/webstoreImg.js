@@ -1,8 +1,8 @@
 const webstoreImg = [
-  "images/webstorephoto.png",
-  "images/webstorehome.png",
-  "images/webstorecategory.png",
-  "images/webstorebasket.png",
+  "images/project-img/webstorephoto.png",
+  "images/project-img/webstorehome.png",
+  "images/project-img/webstorecategory.png",
+  "images/project-img/webstorebasket.png",
 ];
 
 export default webstoreImg;
