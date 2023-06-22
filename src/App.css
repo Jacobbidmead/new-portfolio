@@ -215,6 +215,8 @@
 
   .latest-work {
     font-size: 30px;
+    text-align: center;
+    padding-left: 80px;
   }
 
   .back-arrow {
