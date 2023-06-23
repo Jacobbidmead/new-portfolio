@@ -81,7 +81,7 @@ const App = () => {
             <span className="highlight-1">UX/UI design,</span>
             <span className="highlight-2"> 3D imaging</span> and{" "}
             <span className="highlight-3"> photography.</span> I build web
-            applications with TypeScript, React & Vue . My journey started with
+            applications with TypeScript, React & Vue. My journey started with
             haiku academys full stack web development bootcamp, which I
             completed in october 2022. since graduating, I have learnt to
             utilise my problem-solving skills to create intuative and responsive

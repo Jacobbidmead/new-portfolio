@@ -35,7 +35,14 @@ export default function SimpleAccordion() {
         <AccordionDetails className="accordion-summary">
           <div className="project">
             <ImageSwiper images={webstoreImg} />
-            <div>hello</div>
+            <div className="project-description">
+              <div className="about-project">About.</div>
+              <div>
+                Front end E-commerce store based on alwaysincolor.com &
+                flatspot.com.
+              </div>
+              <div>Link</div>
+            </div>
           </div>
         </AccordionDetails>
       </Accordion>
@@ -58,7 +65,13 @@ export default function SimpleAccordion() {
         <AccordionDetails className="accoridon-summary">
           <div className="project">
             <ImageSwiper images={airBnbImg} />
-            <div>hello</div>
+            <div className="project-description">
+              <div className="about-project">About.</div>
+              <div>
+                Front end E-commerce store based on alwaysincolor.com &
+                flatspot.com.
+              </div>
+            </div>
           </div>
         </AccordionDetails>
       </Accordion>{" "}
@@ -81,7 +94,14 @@ export default function SimpleAccordion() {
         <AccordionDetails className="accoridon-summary">
           <div className="project">
             <ImageSwiper images={airBnbImg} />
-            <div>hello</div>
+            <div className="project-description">
+              <div className="about-project">About.</div>
+              <div>
+                Front end E-commerce store based on alwaysincolor.com &
+                flatspot.com.
+              </div>
+              <div>Link</div>
+            </div>
           </div>
         </AccordionDetails>
       </Accordion>{" "}
@@ -104,7 +124,13 @@ export default function SimpleAccordion() {
         <AccordionDetails className="accoridon-summary">
           <div className="project">
             <ImageSwiper images={airBnbImg} />
-            <div>hello</div>
+            <div className="project-description">
+              <div className="about-project">About.</div>
+              <div>
+                Front end E-commerce store based on alwaysincolor.com &
+                flatspot.com.
+              </div>
+            </div>
           </div>
         </AccordionDetails>
       </Accordion>
@@ -127,7 +153,13 @@ export default function SimpleAccordion() {
         <AccordionDetails className="accoridon-summary">
           <div className="project">
             <ImageSwiper images={airBnbImg} />
-            <div>hello</div>
+            <div className="project-description">
+              <div className="about-project">About.</div>
+              <div>
+                Front end E-commerce store based on alwaysincolor.com &
+                flatspot.com.
+              </div>
+            </div>
           </div>
         </AccordionDetails>
       </Accordion>
