@@ -2,7 +2,6 @@ import * as React from "react";
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
-import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import ImageSwiper from "./Swiper";
 import webstoreImg from "../imageData/webstoreImg";
@@ -11,9 +10,9 @@ import airBnbImg from "../imageData/airBnBImg";
 export default function SimpleAccordion() {
   return (
     <div className="accordion-container">
-      <div className="latest-container">
+      {/* <div className="latest-container">
         <div className="latest-work">LATEST WORK</div>
-      </div>
+      </div> */}
       <Accordion
         sx={{
           border: "none",
@@ -30,12 +29,7 @@ export default function SimpleAccordion() {
         >
           <div className="project-header"> E-COMMERCE STORE</div>
         </AccordionSummary>
-        <AccordionDetails
-          sx={{
-            border: "none",
-            boxShadow: "none",
-          }}
-        >
+        <AccordionDetails className="accordion-summary">
           <div className="project">
             <div>hello</div>
             <ImageSwiper images={webstoreImg} />
@@ -58,7 +52,7 @@ export default function SimpleAccordion() {
         >
           <div className="project-header"> AIR BNB CLONE</div>
         </AccordionSummary>
-        <AccordionDetails>
+        <AccordionDetails className="accoridon-summary">
           <div className="project">
             <div>hello</div>
             <ImageSwiper images={airBnbImg} />
@@ -81,7 +75,7 @@ export default function SimpleAccordion() {
         >
           <div className="project-header"> BOOKMARK URLS</div>
         </AccordionSummary>
-        <AccordionDetails>
+        <AccordionDetails className="accoridon-summary">
           <div className="project">
             <div>hello</div>
             <ImageSwiper images={airBnbImg} />
@@ -104,7 +98,7 @@ export default function SimpleAccordion() {
         >
           <div className="project-header"> CLAUDIA PORTFOLIO</div>
         </AccordionSummary>
-        <AccordionDetails>
+        <AccordionDetails className="accoridon-summary">
           <div className="project">
             <div>hello</div>
             <ImageSwiper images={airBnbImg} />
@@ -127,7 +121,7 @@ export default function SimpleAccordion() {
         >
           <div className="project-header"> GOOGLE SEARCH</div>
         </AccordionSummary>
-        <AccordionDetails>
+        <AccordionDetails className="accoridon-summary">
           <div className="project">
             <div>hello</div>
             <ImageSwiper images={airBnbImg} />

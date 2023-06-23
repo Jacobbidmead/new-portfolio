@@ -75,7 +75,7 @@
 }
 
 .my-stack {
-  background-color: rgba(244, 5, 5, 0.1);
+  background-color: rgba(243, 162, 162, 0.5);
   color: white;
 }
 
@@ -94,7 +94,12 @@
 }
 
 .accordion-container {
-  background-color: rgb(27, 5, 90);
+  background-color: black;
+}
+
+.accordion-summary {
+  background-color: rgba(244, 243, 243, 0);
+  padding: 80px 0px 80px 40px;
 }
 
 .latest-container {
@@ -105,10 +110,10 @@
 }
 
 .latest-work {
-  color: rgb(234, 143, 143);
   font-size: 40px;
   width: 10em;
   margin-bottom: 100px;
+  color: white;
 }
 /* 
 .highlight-1 {
@@ -175,6 +180,7 @@
 .project {
   display: grid;
   grid-template-columns: 1fr 2fr;
+  padding: 80px 0px 80px 40px;
 }
 
 .project-header {
