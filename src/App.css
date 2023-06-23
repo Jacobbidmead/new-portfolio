@@ -104,16 +104,28 @@
 
 .latest-container {
   display: flex;
-  justify-content: center;
+  flex-flow: row-reverse wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+  display: flex;
   padding-top: 100px;
+  padding-right: 50px;
   text-align: center;
 }
 
 .latest-work {
-  font-size: 40px;
+  font-size: 90px;
   width: 10em;
   margin-bottom: 100px;
   color: white;
+  text-shadow: 0 0 8px #cccfcabf;
+  text-align: right;
+}
+
+.latest-date {
+  color: white;
+  text-align: right;
 }
 /* 
 .highlight-1 {
@@ -160,6 +172,10 @@
   width: 78%;
 }
 
+.swiper-buttons:hover {
+  text-shadow: 0 0 8px #cccfcabf;
+}
+
 .back-arrow,
 .forward-arrow {
   cursor: pointer;
@@ -178,13 +194,14 @@
 /* /swiper */
 
 .project {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
+  display: flex;
+  flex-direction: column;
   padding: 80px 0px 80px 40px;
 }
 
 .project-header {
   font-size: 80px;
+  text-shadow: 0 0 8px #cccfcabf;
 }
 
 @media screen and (max-width: 601px) {
@@ -235,9 +252,14 @@
   .project {
     display: flex;
     flex-direction: column;
+    padding: 0;
   }
 
   .project-header {
     font-size: 2em;
+  }
+
+  .latest-date {
+    padding-right: 30px;
   }
 }

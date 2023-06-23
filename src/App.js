@@ -77,7 +77,7 @@ const App = () => {
             viewport={{ once: true, amount: 0.1 }}
             className="about"
           >
-            Im creative front end developer with an interest in{" "}
+            Im creative front end developer with an experience in{" "}
             <span className="highlight-1">UX/UI design,</span>
             <span className="highlight-2"> 3D imaging</span> and{" "}
             <span className="highlight-3"> photography.</span> I build web

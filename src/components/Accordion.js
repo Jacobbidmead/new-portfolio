@@ -10,9 +10,12 @@ import airBnbImg from "../imageData/airBnBImg";
 export default function SimpleAccordion() {
   return (
     <div className="accordion-container">
-      {/* <div className="latest-container">
-        <div className="latest-work">LATEST WORK</div>
-      </div> */}
+      <div className="latest-container">
+        <div className="latest-work">
+          SELECTED WORK
+          <div className="latest-date">2022-2023</div>
+        </div>
+      </div>
       <Accordion
         sx={{
           border: "none",
@@ -31,8 +34,8 @@ export default function SimpleAccordion() {
         </AccordionSummary>
         <AccordionDetails className="accordion-summary">
           <div className="project">
-            <div>hello</div>
             <ImageSwiper images={webstoreImg} />
+            <div>hello</div>
           </div>
         </AccordionDetails>
       </Accordion>
@@ -54,8 +57,8 @@ export default function SimpleAccordion() {
         </AccordionSummary>
         <AccordionDetails className="accoridon-summary">
           <div className="project">
-            <div>hello</div>
             <ImageSwiper images={airBnbImg} />
+            <div>hello</div>
           </div>
         </AccordionDetails>
       </Accordion>{" "}
@@ -77,8 +80,8 @@ export default function SimpleAccordion() {
         </AccordionSummary>
         <AccordionDetails className="accoridon-summary">
           <div className="project">
-            <div>hello</div>
             <ImageSwiper images={airBnbImg} />
+            <div>hello</div>
           </div>
         </AccordionDetails>
       </Accordion>{" "}
@@ -100,8 +103,8 @@ export default function SimpleAccordion() {
         </AccordionSummary>
         <AccordionDetails className="accoridon-summary">
           <div className="project">
-            <div>hello</div>
             <ImageSwiper images={airBnbImg} />
+            <div>hello</div>
           </div>
         </AccordionDetails>
       </Accordion>
@@ -123,8 +126,8 @@ export default function SimpleAccordion() {
         </AccordionSummary>
         <AccordionDetails className="accoridon-summary">
           <div className="project">
-            <div>hello</div>
             <ImageSwiper images={airBnbImg} />
+            <div>hello</div>
           </div>
         </AccordionDetails>
       </Accordion>
