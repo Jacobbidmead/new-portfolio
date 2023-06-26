@@ -39,12 +39,30 @@ export default function SimpleAccordion() {
           <div className="project">
             <ImageSwiper images={webstoreImg} />
             <div className="project-description">
-              <div className="about-project">About.</div>
-              <div>
+              <div className="about-project">
+                {" "}
                 Front end E-commerce store based on alwaysincolor.com &
                 flatspot.com.
               </div>
-              <div>Link</div>
+              <div className="project-text">
+                Users are able to browse items by brand & category, add & remove
+                items from the basket.
+              </div>
+              <div className="technologies">
+                Technologies used - TypeScript, Next.js, MUI library, React
+                context API.
+              </div>
+            </div>
+            <div className="project-link">
+              <a
+                href="https://webstore-react-app-git-main-jacobbidmead.vercel.app/"
+                alt=""
+                target="_blank"
+                rel="noreferrer"
+                className="link"
+              >
+                Live site
+              </a>
             </div>
           </div>
         </AccordionDetails>
