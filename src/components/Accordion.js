@@ -8,6 +8,7 @@ import webstoreImg from "../imageData/webstoreImg";
 import airBnbImg from "../imageData/airBnBImg";
 import bookmarksImg from "../imageData/bookmarksImg";
 import googleImg from "../imageData/googleImg";
+import claudiaImg from "../imageData/claudiaImg";
 
 export default function SimpleAccordion() {
   return (
@@ -61,6 +62,7 @@ export default function SimpleAccordion() {
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel2a-content"
           id="panel2a-header"
+          sx={{ margin: "0" }}
         >
           <div className="project-header"> AIR BNB CLONE</div>
         </AccordionSummary>
@@ -93,7 +95,7 @@ export default function SimpleAccordion() {
         >
           <div className="project-header"> BOOKMARK URLS</div>
         </AccordionSummary>
-        <AccordionDetails className="accoridon-summary">
+        <AccordionDetails className="accordion-summary-b">
           <div className="project">
             <ImageSwiper images={bookmarksImg} />
             <div className="project-description">
@@ -123,9 +125,9 @@ export default function SimpleAccordion() {
         >
           <div className="project-header"> CLAUDIA PORTFOLIO</div>
         </AccordionSummary>
-        <AccordionDetails className="accoridon-summary">
+        <AccordionDetails className="accordion-summary-c">
           <div className="project">
-            <ImageSwiper images={airBnbImg} />
+            <ImageSwiper images={claudiaImg} />
             <div className="project-description">
               <div className="about-project">About.</div>
               <div>
@@ -152,7 +154,7 @@ export default function SimpleAccordion() {
         >
           <div className="project-header"> GOOGLE SEARCH</div>
         </AccordionSummary>
-        <AccordionDetails className="accoridon-summary">
+        <AccordionDetails className="accordion-summary-g">
           <div className="project">
             <ImageSwiper images={googleImg} />
             <div className="project-description">
