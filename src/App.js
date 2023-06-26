@@ -91,7 +91,6 @@ const App = () => {
         </div>
       </div>
       <div className="my-stack">
-        {/* <div className="stack-header">My Stack</div> */}
         <motion.div
           initial={"offscreen"}
           whileInView={"onscreen"}

@@ -6,6 +6,8 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import ImageSwiper from "./Swiper";
 import webstoreImg from "../imageData/webstoreImg";
 import airBnbImg from "../imageData/airBnBImg";
+import bookmarksImg from "../imageData/bookmarksImg";
+import googleImg from "../imageData/googleImg";
 
 export default function SimpleAccordion() {
   return (
@@ -62,7 +64,7 @@ export default function SimpleAccordion() {
         >
           <div className="project-header"> AIR BNB CLONE</div>
         </AccordionSummary>
-        <AccordionDetails className="accoridon-summary">
+        <AccordionDetails className="accordion-summary-ab">
           <div className="project">
             <ImageSwiper images={airBnbImg} />
             <div className="project-description">
@@ -93,7 +95,7 @@ export default function SimpleAccordion() {
         </AccordionSummary>
         <AccordionDetails className="accoridon-summary">
           <div className="project">
-            <ImageSwiper images={airBnbImg} />
+            <ImageSwiper images={bookmarksImg} />
             <div className="project-description">
               <div className="about-project">About.</div>
               <div>
@@ -152,7 +154,7 @@ export default function SimpleAccordion() {
         </AccordionSummary>
         <AccordionDetails className="accoridon-summary">
           <div className="project">
-            <ImageSwiper images={airBnbImg} />
+            <ImageSwiper images={googleImg} />
             <div className="project-description">
               <div className="about-project">About.</div>
               <div>

@@ -67,7 +67,6 @@
 .welcome-container {
   position: relative;
   z-index: 2;
-  background-color: transparent;
 }
 
 .welcome {
@@ -108,11 +107,6 @@
   background-color: black;
 }
 
-.accordion-summary {
-  background-color: rgba(244, 243, 243, 0);
-  padding: 80px 0px 80px 40px;
-}
-
 .latest-container {
   display: flex;
   flex-flow: row-reverse wrap;
@@ -126,7 +120,7 @@
 }
 
 .latest-work {
-  font-size: 90px;
+  font-size: 150px;
   width: 10em;
   margin-bottom: 100px;
   color: white;
@@ -173,6 +167,10 @@
   height: 400px;
   object-fit: contain;
   position: relative;
+  background-color: rgba(251, 250, 250, 0.376);
+  padding-top: 80px;
+  padding-bottom: 80px;
+  border-radius: 5px;
 }
 
 .swiper-buttons {
@@ -183,6 +181,7 @@
   right: 8%;
   height: 100px;
   width: 78%;
+  color: rgb(253, 253, 253);
 }
 
 .swiper-buttons:hover {
@@ -204,12 +203,20 @@
   right: 0%;
 }
 
+.accordion-summary {
+  background-color: rgb(250, 144, 37);
+}
+
+.accordion-summary-ab {
+  background-color: rgb(21, 168, 232);
+}
+
 /* /swiper */
 
 .project {
   display: flex;
   flex-direction: column;
-  padding: 80px 0px 80px 40px;
+  padding: 80px 160px 80px 160px;
 }
 
 .project-header {
@@ -275,5 +282,11 @@
 
   .latest-date {
     padding-right: 30px;
+  }
+
+  .swiper-img {
+    padding: 20px 0px 20px 0px;
+    border-radius: 10px;
+    margin: 20px 0px;
   }
 }
