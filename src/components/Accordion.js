@@ -147,7 +147,8 @@ export default function SimpleAccordion() {
               <div className="about-project">Bookmarker App.</div>
               <div className="project-text">
                 Users are able to add, edit & delete bookmarks (URLS). Front end
-                app, data is saved on the browers and persists page reload.
+                app, data is saved on the brower and persists page reload. The
+                page uses pagination, up too twenty links are shown per page.
               </div>
               <div className="technologies">
                 TypeScript, React, Styled Components.
