@@ -72,6 +72,35 @@ export default function SimpleAccordion() {
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel2a-content"
           id="panel2a-header"
+        >
+          <div className="project-header"> CLAUDIA PORTFOLIO</div>
+        </AccordionSummary>
+        <AccordionDetails className="accordion-summary-c">
+          <div className="project">
+            <ImageSwiper images={claudiaImg} />
+            <div className="project-description">
+              <div className="about-project">About.</div>
+              <div>
+                Front end E-commerce store based on alwaysincolor.com &
+                flatspot.com.
+              </div>
+            </div>
+          </div>
+        </AccordionDetails>
+      </Accordion>
+      <Accordion
+        sx={{
+          border: "none",
+          boxShadow: "none",
+          backgroundColor: "rgba(0, 0, 0, 0)",
+          color: "white",
+          margin: "none",
+        }}
+      >
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel2a-content"
+          id="panel2a-header"
           sx={{ margin: "0" }}
         >
           <div className="project-header"> AIR BNB CLONE</div>
@@ -127,35 +156,6 @@ export default function SimpleAccordion() {
           </div>
         </AccordionDetails>
       </Accordion>{" "}
-      <Accordion
-        sx={{
-          border: "none",
-          boxShadow: "none",
-          backgroundColor: "rgba(0, 0, 0, 0)",
-          color: "white",
-          margin: "none",
-        }}
-      >
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel2a-content"
-          id="panel2a-header"
-        >
-          <div className="project-header"> CLAUDIA PORTFOLIO</div>
-        </AccordionSummary>
-        <AccordionDetails className="accordion-summary-c">
-          <div className="project">
-            <ImageSwiper images={claudiaImg} />
-            <div className="project-description">
-              <div className="about-project">About.</div>
-              <div>
-                Front end E-commerce store based on alwaysincolor.com &
-                flatspot.com.
-              </div>
-            </div>
-          </div>
-        </AccordionDetails>
-      </Accordion>
       <Accordion
         sx={{
           border: "none",

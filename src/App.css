@@ -86,8 +86,8 @@
 }
 
 .my-stack {
-  background-color: rgba(213, 31, 234, 1);
   color: white;
+  background-color: rgb(222, 6, 251);
 }
 
 .stack-header {
@@ -109,7 +109,7 @@
   z-index: 2;
   background-color: black;
   color: white;
-  padding: 20px;
+  padding: 40px;
   background-image: url("/public/images/japan.jpeg");
 }
 
@@ -127,12 +127,13 @@
 
 .latest-work {
   font-size: 150px;
-  width: 10em;
   margin-bottom: 100px;
-  color: rgb(0, 244, 53);
   text-shadow: 0 0 8px #cccfcabf;
   text-align: right;
   font-family: "Polysans";
+  background-color: rgb(78, 133, 251);
+  padding: 20px;
+  border-radius: 30px;
 }
 
 .latest-date {
@@ -209,7 +210,7 @@
   right: 0%;
 }
 
-/* .accordion-summary {
+.accordion-summary {
   background-color: rgb(250, 125, 63);
 }
 
@@ -227,7 +228,7 @@
 
 .accordion-summary-g {
   background-color: #fe5f55;
-} */
+}
 
 .Mui-expanded {
   margin: 0px;
@@ -290,7 +291,7 @@
   padding: 50px;
   border-radius: 20px;
   /* background-color: rgba(251, 250, 250, 0.1); */
-  background-color: rgba(250, 255, 253, 0.9);
+  background-color: rgba(250, 255, 253, 0.4);
 }
 
 @media screen and (max-width: 601px) {
@@ -325,6 +326,7 @@
 
   .latest-work {
     font-size: 30px;
+    margin-bottom: 20px;
   }
 
   .latest-container {
@@ -380,5 +382,8 @@
   }
   .technologies {
     font-size: 12px;
+  }
+  .accordion-container {
+    padding: 2px;
   }
 }
