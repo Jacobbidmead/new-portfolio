@@ -286,6 +286,22 @@
   background-color: rgba(250, 255, 253, 0.4);
 }
 
+.contact {
+  display: flex;
+  place-items: center;
+  font-family: PolySans;
+  height: 500px;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+  background-color: black;
+  color: white;
+  flex-direction: column;
+  font-size: 40px;
+  text-shadow: 0 0 8px #cccfcabf;
+}
+
 @media screen and (max-width: 601px) {
   .main-page-container {
     display: flex;

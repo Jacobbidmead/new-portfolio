@@ -11,6 +11,7 @@ import TsIconComponent from "./components/TsIcon";
 import NodeIconComponent from "./components/NodeIcon";
 import ThreejsIconComponent from "./components/Threejs";
 import SimpleAccordion from "./components/Accordion";
+import Nav from "./components/Nav";
 
 const boxAnimate = {
   offscreen: { y: 200, opacity: 0 },
@@ -113,6 +114,12 @@ const App = () => {
           <SimpleAccordion />
         </div>
       </div>
+      <section>
+        <div className="contact">
+          <div>To discuss a project or collaboration, send an email to </div>
+          <div className="email">jacob.bidmead.fullstack@outlook.com</div>
+        </div>
+      </section>
     </>
   );
 };
