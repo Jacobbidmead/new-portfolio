@@ -219,7 +219,7 @@
 }
 
 .accordion-summary-b {
-  background-color: #ef1662;
+  background-color: rgba(239, 22, 98, 0.9);
 }
 
 .accordion-summary-c {
@@ -227,7 +227,7 @@
 }
 
 .accordion-summary-g {
-  background-color: #fe5f55;
+  background-color: rgba(254, 95, 85, 0.9);
 }
 
 .Mui-expanded {

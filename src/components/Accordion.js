@@ -137,44 +137,6 @@ export default function SimpleAccordion() {
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel2a-content"
           id="panel2a-header"
-          sx={{ margin: "0" }}
-        >
-          <div className="project-header"> AIR BNB CLONE</div>
-        </AccordionSummary>
-        <AccordionDetails className="accordion-summary-ab">
-          <div className="project">
-            <ImageSwiper images={airBnbImg} />
-            <div className="project-description">
-              <div className="about-project">
-                {" "}
-                Full stack MVC Air Bnb Clone.
-              </div>
-              <div className="project-text">
-                Users are able to create a profile and upload house data, which
-                is populated onto the main app page. Users, while logged in, can
-                also edit house data and leave comments. User data is stored in
-                MongoDB and accessed with Express.js.
-              </div>
-              <div className="technologies">
-                JavaScript, HTML, CSS, Bootstrap, Express.js, Node.js, MongoDB.
-              </div>
-            </div>
-          </div>
-        </AccordionDetails>
-      </Accordion>{" "}
-      <Accordion
-        sx={{
-          border: "none",
-          boxShadow: "none",
-          backgroundColor: "rgba(0, 0, 0, 0)",
-          color: "white",
-          margin: "none",
-        }}
-      >
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel2a-content"
-          id="panel2a-header"
         >
           <div className="project-header"> BOOKMARK URLS</div>
         </AccordionSummary>
@@ -186,6 +148,9 @@ export default function SimpleAccordion() {
               <div className="project-text">
                 Users are able to add, edit & delete bookmarks (URLS). Front end
                 app, data is saved on the browers and persists page reload.
+              </div>
+              <div className="technologies">
+                TypeScript, React, Styled Components.
               </div>
               <div className="project-link">
                 <a
@@ -215,6 +180,45 @@ export default function SimpleAccordion() {
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel2a-content"
           id="panel2a-header"
+          sx={{ margin: "0" }}
+        >
+          <div className="project-header"> AIR BNB CLONE</div>
+        </AccordionSummary>
+        <AccordionDetails className="accordion-summary-ab">
+          <div className="project">
+            <ImageSwiper images={airBnbImg} />
+            <div className="project-description">
+              <div className="about-project">
+                {" "}
+                Full stack MVC Air Bnb Clone.
+              </div>
+              <div className="project-text">
+                Users are able to create a profile and upload house data, which
+                is populated onto the main app page. Users, while logged in, can
+                also edit house data and leave comments. User data is stored in
+                MongoDB and accessed with Express.js.
+              </div>
+              <div className="technologies">
+                Technologies used - JavaScript, HTML, CSS, Bootstrap,
+                Express.js, Node.js, MongoDB.
+              </div>
+            </div>
+          </div>
+        </AccordionDetails>
+      </Accordion>{" "}
+      <Accordion
+        sx={{
+          border: "none",
+          boxShadow: "none",
+          backgroundColor: "rgba(0, 0, 0, 0)",
+          color: "white",
+          margin: "none",
+        }}
+      >
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel2a-content"
+          id="panel2a-header"
         >
           <div className="project-header"> GOOGLE SEARCH</div>
         </AccordionSummary>
@@ -222,10 +226,15 @@ export default function SimpleAccordion() {
           <div className="project">
             <ImageSwiper images={googleImg} />
             <div className="project-description">
-              <div className="about-project">About.</div>
-              <div>
-                Front end E-commerce store based on alwaysincolor.com &
-                flatspot.com.
+              <div className="about-project">Goolge search style app.</div>
+              <div className="project-text">
+                Google Search style app, made using React for the front end
+                while creating our own API and connecting to the backend using
+                Axios. Users are able to search for limited data contained in
+                the MongoDB database.
+              </div>
+              <div className="technologies">
+                Technologies used - React, Axios, MongoDb.
               </div>
             </div>
           </div>
