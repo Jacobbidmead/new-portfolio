@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../styles/Photos.css";
+import "../styles/Photo.css";
 import saImageData from "../imageData/saImageData";
 import asiaImageData from "../imageData/asiaImageData";
 import europeImageData from "../imageData/europeImageData";
