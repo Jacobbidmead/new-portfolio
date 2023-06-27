@@ -79,10 +79,26 @@ export default function SimpleAccordion() {
           <div className="project">
             <ImageSwiper images={claudiaImg} />
             <div className="project-description">
-              <div className="about-project">About.</div>
-              <div>
-                Front end E-commerce store based on alwaysincolor.com &
-                flatspot.com.
+              <div className="about-project">
+                Claudia Cantarini Personal Portfolio.
+              </div>
+              <div className="project-text">
+                Static and responsive portfolio site for professional
+                photographer Claduia Cantarini.
+              </div>
+              <div className="technologies">
+                Technologies used - React, CSS, Swiper.js
+              </div>
+              <div className="project-link">
+                <a
+                  href="https://webstore-react-app-git-main-jacobbidmead.vercel.app/"
+                  alt=""
+                  target="_blank"
+                  rel="noreferrer"
+                  className="link"
+                >
+                  Live site
+                </a>
               </div>
             </div>
           </div>
@@ -146,12 +162,22 @@ export default function SimpleAccordion() {
           <div className="project">
             <ImageSwiper images={bookmarksImg} />
             <div className="project-description">
-              <div className="about-project">About.</div>
-              <div>
-                Front end E-commerce store based on alwaysincolor.com &
-                flatspot.com.
+              <div className="about-project">Bookmarker App.</div>
+              <div className="project-text">
+                Users are able to add, edit & delete bookmarks (URLS). Front end
+                app, data is saved on the browers and persists page reload.
               </div>
-              <div>Link</div>
+              <div className="project-link">
+                <a
+                  href="https://loquacious-sable-4df720.netlify.app/"
+                  alt=""
+                  target="_blank"
+                  rel="noreferrer"
+                  className="link"
+                >
+                  Live site
+                </a>
+              </div>
             </div>
           </div>
         </AccordionDetails>

@@ -131,7 +131,7 @@
   text-shadow: 0 0 8px #cccfcabf;
   text-align: right;
   font-family: "Polysans";
-  background-color: rgb(78, 133, 251);
+  background-color: rgba(78, 133, 251, 0.9);
   padding: 20px;
   border-radius: 30px;
 }
@@ -211,11 +211,11 @@
 }
 
 .accordion-summary {
-  background-color: rgb(250, 125, 63);
+  background-color: rgba(250, 125, 63, 0.9);
 }
 
 .accordion-summary-ab {
-  background-color: rgb(21, 168, 232);
+  background-color: rgba(21, 168, 232, 0.9);
 }
 
 .accordion-summary-b {
@@ -223,7 +223,7 @@
 }
 
 .accordion-summary-c {
-  background-color: rgb(21, 232, 141);
+  background-color: rgba(21, 232, 141, 0.9);
 }
 
 .accordion-summary-g {
