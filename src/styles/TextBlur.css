@@ -4,10 +4,12 @@
   width: 100%;
   height: 100%;
   z-index: 1;
+  pointer-events: none; /* Disable pointer events on the text container */
 }
 
 .text-container.blur .name-container {
   filter: blur(4px);
+  pointer-events: auto; /* Enable pointer events on the blurred name container */
 }
 
 .name-container.front {

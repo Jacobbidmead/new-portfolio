@@ -67,13 +67,14 @@
 .welcome-container {
   position: relative;
   z-index: 2;
+  overflow: hidden;
 }
 
 .welcome {
   display: flex;
   justify-content: center;
   position: relative;
-  background-color: rgba(244, 14, 221, 0.1);
+  background-color: rgba(244, 14, 221, 0.3);
   padding: 20px;
   position: sticky;
   top: 0;
@@ -85,7 +86,7 @@
 }
 
 .my-stack {
-  background-color: rgb(213, 31, 234);
+  background-color: rgba(213, 31, 234, 1);
   color: white;
 }
 
@@ -104,7 +105,12 @@
 }
 
 .accordion-container {
+  position: relative;
+  z-index: 2;
   background-color: black;
+  color: white;
+  padding: 20px;
+  background-image: url("/public/images/japan.jpeg");
 }
 
 .latest-container {
@@ -123,7 +129,7 @@
   font-size: 150px;
   width: 10em;
   margin-bottom: 100px;
-  color: white;
+  color: rgb(0, 244, 53);
   text-shadow: 0 0 8px #cccfcabf;
   text-align: right;
   font-family: "Polysans";
@@ -203,7 +209,7 @@
   right: 0%;
 }
 
-.accordion-summary {
+/* .accordion-summary {
   background-color: rgb(250, 125, 63);
 }
 
@@ -221,7 +227,7 @@
 
 .accordion-summary-g {
   background-color: #fe5f55;
-}
+} */
 
 .Mui-expanded {
   margin: 0px;
@@ -239,10 +245,11 @@
   font-size: 80px;
   text-shadow: 0 0 8px #cccfcabf;
   font-family: "Polysans";
+  color: rgb(255, 255, 255);
 }
 
 .about-project {
-  font-size: 30px;
+  font-size: 40px;
 }
 
 .project-text {
@@ -264,7 +271,7 @@
   text-decoration: none;
   color: black;
   cursor: pointer;
-  background-color: rgba(251, 250, 250, 0.2);
+  background-color: rgba(251, 250, 250, 0.1);
   padding: 10px;
   border-radius: 50px;
   border: 1px black solid;
@@ -276,10 +283,14 @@
   text-align: center;
   color: black;
   font-family: Polysans;
-  width: 50%;
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 20px;
+  margin-top: 50px;
+  padding: 50px;
+  border-radius: 20px;
+  /* background-color: rgba(251, 250, 250, 0.1); */
+  background-color: rgba(250, 255, 253, 0.9);
 }
 
 @media screen and (max-width: 601px) {
@@ -314,8 +325,10 @@
 
   .latest-work {
     font-size: 30px;
-    text-align: center;
-    padding-left: 80px;
+  }
+
+  .latest-container {
+    padding: 20px;
   }
 
   .back-arrow {
@@ -338,12 +351,34 @@
   }
 
   .latest-date {
-    padding-right: 30px;
+    padding-right: 10px;
+    font-size: 12px;
   }
 
   .swiper-img {
     padding: 20px 0px 20px 0px;
     border-radius: 10px;
     margin: 20px 0px;
+  }
+
+  .about-project {
+    font-size: 20px;
+  }
+
+  .project-description {
+    margin-top: 10px;
+    margin-bottom: 12px;
+    width: 70%;
+  }
+
+  .project-link {
+    margin-bottom: 20px;
+  }
+
+  .project-text {
+    font-size: 12px;
+  }
+  .technologies {
+    font-size: 12px;
   }
 }

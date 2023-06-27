@@ -28,22 +28,14 @@ export default function SimpleAccordion() {
           margin: "none",
         }}
       >
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel1a-content"
-          id="panel1a-header"
-        >
+        <AccordionSummary aria-controls="panel1a-content" id="panel1a-header">
           <div className="project-header"> E-COMMERCE STORE</div>
         </AccordionSummary>
         <AccordionDetails className="accordion-summary">
           <div className="project">
             <ImageSwiper images={webstoreImg} />
             <div className="project-description">
-              <div className="about-project">
-                {" "}
-                Front end E-commerce store based on alwaysincolor.com &
-                flatspot.com.
-              </div>
+              <div className="about-project"> Front end E-commerce store.</div>
               <div className="project-text">
                 Users are able to browse items by brand & category, add & remove
                 items from the basket.
@@ -88,10 +80,18 @@ export default function SimpleAccordion() {
           <div className="project">
             <ImageSwiper images={airBnbImg} />
             <div className="project-description">
-              <div className="about-project">About.</div>
-              <div>
-                Front end E-commerce store based on alwaysincolor.com &
-                flatspot.com.
+              <div className="about-project">
+                {" "}
+                Full stack MVC Air Bnb Clone.
+              </div>
+              <div className="project-text">
+                Users are able to create a profile and upload house data, which
+                is populated onto the main app page. Users, while logged in, can
+                also edit house data and leave comments. User data is stored in
+                MongoDB and accessed with Express.js.
+              </div>
+              <div className="technologies">
+                JavaScript, HTML, CSS, Bootstrap, Express.js, Node.js, MongoDB.
               </div>
             </div>
           </div>
