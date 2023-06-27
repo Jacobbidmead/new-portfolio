@@ -114,6 +114,7 @@ const App = () => {
           <SimpleAccordion />
         </div>
       </div>
+      <Nav />
     </>
   );
 };

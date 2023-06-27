@@ -36,9 +36,12 @@
   justify-content: space-around;
   transition: background-color 1s ease-in-out;
   font-size: 35px;
-  color: rgb(150, 141, 229);
+  color: white;
   padding: 20px;
   cursor: pointer;
+  background-color: rgba(0, 0, 0, 1);
+  font-family: PolySans;
+  text-shadow: 0 0 6px #cccfcabf;
 }
 
 /* text */
