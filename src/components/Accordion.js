@@ -64,17 +64,17 @@ export default function SimpleAccordion() {
                 Technologies used - TypeScript, Next.js, MUI library, React
                 context API.
               </div>
-            </div>
-            <div className="project-link">
-              <a
-                href="https://webstore-react-app-git-main-jacobbidmead.vercel.app/"
-                alt=""
-                target="_blank"
-                rel="noreferrer"
-                className="link"
-              >
-                Live site
-              </a>
+              <div className="project-link">
+                <a
+                  href="https://webstore-react-app-git-main-jacobbidmead.vercel.app/"
+                  alt=""
+                  target="_blank"
+                  rel="noreferrer"
+                  className="link"
+                >
+                  Live site
+                </a>
+              </div>
             </div>
           </div>
         </AccordionDetails>
@@ -104,7 +104,7 @@ export default function SimpleAccordion() {
               </div>
               <div className="project-text">
                 Static and responsive portfolio site for professional
-                photographer Claduia Cantarini.
+                photographer Claudia Cantarini.
               </div>
               <div className="technologies">
                 Technologies used - React, CSS, Swiper.js
