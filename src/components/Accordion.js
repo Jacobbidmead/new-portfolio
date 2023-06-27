@@ -9,15 +9,35 @@ import airBnbImg from "../imageData/airBnBImg";
 import bookmarksImg from "../imageData/bookmarksImg";
 import googleImg from "../imageData/googleImg";
 import claudiaImg from "../imageData/claudiaImg";
+import { motion } from "framer-motion";
+
+const boxAnimate = {
+  offscreen: { y: 200, opacity: 0 },
+  onscreen: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      type: "tween",
+      bounce: 0.5,
+      duration: 1,
+    },
+  },
+};
 
 export default function SimpleAccordion() {
   return (
     <div className="accordion-container">
       <div className="latest-container">
-        <div className="latest-work">
+        <motion.div
+          initial={"offscreen"}
+          whileInView={"onscreen"}
+          variants={boxAnimate}
+          viewport={{ once: true, amount: 0.1 }}
+          className="latest-work"
+        >
           SELECTED WORK
           <div className="latest-date">2022-2023</div>
-        </div>
+        </motion.div>
       </div>
       <Accordion
         sx={{

@@ -59,13 +59,13 @@ const App = () => {
         style={{ backgroundColor: colors[colorIndex] }}
       >
         <TextBlur />
-        {/* <motion.div
+        <motion.div
           initial={"offscreen"}
           whileInView={"onscreen"}
           variants={textAnimate}
           viewport={{ once: true, amount: 0.1 }}
           className="contents-container"
-        ></motion.div> */}
+        ></motion.div>
       </div>
       <div className="welcome-container">
         <div className="welcome">
