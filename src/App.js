@@ -56,7 +56,6 @@ const App = () => {
 
   return (
     <>
-      <Photo />
       <div
         className="main-page-container"
         style={{ backgroundColor: colors[colorIndex] }}

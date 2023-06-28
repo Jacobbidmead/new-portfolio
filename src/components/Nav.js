@@ -4,8 +4,10 @@ const Nav = () => {
   return (
     <>
       <div className="nav-bar">
-        <div>SVG icons</div>
-        <Link>PHOTOGRAPHY</Link>
+        <div className="nav-icons">SVG icons</div>
+        <Link to="/Photo" className="photo-link">
+          PHOTOGRAPHY
+        </Link>
       </div>
     </>
   );

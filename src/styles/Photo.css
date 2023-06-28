@@ -11,6 +11,11 @@
   border-radius: 5px;
 }
 
+.photo-view {
+  background-color: black;
+  height: 100vh;
+}
+
 .photo-bg {
   padding-bottom: 60px;
 }
