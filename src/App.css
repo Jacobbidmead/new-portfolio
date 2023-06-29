@@ -215,29 +215,13 @@
   border-radius: 10px;
 }
 
-.accordion-summary-ab {
-  /* background-color: rgba(21, 168, 232, 0.9); */
-  border-radius: 10px;
-}
-
-.accordion-summary-b {
-  /* background-color: rgba(239, 22, 98, 0.9); */
-  border-radius: 10px;
-}
-
-.accordion-summary-c {
-  /* background-color: rgba(21, 232, 141, 0.9); */
-  border-radius: 10px;
-}
-
-.accordion-summary-g {
-  /* background-color: rgba(254, 95, 85, 0.9); */
-  border-radius: 10px;
-}
-
 .Mui-expanded {
   margin: 0px;
 }
+
+/* animation */
+
+/* animation */
 
 /* /swiper */
 

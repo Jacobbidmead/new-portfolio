@@ -96,7 +96,7 @@ export default function SimpleAccordion() {
         >
           <div className="project-header"> CLAUDIA PORTFOLIO</div>
         </AccordionSummary>
-        <AccordionDetails className="accordion-summary-c">
+        <AccordionDetails className="accordion-summary">
           <div className="project">
             <ImageSwiper images={claudiaImg} />
             <div className="project-description">
@@ -141,7 +141,7 @@ export default function SimpleAccordion() {
         >
           <div className="project-header"> BOOKMARK URLS</div>
         </AccordionSummary>
-        <AccordionDetails className="accordion-summary-b">
+        <AccordionDetails className="accordion-summary">
           <div className="project">
             <ImageSwiper images={bookmarksImg} />
             <div className="project-description">
@@ -186,7 +186,7 @@ export default function SimpleAccordion() {
         >
           <div className="project-header"> AIR BNB CLONE</div>
         </AccordionSummary>
-        <AccordionDetails className="accordion-summary-ab">
+        <AccordionDetails className="accordion-summary">
           <div className="project">
             <ImageSwiper images={airBnbImg} />
             <div className="project-description">
@@ -224,7 +224,7 @@ export default function SimpleAccordion() {
         >
           <div className="project-header"> GOOGLE SEARCH</div>
         </AccordionSummary>
-        <AccordionDetails className="accordion-summary-g">
+        <AccordionDetails className="accordion-summary">
           <div className="project">
             <ImageSwiper images={googleImg} />
             <div className="project-description">

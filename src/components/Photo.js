@@ -3,6 +3,7 @@ import "../styles/Photo.css";
 import saImageData from "../imageData/saImageData";
 import asiaImageData from "../imageData/asiaImageData";
 import europeImageData from "../imageData/europeImageData";
+import { Link } from "react-router-dom";
 
 const saDescription =
   "South & Central America: September 2017 - March 2018. Countries exhibited: Peru, Bolivia, Colombia & Mexico ";
@@ -41,6 +42,12 @@ const Photo = () => {
   return (
     <>
       <div className="photo-view">
+        <div className="photo-head-container">
+          <Link to="/">Back</Link>
+          <div className="photo-header">
+            <span className="hover-underline-animation">MOMENTS</span>
+          </div>
+        </div>
         <div className="container">
           <div className="photo-container">
             {allImages.map((el, i) => (
