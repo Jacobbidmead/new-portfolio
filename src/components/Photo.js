@@ -45,7 +45,7 @@ const Photo = () => {
         <div className="photo-head-container">
           <Link to="/">Back</Link>
           <div className="photo-header">
-            <span className="hover-underline-animation">MOMENTS</span>
+            <span>MOMENTS</span>
           </div>
         </div>
         <div className="container">

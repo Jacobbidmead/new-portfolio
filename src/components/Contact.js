@@ -26,8 +26,11 @@ const Contact = () => {
           className="contact"
         >
           <div>To discuss a project or collaboration, send an email to </div>
-          <div className="email underline-effect">
-            jacob.bidmead.fullstack@outlook.com
+          <div className="email ">
+            <span className="hover-underline-animation">
+              {" "}
+              jacob.bidmead.fullstack@outlook.com
+            </span>
           </div>
         </motion.div>
       </section>
