@@ -41,17 +41,6 @@ const Photo = () => {
   return (
     <>
       <div className="photo-view">
-        <div className="photo-nav">
-          <span onClick={changeToAsia} className="change-photos">
-            Far East
-          </span>
-          <span onClick={changeToSa} className="change-photos">
-            Americas
-          </span>
-          <span onClick={changeToEurope} className="change-photos">
-            Europe
-          </span>
-        </div>
         <div className="container">
           <div className="photo-container">
             {allImages.map((el, i) => (
@@ -66,6 +55,34 @@ const Photo = () => {
               <div className="img-description">{imgDescription}</div>
             </div>
           </div>
+        </div>
+        <div className="photo-nav">
+          <span onClick={changeToAsia} className="change-photos">
+            Far East
+          </span>
+          <span onClick={changeToSa} className="change-photos">
+            Americas
+          </span>
+          <span onClick={changeToEurope} className="change-photos">
+            Europe
+          </span>
+        </div>
+        <div className="quote">
+          "Travel changes you, as you move through this life and this world you
+          change things slightly, you leave marks behind, however small. And in
+          return, life — and travel — leaves marks on you."{" "}
+          <p> - Anthony Bourdain</p>{" "}
+          <p>
+            Over the last 10 years, I've been shooting street photography.
+            Capturing moments from my life & travels; cultures, experiences,
+            landscapes and compositions.
+          </p>
+          <p>
+            {" "}
+            Through my work, I attempt to describe my love of anthropology &
+            discovering new cultures.
+          </p>
+          <small>Shot on Contax TVS III</small>
         </div>
       </div>
     </>
