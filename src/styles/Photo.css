@@ -39,7 +39,6 @@
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-
   padding: 18px;
   border-radius: 5px;
 }
@@ -122,6 +121,9 @@
 .photo-header {
   font-size: 100px;
   text-shadow: 0 0 6px #cccfcabf;
+  padding-top: 40px;
+  padding-right: 100px;
+  margin-left: auto;
 }
 
 @media screen and (max-width: 600px) {
