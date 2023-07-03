@@ -57,7 +57,10 @@ const App = () => {
     <>
       <div
         className="main-page-container"
-        style={{ backgroundColor: colors[colorIndex] }}
+        style={{
+          backgroundColor: colors[colorIndex],
+          backgroundImage: "url(images/svg.png)",
+        }}
       >
         <Nav />
         <TextBlur />
