@@ -27,7 +27,7 @@ const boxAnimate = {
 };
 
 const textAnimate = {
-  offscreen: { y: 100 },
+  offscreen: { y: 200 },
   onscreen: {
     y: 0,
     transition: {

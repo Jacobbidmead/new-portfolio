@@ -13,6 +13,13 @@ const boxAnimate = {
   },
 };
 
+const goToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+};
+
 const Contact = () => {
   return (
     <>
@@ -34,6 +41,9 @@ const Contact = () => {
           </div>
         </motion.div>
       </section>
+      <div onClick={goToTop} className="return-top">
+        <span className="top-button">To the top.</span>
+      </div>
     </>
   );
 };
