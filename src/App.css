@@ -477,4 +477,13 @@
   .hover-underline-animation {
     padding-top: 8px;
   }
+
+  .top-button {
+    font-size: 18px;
+    padding: 0px;
+  }
+
+  .return-top {
+    padding: 6px;
+  }
 }
