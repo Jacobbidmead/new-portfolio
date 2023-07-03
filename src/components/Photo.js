@@ -3,7 +3,7 @@ import "../styles/Photo.css";
 import saImageData from "../imageData/saImageData";
 import asiaImageData from "../imageData/asiaImageData";
 import europeImageData from "../imageData/europeImageData";
-import { Link } from "react-router-dom";
+import ArrowIconComponent from "./Arrow";
 
 const saDescription =
   "South & Central America: September 2017 - March 2018. Countries exhibited: Peru, Bolivia, Colombia & Mexico ";
@@ -43,7 +43,7 @@ const Photo = () => {
     <>
       <div className="photo-view">
         <div className="photo-head-container">
-          <Link to="/">Back</Link>
+          <ArrowIconComponent />
           <div className="photo-header">
             <span>MOMENTS</span>
           </div>

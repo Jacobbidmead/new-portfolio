@@ -12,7 +12,6 @@ import NodeIconComponent from "./components/NodeIcon";
 import ThreejsIconComponent from "./components/Threejs";
 import SimpleAccordion from "./components/Accordion";
 import Nav from "./components/Nav";
-import Photo from "./components/Photo";
 
 const boxAnimate = {
   offscreen: { y: 200, opacity: 0 },
@@ -60,6 +59,7 @@ const App = () => {
         className="main-page-container"
         style={{ backgroundColor: colors[colorIndex] }}
       >
+        <Nav />
         <TextBlur />
         <motion.div
           initial={"offscreen"}
@@ -115,7 +115,6 @@ const App = () => {
           <SimpleAccordion />
         </div>
       </div>
-      <Nav />
     </>
   );
 };
