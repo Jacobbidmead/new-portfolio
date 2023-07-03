@@ -3,8 +3,8 @@ import "../styles/Photo.css";
 
 const UpIconComponent = () => {
   return (
-    <div className="top-button">
-      <Icon />
+    <div>
+      <Icon className="top-button" />
     </div>
   );
 };
