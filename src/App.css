@@ -53,10 +53,10 @@
 
 .nav-icons {
   background-color: rgba(244, 5, 5, 0.1);
-  padding: 5px;
+  padding: 10px;
   display: flex;
   flex-direction: row;
-  gap: 8px;
+  gap: 30px;
 }
 
 /* text */
@@ -462,6 +462,6 @@
   }
 
   .hover-underline-animation {
-    padding-top: 14px;
+    padding-top: 8px;
   }
 }

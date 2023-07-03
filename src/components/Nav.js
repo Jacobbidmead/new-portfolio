@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import GitHubIconComponent from "./GitHub";
 import SpotifyIconComponent from "./Spotify";
-import InstagramIconComponent from "./Instagram";
 
 const Nav = () => {
   return (
@@ -10,7 +9,6 @@ const Nav = () => {
         <div className="nav-icons">
           <GitHubIconComponent />
           <SpotifyIconComponent />
-          <InstagramIconComponent />
         </div>
         <Link to="/Photo" className="photo-link">
           <span className="hover-underline-animation"> PHOTOGRAPHY</span>
