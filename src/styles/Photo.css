@@ -131,8 +131,8 @@
 
 @media screen and (max-width: 600px) {
   .quote {
-    font-size: 13px;
-    margin: 0px 10px 100px 0px;
+    font-size: 20px;
+    margin: 0px;
   }
   .photo-subtitle {
     font-size: 6px;
@@ -140,33 +140,33 @@
   }
 
   .large-photo-container {
-    width: 360px;
-    height: 0px;
-    display: flex;
-    flex-direction: column;
-    padding: 0px;
+    width: auto;
+    padding: 18px;
   }
+
   .change-photos {
-    padding: 0px;
+    padding: 6px;
     font-size: 10px;
     padding-left: 5px;
   }
 
   .photo-nav {
     margin: 0px;
+    padding-top: 5px;
   }
 
   .span.change-photos {
     font-size: 5px;
   }
-  .photo-container {
-    position: absolute;
-    bottom: -860px;
-    margin-left: 15px;
-    padding-top: 0px;
-    padding-bottom: 20px;
-    text-align: center;
-    padding-left: 0px;
+  .main-photo {
+    width: 100%;
+    height: 100%;
+    margin-top: 0px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
   }
   .photo-bg {
     display: flex;
@@ -175,9 +175,8 @@
     margin: 0px;
   }
   .photo {
-    width: 130px;
-    height: 65px;
-    margin: 15px;
+    width: 80%;
+    height: 80%;
   }
 
   .img-description {
@@ -186,5 +185,30 @@
 
   .photo-head {
     margin-left: 40px;
+  }
+
+  .photo-header {
+    font-size: 30px;
+    padding: 0px;
+    display: flex;
+    place-items: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .photo-head-container {
+    padding-top: 20px;
+  }
+
+  .main-photo {
+    width: px;
+  }
+
+  .photo-container {
+    padding: 0px;
+  }
+
+  .arrow-icon {
+    padding: 14px;
   }
 }
