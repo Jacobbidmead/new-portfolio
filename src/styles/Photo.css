@@ -1,14 +1,21 @@
 .photo {
   width: 200px;
   height: 130px;
-  background-image: cover;
-  background-size: contain;
   -webkit-transition: -webkit-transform 0.8s;
   transition: transform 0.8s;
   opacity: 0.6;
   margin: 0px 2px 20px 20px;
   object-fit: cover;
   border-radius: 5px;
+}
+
+.main-photo {
+  width: 880px;
+  height: 550px;
+  margin-top: 17px;
+  animation: fadein 1.5s;
+  border-radius: 5px;
+  object-fit: cover;
 }
 
 .photo-view {
@@ -73,16 +80,6 @@
   margin-right: auto;
   margin-left: auto;
   padding-top: 50px;
-}
-
-.main-photo {
-  width: 880px;
-  height: 550px;
-  background-size: contain;
-  background-image: cover;
-  margin-top: 17px;
-  animation: fadein 1.5s;
-  border-radius: 5px;
 }
 
 .large-photo-container {
@@ -162,6 +159,7 @@
     width: 100%;
     height: 100%;
     margin-top: 0px;
+    object-fit: cover;
   }
 
   .container {
@@ -198,10 +196,6 @@
 
   .photo-head-container {
     padding-top: 20px;
-  }
-
-  .main-photo {
-    width: px;
   }
 
   .photo-container {
