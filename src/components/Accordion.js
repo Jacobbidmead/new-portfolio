@@ -49,7 +49,11 @@ export default function SimpleAccordion() {
           margin: "none",
         }}
       >
-        <AccordionSummary aria-controls="panel1a-content" id="panel1a-header">
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel1a-content"
+          id="panel1a-header"
+        >
           <div className="project-header"> E-COMMERCE STORE</div>
         </AccordionSummary>
         <AccordionDetails className="accordion-summary">
