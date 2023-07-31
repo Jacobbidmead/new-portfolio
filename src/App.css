@@ -454,19 +454,18 @@
   .contact {
     font-size: 20px;
     text-align: center;
-    padding: 0px;
+    padding: 20px;
     border-radius: 5px;
     height: 200px;
   }
 
   .contact-text {
-    gap: 10px;
     padding: 15px;
   }
 
   .email {
-    padding-top: 30px;
-    font-size: 20px;
+    font-size: 18px;
+    padding: 0px 20px;
   }
 
   .photo-link {
