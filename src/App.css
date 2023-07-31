@@ -454,6 +454,11 @@
     height: 200px;
   }
 
+  .contact-text {
+    gap: 10px;
+    padding: 15px;
+  }
+
   .email {
     padding-top: 30px;
     font-size: 20px;
