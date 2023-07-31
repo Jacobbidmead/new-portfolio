@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import UpIconComponent from "./Up";
 
 const goToTop = () => {
+  console.log("working");
   window.scrollTo({
     top: 0,
     behavior: "smooth",
@@ -25,7 +26,7 @@ const Contact = () => {
           </div>
         </motion.div>
       </section>
-      <div className="return-top">
+      <div className="return-top" onClick={goToTop}>
         <UpIconComponent onClick={goToTop} />
       </div>
     </>
