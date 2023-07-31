@@ -25,8 +25,8 @@ const Contact = () => {
           </div>
         </motion.div>
       </section>
-      <div onClick={goToTop} className="return-top">
-        <UpIconComponent />
+      <div className="return-top">
+        <UpIconComponent onClick={goToTop} />
       </div>
     </>
   );
