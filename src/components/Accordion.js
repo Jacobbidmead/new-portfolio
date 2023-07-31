@@ -11,8 +11,7 @@ import googleImg from "../imageData/googleImg";
 import claudiaImg from "../imageData/claudiaImg";
 import { motion } from "framer-motion";
 import ArrowIconComponent from "./Arrow";
-import { hexToRgb } from "@mui/material";
-import { height } from "@mui/system";
+import UpIconComponent from "./Up";
 
 const boxAnimate = {
   offscreen: { y: 200, opacity: 0 },
@@ -25,6 +24,13 @@ const boxAnimate = {
       duration: 1,
     },
   },
+};
+
+const goToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
 };
 
 export default function SimpleAccordion() {
@@ -255,6 +261,9 @@ export default function SimpleAccordion() {
               </div>
             </AccordionDetails>
           </Accordion>
+          <div onClick={goToTop} className="return-top">
+            <UpIconComponent />
+          </div>
         </div>
       </div>
     </div>
