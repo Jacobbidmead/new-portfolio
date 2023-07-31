@@ -10,7 +10,7 @@ import bookmarksImg from "../imageData/bookmarksImg";
 import googleImg from "../imageData/googleImg";
 import claudiaImg from "../imageData/claudiaImg";
 import { motion } from "framer-motion";
-import Contact from "./Contact";
+import ArrowIconComponent from "./Arrow";
 
 const boxAnimate = {
   offscreen: { y: 200, opacity: 0 },
@@ -28,6 +28,7 @@ const boxAnimate = {
 export default function SimpleAccordion() {
   return (
     <div className="accordion-container">
+      <ArrowIconComponent />
       <div className="latest-container">
         <motion.div
           initial={"offscreen"}
@@ -246,7 +247,6 @@ export default function SimpleAccordion() {
           </div>
         </AccordionDetails>
       </Accordion>
-      <Contact />
     </div>
   );
 }

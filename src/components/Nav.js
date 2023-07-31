@@ -10,9 +10,16 @@ const Nav = () => {
           <GitHubIconComponent />
           <SpotifyIconComponent />
         </div>
-        <Link to="/Photo" className="photo-link">
-          <span className="hover-underline-animation"> PHOTOGRAPHY</span>
-        </Link>
+        <div className="links">
+          <Link to="/Projects" className="photo-link">
+            {" "}
+            <span className="hover-underline-animation"> PROJECTS</span>{" "}
+          </Link>
+
+          <Link to="/Photo" className="photo-link">
+            <span className="hover-underline-animation"> PHOTOGRAPHY</span>
+          </Link>
+        </div>
       </div>
     </>
   );

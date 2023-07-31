@@ -43,6 +43,12 @@
   text-shadow: 0 0 6px #cccfcabf;
 }
 
+.links {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 30px;
+}
+
 .photo-link {
   text-decoration: none;
   color: white;

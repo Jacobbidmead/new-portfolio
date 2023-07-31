@@ -5,6 +5,7 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Photo from "./components/Photo.js";
+import Accordion from "./components/Accordion.js";
 
 const router = createBrowserRouter([
   {
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
   {
     path: "/Photo",
     element: <Photo />,
+  },
+  {
+    path: "/Projects",
+    element: <Accordion />,
   },
 ]);
 
