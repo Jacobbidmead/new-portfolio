@@ -10,8 +10,8 @@ import ReactIconComponent from "./components/ReactIcon";
 import TsIconComponent from "./components/TsIcon";
 import NodeIconComponent from "./components/NodeIcon";
 import ThreejsIconComponent from "./components/Threejs";
-import SimpleAccordion from "./components/Accordion";
 import Nav from "./components/Nav";
+import Contact from "./components/Contact";
 
 const boxAnimate = {
   offscreen: { y: 200, opacity: 0 },
@@ -113,9 +113,7 @@ const App = () => {
             <MongoDbIconComponent />
             <ThreejsIconComponent />
           </motion.div>
-        </div>
-        <div>
-          <SimpleAccordion />
+          <Contact />
         </div>
       </div>
     </>
