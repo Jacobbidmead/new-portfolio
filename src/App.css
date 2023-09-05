@@ -64,12 +64,19 @@ body {
   padding: 5px;
 }
 
+.about > p {
+  background-color: rgba(91, 91, 91, 0.2);
+  padding: 1rem;
+  border-radius: 4px;
+}
+
 .nav-icons {
-  background-color: rgba(244, 5, 5, 0.1);
+  background-color: rgba(91, 91, 91, 0.2);
   padding: 10px;
   display: flex;
   flex-direction: row;
   gap: 30px;
+  border-radius: 4px;
 }
 
 /* text */
@@ -90,14 +97,14 @@ body {
   margin: 0.5rem;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.817);
-  background-color: rgba(244, 5, 5, 0.1);
+  background-color: rgba(91, 91, 91, 0.2);
 }
 
 .about {
   font-size: 70px;
   font-family: "Rubik", sans-serif;
   text-transform: uppercase;
-  text-shadow: 0 0 4px #2c2c2dbf;
+  /* text-shadow: 0 0 4px #2c2c2dbf; */
   color: rgba(255, 255, 255, 0.942);
 }
 
@@ -112,7 +119,6 @@ body {
   justify-content: center;
   position: relative;
   background-image: url("/public/images/mesh.png");
-  padding: 20px;
   position: sticky;
   top: 0;
   z-index: 3;
@@ -377,6 +383,10 @@ body {
 
   .about {
     font-size: 20px;
+  }
+
+  .welcome {
+    padding: 10px;
   }
 
   .nav-bar {
