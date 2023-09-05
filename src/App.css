@@ -444,6 +444,10 @@ body {
     font-size: 20px;
   }
 
+  .accordion-container {
+    padding: 30px 10px 100px 10px;
+  }
+
   .project-description {
     margin-top: 10px;
     margin-bottom: 12px;
