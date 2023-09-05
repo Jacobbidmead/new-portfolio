@@ -8,14 +8,23 @@
   src: url("/public/fonts/PolySans.woff");
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 ::selection {
   color: rgb(244, 59, 213);
   background: rgb(6, 6, 6);
 }
 
-.body {
+body {
   padding: none;
   margin: none;
+  height: 100vh;
+  background-color: black;
+  overflow: none;
 }
 
 .main-page-container {
@@ -25,7 +34,7 @@
 }
 
 .contents-container {
-  position: relative;
+  position: fixed;
   z-index: 0;
   display: flex;
   grid-template-columns: 1fr 1fr;
