@@ -11,7 +11,7 @@ import TsIconComponent from "./components/TsIcon";
 import NodeIconComponent from "./components/NodeIcon";
 import ThreejsIconComponent from "./components/Threejs";
 import Nav from "./components/Nav";
-import Contact from "./components/Contact";
+// import Contact from "./components/Contact";
 
 const boxAnimate = {
   offscreen: { y: 200, opacity: 0 },
@@ -55,11 +55,14 @@ const App = () => {
 
   return (
     <>
+      {/* <Contact /> */}
       <div
         className="main-page-container"
         style={{
           backgroundColor: colors[colorIndex],
-          backgroundImage: "url(images/svg.png)",
+          // backgroundImage: "url(images/bluewave.png)",
+          // backgroundSize: "cover",
+          // backgroundRepeat: "no-repeat",
         }}
       >
         <Nav />
@@ -95,8 +98,8 @@ const App = () => {
           </motion.div>
         </div>
       </div>
-      <div style={{ backgroundColor: "black" }}>
-        <div className="my-stack">
+      <div className="my-stack">
+        <div>
           <motion.div
             initial={"offscreen"}
             whileInView={"onscreen"}
@@ -113,7 +116,6 @@ const App = () => {
             <MongoDbIconComponent />
             <ThreejsIconComponent />
           </motion.div>
-          <Contact />
         </div>
       </div>
     </>
