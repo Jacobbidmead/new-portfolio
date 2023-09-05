@@ -365,6 +365,10 @@ body {
     display: flex;
     flex-direction: column;
   }
+
+  .asset-container {
+    padding-top: 200px;
+  }
   .word {
     font-size: 25px;
   }
