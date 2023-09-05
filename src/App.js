@@ -11,6 +11,9 @@ import TsIconComponent from "./components/TsIcon";
 import NodeIconComponent from "./components/NodeIcon";
 import ThreejsIconComponent from "./components/Threejs";
 import Nav from "./components/Nav";
+import Asset from "./components/Asset";
+import AssetSml from "./components/AssetSml";
+
 // import Contact from "./components/Contact";
 
 const boxAnimate = {
@@ -38,10 +41,30 @@ const textAnimate = {
   },
 };
 
-const colors = ["#FFC0CB", "#FFDAB9", "#FFFFE0", "#E0FFFF", "#D8BFD8"];
+const colors = [
+  "rgba(64, 56, 243, 0.73)",
+  "rgba(38, 252, 198, 1)",
+  "rgba(180, 195, 252, 1)",
+  "rgba(79, 163, 246, 1)",
+];
 
 const App = () => {
   const [colorIndex, setColorIndex] = useState(0);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    // Update window width upon resize
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    // Cleanup
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -66,7 +89,9 @@ const App = () => {
         }}
       >
         <Nav />
+
         <TextBlur />
+
         <motion.div
           initial={"offscreen"}
           whileInView={"onscreen"}
@@ -74,7 +99,19 @@ const App = () => {
           viewport={{ once: true, amount: 0.1 }}
           className="contents-container"
         ></motion.div>
+        <div className="asset-container">
+          {windowWidth >= 866 ? (
+            <div>
+              <Asset />
+            </div>
+          ) : (
+            <div>
+              <AssetSml />
+            </div>
+          )}
+        </div>
       </div>
+
       <div className="welcome-container">
         <div className="welcome">
           <motion.div
