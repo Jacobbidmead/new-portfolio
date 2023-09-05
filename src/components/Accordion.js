@@ -35,7 +35,7 @@ const goToTop = () => {
 
 export default function SimpleAccordion() {
   return (
-    <div>
+    <div style={{ height: "100vh" }}>
       <div className="accordion-container">
         <ArrowIconComponent />
         <div className="latest-container">
