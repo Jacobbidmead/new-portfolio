@@ -13,12 +13,12 @@
   background: rgb(6, 6, 6);
 }
 
+html,
 body {
-  padding: none;
-  margin: none;
-  height: 100vh;
+  height: 100%;
+  margin: 0;
+  padding: 0;
   background-color: black;
-  overflow: none;
 }
 
 .main-page-container {
@@ -97,7 +97,8 @@ body {
   font-size: 70px;
   font-family: "Rubik", sans-serif;
   text-transform: uppercase;
-  text-shadow: 0 0 6px #f5def2bf;
+  text-shadow: 0 0 4px #6d37f8bf;
+  color: rgb(255, 255, 255);
 }
 
 .welcome-container {
@@ -155,6 +156,7 @@ body {
   background-image: url("/public/images/blackmesh.png");
   background-size: cover;
   background-repeat: no-repeat;
+  height: 100%;
 }
 
 .latest-container {
@@ -458,9 +460,6 @@ body {
   }
   .technologies {
     font-size: 12px;
-  }
-  .accordion-container {
-    padding: 2px;
   }
 
   .contact {

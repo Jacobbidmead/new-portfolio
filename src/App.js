@@ -83,9 +83,6 @@ const App = () => {
         className="main-page-container"
         style={{
           backgroundColor: colors[colorIndex],
-          // backgroundImage: "url(images/bluewave.png)",
-          // backgroundSize: "cover",
-          // backgroundRepeat: "no-repeat",
         }}
       >
         <Nav />
