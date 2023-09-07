@@ -4,6 +4,7 @@ import saImageData from "../imageData/saImageData";
 import asiaImageData from "../imageData/asiaImageData";
 import europeImageData from "../imageData/europeImageData";
 import ArrowIconComponent from "./Arrow";
+import ReturnTop from "./ReturnTop";
 
 const saDescription =
   "South & Central America: September 2017 - March 2018. Countries exhibited: Peru, Bolivia, Colombia & Mexico ";
@@ -91,6 +92,7 @@ const Photo = () => {
           </p>
           <small>Shot on Contax TVS III</small>
         </div>
+        <ReturnTop />
       </div>
     </>
   );

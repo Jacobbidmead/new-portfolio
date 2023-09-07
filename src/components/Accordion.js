@@ -11,7 +11,7 @@ import googleImg from "../imageData/googleImg";
 import claudiaImg from "../imageData/claudiaImg";
 import { motion } from "framer-motion";
 import ArrowIconComponent from "./Arrow";
-import UpIconComponent from "./Up";
+import ReturnTop from "./ReturnTop";
 
 const boxAnimate = {
   offscreen: { y: 200, opacity: 0 },
@@ -24,13 +24,6 @@ const boxAnimate = {
       duration: 1,
     },
   },
-};
-
-const goToTop = () => {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth",
-  });
 };
 
 export default function SimpleAccordion() {
@@ -260,9 +253,7 @@ export default function SimpleAccordion() {
             </div>
           </AccordionDetails>
         </Accordion>
-        <div onClick={goToTop} className="return-top">
-          <UpIconComponent />
-        </div>
+        <ReturnTop />
       </div>
     </div>
   );

@@ -1,12 +1,4 @@
 import React, { useState } from "react";
-import UpIconComponent from "./Up";
-
-const goToTop = () => {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth",
-  });
-};
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -47,39 +39,42 @@ const Contact = () => {
 
   return (
     <section>
-      <div className="contact">
-        <div></div>
-        <div>
+      <div className="contact-container">
+        <div className="contact-message">
+          <h1>Get in touch</h1>
+        </div>
+        <div className="contact">
           <form onSubmit={handleSubmit}>
-            <input
-              type="text"
-              name="name"
-              placeholder="Your name"
-              value={formData.name}
-              onChange={handleChange}
-              required
-            />
-            <input
-              type="email"
-              name="email"
-              placeholder="Your email"
-              value={formData.email}
-              onChange={handleChange}
-              required
-            />
-            <textarea
-              name="message"
-              placeholder="Your message"
-              value={formData.message}
-              onChange={handleChange}
-              required
-            />
-            <button type="submit">Send Email</button>
+            <div>
+              <textarea
+                name="message"
+                placeholder="Say Something"
+                value={formData.message}
+                onChange={handleChange}
+                required
+              />
+            </div>
+            <div className="inputs">
+              <input
+                type="text"
+                name="name"
+                placeholder="Name"
+                value={formData.name}
+                onChange={handleChange}
+                required
+              />
+              <input
+                type="email"
+                name="email"
+                placeholder="Email"
+                value={formData.email}
+                onChange={handleChange}
+                required
+              />
+            </div>
+            <button type="submit">Send</button>
           </form>
         </div>
-      </div>
-      <div className="return-top" onClick={goToTop}>
-        <UpIconComponent />
       </div>
     </section>
   );

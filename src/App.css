@@ -133,7 +133,6 @@ body {
 
 .my-stack {
   color: white;
-  background-color: rgb(248, 162, 104);
   background-image: url("/public/images/bluewave.png");
   background-size: cover;
   background-color: rgba(64, 56, 243, 0.73);
@@ -341,17 +340,62 @@ body {
   text-shadow: 0 0 8px #cccfcabf;
 }
 
-.contact {
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  place-items: center;
+/* contact form */
+
+textarea {
+  width: 80%;
+  height: 200px;
+  resize: none;
+  outline: none;
+  background-color: rgba(64, 56, 243, 0.73);
+  border: 1px solid white;
+  color: white;
+  border-radius: 8px;
+  margin-top: 40px;
   font-family: PolySans;
-  justify-content: center;
-  flex-direction: column;
+  padding: 10px;
+  text-shadow: 0 0 8px #cccfcabf;
+  font-size: 20px;
+}
+input {
+  outline: none;
+  border: 1px solid white;
+  background-color: rgba(64, 56, 243, 0.73);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.inputs {
+  padding-top: 30px;
+  display: flex;
+  gap: 50px;
+  margin-left: 20px;
+}
+
+::placeholder {
+  color: white;
+  text-shadow: 0 0 8px #cccfcabf;
+}
+
+button {
+  width: 100px;
+}
+
+.contact {
+  font-family: PolySans;
   font-size: 40px;
   text-shadow: 0 0 8px #cccfcabf;
   border-radius: 5px;
   color: rgb(255, 255, 255);
+  z-index: 2;
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: rgba(64, 56, 243, 0.73);
+  z-index: 2;
+  overflow: hidden;
 }
 
 .contact-text {
@@ -361,11 +405,22 @@ body {
   background-color: rgba(55, 55, 53, 0.358);
 }
 
+.contact-message {
+  padding: 20px;
+  background-color: rgb(6, 6, 6);
+  padding: 0px 100px;
+}
+
 .top-button {
   padding: 20px;
   border-radius: 50%;
   cursor: pointer;
   margin: 20px;
+}
+
+.return-top {
+  display: flex;
+  justify-content: flex-end;
 }
 
 @media screen and (max-width: 601px) {

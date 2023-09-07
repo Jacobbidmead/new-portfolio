@@ -13,8 +13,8 @@ import ThreejsIconComponent from "./components/Threejs";
 import Nav from "./components/Nav";
 import Asset from "./components/Asset";
 import AssetSml from "./components/AssetSml";
-
 // import Contact from "./components/Contact";
+// import ReturnTop from "./components/ReturnTop";
 
 const boxAnimate = {
   offscreen: { y: 200, opacity: 0 },
@@ -78,7 +78,6 @@ const App = () => {
 
   return (
     <>
-      {/* <Contact /> */}
       <div
         className="main-page-container"
         style={{
@@ -160,6 +159,12 @@ const App = () => {
           </motion.div>
         </div>
       </div>
+      {/* <div className="contact">
+        <Contact />
+      </div>
+      <div>
+        <ReturnTop />
+      </div> */}
     </>
   );
 };
