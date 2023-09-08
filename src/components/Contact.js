@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+// import Asset from "./Asset";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -41,13 +42,13 @@ const Contact = () => {
   return (
     <section>
       <div className="contact-container">
-        <div></div>
+        <div className="contact-asset">{/* <Asset /> */}</div>
         <div className="contact">
           <form onSubmit={handleSubmit}>
             <div className="contact-text">
               <textarea
                 name="message"
-                placeholder="Say Something"
+                placeholder="To discuss a project or comission, send me a message..."
                 value={formData.message}
                 onChange={handleChange}
                 required
