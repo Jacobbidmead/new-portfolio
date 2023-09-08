@@ -371,6 +371,8 @@ input {
   background-color: rgba(64, 56, 243, 0.73);
   padding: 10px;
   border-radius: 20px;
+  color: white;
+  text-shadow: 0 0 8px #cccfcabf;
 }
 
 .inputs {
