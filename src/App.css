@@ -425,8 +425,10 @@ button:hover {
   display: grid;
   grid-template-columns: 1fr 1fr;
   background-color: rgba(64, 56, 243, 0.73);
-  z-index: 2;
+  z-index: 3;
   overflow: hidden;
+  position: sticky;
+  position: relative;
 }
 
 .contact-message {
