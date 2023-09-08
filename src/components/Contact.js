@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -40,12 +41,10 @@ const Contact = () => {
   return (
     <section>
       <div className="contact-container">
-        <div className="contact-message">
-          <h1>Get in touch</h1>
-        </div>
+        <div></div>
         <div className="contact">
           <form onSubmit={handleSubmit}>
-            <div>
+            <div className="contact-text">
               <textarea
                 name="message"
                 placeholder="Say Something"
@@ -55,24 +54,37 @@ const Contact = () => {
               />
             </div>
             <div className="inputs">
-              <input
-                type="text"
-                name="name"
-                placeholder="Name"
-                value={formData.name}
-                onChange={handleChange}
-                required
-              />
-              <input
-                type="email"
-                name="email"
-                placeholder="Email"
-                value={formData.email}
-                onChange={handleChange}
-                required
-              />
+              <div>
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Name"
+                  value={formData.name}
+                  onChange={handleChange}
+                  required
+                />
+              </div>
+              <div>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  required
+                />
+              </div>
             </div>
-            <button type="submit">Send</button>
+            <div className="button-container">
+              <motion.button
+                whileHover={{ scale: 1.3 }}
+                whileTap={{ scale: 0.9 }}
+                transition={{ type: "spring", stiffness: 400, damping: 17 }}
+                type="submit"
+              >
+                Send
+              </motion.button>
+            </div>
           </form>
         </div>
       </div>

@@ -5,6 +5,7 @@ import asiaImageData from "../imageData/asiaImageData";
 import europeImageData from "../imageData/europeImageData";
 import ArrowIconComponent from "./Arrow";
 import ReturnTop from "./ReturnTop";
+import { motion } from "framer-motion";
 
 const saDescription =
   "South & Central America: September 2017 - March 2018. Countries exhibited: Peru, Bolivia, Colombia & Mexico ";
@@ -65,15 +66,33 @@ const Photo = () => {
           </div>
         </div>
         <div className="photo-nav">
-          <span onClick={changeToAsia} className="change-photos">
+          <motion.span
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 0.9 }}
+            transition={{ type: "spring", stiffness: 400, damping: 17 }}
+            onClick={changeToAsia}
+            className="change-photos"
+          >
             Far East
-          </span>
-          <span onClick={changeToSa} className="change-photos">
+          </motion.span>
+          <motion.span
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 0.9 }}
+            transition={{ type: "spring", stiffness: 400, damping: 17 }}
+            onClick={changeToSa}
+            className="change-photos"
+          >
             Americas
-          </span>
-          <span onClick={changeToEurope} className="change-photos">
+          </motion.span>
+          <motion.span
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 0.9 }}
+            transition={{ type: "spring", stiffness: 400, damping: 17 }}
+            onClick={changeToEurope}
+            className="change-photos"
+          >
             Europe
-          </span>
+          </motion.span>
         </div>
         <div className="quote">
           "Travel changes you, as you move through this life and this world you

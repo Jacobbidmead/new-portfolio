@@ -9,7 +9,7 @@
 }
 
 ::selection {
-  color: rgb(244, 59, 213);
+  color: rgb(69, 36, 255);
   background: rgb(6, 6, 6);
 }
 
@@ -61,7 +61,8 @@ body {
   color: white;
   font-size: 40px;
   background-color: rgba(244, 5, 5, 0.1);
-  padding: 5px;
+  padding: 6px;
+  border-radius: 4px;
 }
 
 .about > p {
@@ -104,7 +105,7 @@ body {
   font-size: 70px;
   font-family: "Rubik", sans-serif;
   text-transform: uppercase;
-  /* text-shadow: 0 0 4px #2c2c2dbf; */
+  text-shadow: 0 0 4px #2c2c2dbf;
   color: rgba(255, 255, 255, 0.942);
 }
 
@@ -343,8 +344,8 @@ body {
 /* contact form */
 
 textarea {
-  width: 80%;
-  height: 200px;
+  width: 70%;
+  height: 190px;
   resize: none;
   outline: none;
   background-color: rgba(64, 56, 243, 0.73);
@@ -355,21 +356,31 @@ textarea {
   font-family: PolySans;
   padding: 10px;
   text-shadow: 0 0 8px #cccfcabf;
-  font-size: 20px;
+  font-size: 12px;
 }
+
+.contact-text {
+  display: flex;
+  justify-content: center;
+}
+
 input {
+  width: 15rem;
   outline: none;
   border: 1px solid white;
   background-color: rgba(64, 56, 243, 0.73);
-  padding: 20px;
-  border-radius: 8px;
+  padding: 10px;
+  border-radius: 20px;
 }
 
 .inputs {
-  padding-top: 30px;
   display: flex;
-  gap: 50px;
-  margin-left: 20px;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 30px;
+  gap: 20px;
+  place-items: end center;
+  padding-right: 100px;
 }
 
 ::placeholder {
@@ -377,8 +388,28 @@ input {
   text-shadow: 0 0 8px #cccfcabf;
 }
 
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 100px;
+  margin-top: 20px;
+}
+
 button {
-  width: 100px;
+  font-family: PolySans;
+  font-size: 12px;
+  cursor: pointer;
+  color: white;
+  padding: 4px 26px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.459);
+  border-radius: 20px;
+  margin: 8px;
+  background-color: rgba(255, 255, 255, 0.093);
+}
+
+button:hover {
+  background-color: rgba(79, 163, 246, 1);
 }
 
 .contact {
@@ -391,6 +422,7 @@ button {
 }
 
 .contact-container {
+  padding-top: 50px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   background-color: rgba(64, 56, 243, 0.73);
@@ -398,17 +430,15 @@ button {
   overflow: hidden;
 }
 
-.contact-text {
-  padding: 60px;
-  margin-top: 10px;
-  border-radius: 4px;
-  background-color: rgba(55, 55, 53, 0.358);
-}
-
 .contact-message {
   padding: 20px;
-  background-color: rgb(6, 6, 6);
   padding: 0px 100px;
+  font-family: "Rubik", sans-serif;
+  text-transform: uppercase;
+  text-shadow: 0 0 4px #2c2c2dbf;
+  color: rgba(255, 255, 255, 0.817);
+  background-color: rgba(7, 7, 7, 0.235);
+  margin: 6rem;
 }
 
 .top-button {
@@ -421,6 +451,11 @@ button {
 .return-top {
   display: flex;
   justify-content: flex-end;
+}
+
+.return-top-homescreen {
+  background-color: rgba(64, 56, 243, 0.73);
+  padding-right: 70px;
 }
 
 @media screen and (max-width: 601px) {
