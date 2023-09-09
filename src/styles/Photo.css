@@ -77,9 +77,11 @@
 .photo-nav {
   text-align: center;
   margin-bottom: 40px;
-  margin-right: auto;
-  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
   padding-top: 50px;
+  gap: 8px;
 }
 
 .large-photo-container {

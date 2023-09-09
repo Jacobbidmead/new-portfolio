@@ -66,7 +66,7 @@ const Photo = () => {
           </div>
         </div>
         <div className="photo-nav">
-          <motion.span
+          <motion.div
             whileHover={{ scale: 1.2 }}
             whileTap={{ scale: 0.9 }}
             transition={{ type: "spring", stiffness: 400, damping: 17 }}
@@ -74,8 +74,8 @@ const Photo = () => {
             className="change-photos"
           >
             Far East
-          </motion.span>
-          <motion.span
+          </motion.div>
+          <motion.div
             whileHover={{ scale: 1.2 }}
             whileTap={{ scale: 0.9 }}
             transition={{ type: "spring", stiffness: 400, damping: 17 }}
@@ -83,8 +83,8 @@ const Photo = () => {
             className="change-photos"
           >
             Americas
-          </motion.span>
-          <motion.span
+          </motion.div>
+          <motion.div
             whileHover={{ scale: 1.2 }}
             whileTap={{ scale: 0.9 }}
             transition={{ type: "spring", stiffness: 400, damping: 17 }}
@@ -92,7 +92,7 @@ const Photo = () => {
             className="change-photos"
           >
             Europe
-          </motion.span>
+          </motion.div>
         </div>
         <div className="quote">
           "Travel changes you, as you move through this life and this world you
