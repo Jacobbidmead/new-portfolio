@@ -75,7 +75,12 @@ export default function SimpleAccordion() {
                   Technologies used - TypeScript, Next.js, MUI library, React
                   context API.
                 </div>
-                <div className="project-link">
+                <motion.div
+                  whileHover={{ scale: 1.3 }}
+                  whileTap={{ scale: 0.9 }}
+                  transition={{ type: "spring", stiffness: 400, damping: 17 }}
+                  className="project-link"
+                >
                   <a
                     href="https://webstore-react-app-git-main-jacobbidmead.vercel.app/"
                     alt=""
@@ -85,7 +90,7 @@ export default function SimpleAccordion() {
                   >
                     Live site
                   </a>
-                </div>
+                </motion.div>
               </div>
             </div>
           </AccordionDetails>
@@ -120,7 +125,12 @@ export default function SimpleAccordion() {
                 <div className="technologies">
                   Technologies used - React, CSS, Swiper.js
                 </div>
-                <div className="project-link">
+                <motion.div
+                  whileHover={{ scale: 1.3 }}
+                  whileTap={{ scale: 0.9 }}
+                  transition={{ type: "spring", stiffness: 400, damping: 17 }}
+                  className="project-link"
+                >
                   <a
                     href="https://webstore-react-app-git-main-jacobbidmead.vercel.app/"
                     alt=""
@@ -130,7 +140,7 @@ export default function SimpleAccordion() {
                   >
                     Live site
                   </a>
-                </div>
+                </motion.div>
               </div>
             </div>
           </AccordionDetails>
@@ -165,7 +175,12 @@ export default function SimpleAccordion() {
                 <div className="technologies">
                   TypeScript, React, Styled Components.
                 </div>
-                <div className="project-link">
+                <motion.div
+                  whileHover={{ scale: 1.3 }}
+                  whileTap={{ scale: 0.9 }}
+                  transition={{ type: "spring", stiffness: 400, damping: 17 }}
+                  className="project-link"
+                >
                   <a
                     href="https://loquacious-sable-4df720.netlify.app/"
                     alt=""
@@ -175,7 +190,7 @@ export default function SimpleAccordion() {
                   >
                     Live site
                   </a>
-                </div>
+                </motion.div>
               </div>
             </div>
           </AccordionDetails>

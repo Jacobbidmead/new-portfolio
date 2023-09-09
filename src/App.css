@@ -60,7 +60,7 @@ body {
   text-decoration: none;
   color: white;
   font-size: 40px;
-  background-color: rgba(244, 5, 5, 0.1);
+  background-color: rgba(91, 91, 91, 0.2);
   padding: 6px;
   border-radius: 4px;
 }
@@ -590,7 +590,11 @@ button:hover {
   }
 
   .return-top-homescreen {
-    padding-right: 20px;
+    padding-right: 54px;
+  }
+
+  .return-top {
+    padding-right: 25px;
   }
 
   .button-container {
