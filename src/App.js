@@ -107,63 +107,64 @@ const App = () => {
           )}
         </div>
       </div>
-
-      <div className="welcome-container">
-        <div className="welcome">
-          <motion.div
-            initial={"offscreen"}
-            whileInView={"onscreen"}
-            variants={textAnimate}
-            viewport={{ once: true, amount: 0.1 }}
-            className="about"
-          >
-            <p>
-              Im a creative front end developer with experience in{" "}
-              <span className="highlight-1">UX/UI design,</span>
-              <span className="highlight-2"> 3D imaging</span> and{" "}
-              <span className="highlight-3"> photography.</span> I build web
-              applications with TypeScript, React & Vue.{" "}
-            </p>
-            <p>
-              My journey started with haiku academys full stack web development
-              bootcamp, which I completed in october 2022. since graduating, I
-              have learnt to utilise my problem-solving skills to create
-              intuative and responsive web applications.
-            </p>
-            <p>
-              {" "}
-              I have a creative background, studying print & time based media at
-              UAL. A passionate photographer & explorer, I have documented my
-              travels around the world over the last ten years.
-            </p>
-          </motion.div>
+      <div>
+        <div className="welcome-container">
+          <div className="welcome">
+            <motion.div
+              initial={"offscreen"}
+              whileInView={"onscreen"}
+              variants={textAnimate}
+              viewport={{ once: true, amount: 0.1 }}
+              className="about"
+            >
+              <p>
+                Im a creative front end developer with experience in{" "}
+                <span className="highlight-1">UX/UI design,</span>
+                <span className="highlight-2"> 3D imaging</span> and{" "}
+                <span className="highlight-3"> photography.</span> I build web
+                applications with TypeScript, React & Vue.{" "}
+              </p>
+              <p>
+                My journey started with haiku academys full stack web
+                development bootcamp, which I completed in october 2022. since
+                graduating, I have learnt to utilise my problem-solving skills
+                to create intuative and responsive web applications.
+              </p>
+              <p>
+                {" "}
+                I have a creative background, studying print & time based media
+                at UAL. A passionate photographer & explorer, I have documented
+                my travels around the world over the last ten years.
+              </p>
+            </motion.div>
+          </div>
         </div>
-      </div>
-      <div className="my-stack">
-        <div>
-          <motion.div
-            initial={"offscreen"}
-            whileInView={"onscreen"}
-            variants={boxAnimate}
-            viewport={{ once: true, amount: 0.3 }}
-            className="icons"
-          >
-            <JsIconComponet />
-            <TsIconComponent />
-            <NextIconComponent />
-            <ReactIconComponent />
-            <NodeIconComponent />
-            <VueIconComponent />
-            <MongoDbIconComponent />
-            <ThreejsIconComponent />
-          </motion.div>
+        <div className="my-stack">
+          <div>
+            <motion.div
+              initial={"offscreen"}
+              whileInView={"onscreen"}
+              variants={boxAnimate}
+              viewport={{ once: true, amount: 0.3 }}
+              className="icons"
+            >
+              <JsIconComponet />
+              <TsIconComponent />
+              <NextIconComponent />
+              <ReactIconComponent />
+              <NodeIconComponent />
+              <VueIconComponent />
+              <MongoDbIconComponent />
+              <ThreejsIconComponent />
+            </motion.div>
+          </div>
         </div>
-      </div>
-      <div className="contact">
-        <Contact />
-      </div>
-      <div className="return-top-homescreen">
-        <ReturnTop />
+        <div className="contact">
+          <Contact />
+        </div>
+        <div className="return-top-homescreen">
+          <ReturnTop />
+        </div>
       </div>
     </>
   );
