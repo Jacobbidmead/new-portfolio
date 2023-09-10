@@ -125,7 +125,8 @@ export default function SimpleAccordion() {
                 <div className="technologies">
                   Technologies used - React, CSS, Swiper.js
                 </div>
-                <motion.div
+                {/* added link when page is finished and live */}
+                {/* <motion.div
                   whileHover={{ scale: 1.3 }}
                   whileTap={{ scale: 0.9 }}
                   transition={{ type: "spring", stiffness: 400, damping: 17 }}
@@ -140,7 +141,7 @@ export default function SimpleAccordion() {
                   >
                     Live site
                   </a>
-                </motion.div>
+                </motion.div> */}
               </div>
             </div>
           </AccordionDetails>
