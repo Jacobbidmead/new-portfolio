@@ -23,27 +23,14 @@ const Contact = () => {
     e.preventDefault();
 
     try {
-<<<<<<< HEAD
-      const response = await fetch(
-        "https://new-portfolio-delta-indol.vercel.app/api/send-email",
-        {
-          method: "POST",
-          mode: "no-cors", // add this line
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(formData),
-        }
-      );
-=======
-      const response = await fetch("http://jacobbidmead.com/send-email", {
+      const response = await fetch("http://localhost:3001/send-email", {
         method: "POST",
+
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify(formData),
       });
->>>>>>> parent of a431996d (Updated backend)
 
       if (response.status === 200) {
         alert("Email sent successfully");
