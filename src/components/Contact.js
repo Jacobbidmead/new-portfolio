@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+import ReturnTop from "./ReturnTop";
 // import Asset from "./Asset";
 
 const Contact = () => {
@@ -85,6 +86,7 @@ const Contact = () => {
               >
                 Send
               </motion.button>
+              <ReturnTop />
             </div>
           </form>
         </div>
