@@ -102,7 +102,7 @@ body {
 }
 
 .about {
-  font-size: 70px;
+  font-size: 3rem;
   font-family: "Rubik", sans-serif;
   text-transform: uppercase;
   text-shadow: 0 0 4px #2c2c2dbf;
@@ -640,5 +640,9 @@ button:hover {
 
   button {
     margin-top: 8px;
+  }
+
+  textarea {
+    margin-top: 0px;
   }
 }
