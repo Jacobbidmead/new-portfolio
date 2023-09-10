@@ -26,6 +26,7 @@ const Contact = () => {
         "https://new-portfolio-delta-indol.vercel.app/api/send-email",
         {
           method: "POST",
+          mode: "no-cors", // add this line
           headers: {
             "Content-Type": "application/json",
           },
