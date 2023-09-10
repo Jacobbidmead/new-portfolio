@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import ReturnTop from "./ReturnTop";
-// import Asset from "./Asset";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -23,13 +22,16 @@ const Contact = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch("http://jacobbidmead.com/send-email", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
+      const response = await fetch(
+        "https://new-portfolio-delta-indol.vercel.app/api/send-email",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        }
+      );
 
       if (response.status === 200) {
         alert("Email sent successfully");
@@ -44,7 +46,7 @@ const Contact = () => {
   return (
     <section>
       <div className="contact-container">
-        <div className="contact-asset">{/* <Asset /> */}</div>
+        <div className="contact-asset"></div>
         <div className="contact">
           <form onSubmit={handleSubmit}>
             <div className="contact-text">
