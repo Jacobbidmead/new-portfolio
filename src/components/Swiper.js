@@ -1,6 +1,7 @@
 import { useState } from "react";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import { motion } from "framer-motion";
 
 const ImageSwiper = ({ images }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -24,8 +25,12 @@ const ImageSwiper = ({ images }) => {
           className="swiper-img"
         />
         <div className="swiper-buttons">
-          <ArrowBackIcon className="back-arrow" onClick={previousImage} />
-          <ArrowForwardIcon className="forward-arrow" onClick={nextImage} />
+          <motion.div className="arrow-icons">
+            <ArrowBackIcon className="back-arrow" onClick={previousImage} />
+          </motion.div>
+          <motion.div className="arrow-icons">
+            <ArrowForwardIcon className="forward-arrow" onClick={nextImage} />
+          </motion.div>
         </div>
       </div>
     </>

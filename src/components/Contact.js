@@ -8,6 +8,7 @@ const Contact = () => {
     name: "",
     email: "",
     message: "",
+    subject: "",
   });
 
   const handleChange = (e) => {
@@ -56,6 +57,16 @@ const Contact = () => {
               />
             </div>
             <div className="inputs">
+              <div>
+                <input
+                  type="text"
+                  name="subject"
+                  placeholder="Subject"
+                  value={formData.subject}
+                  onChange={handleChange}
+                  required
+                />
+              </div>
               <div>
                 <input
                   type="text"
