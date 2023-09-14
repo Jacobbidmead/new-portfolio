@@ -1,59 +1,22 @@
-import React, { useState } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import ReturnTop from "./ReturnTop";
 // import Asset from "./Asset";
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-    subject: "",
-  });
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value,
-    });
-  };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-
-    try {
-      const response = await fetch("http://localhost:3001/send-email", {
-        method: "POST",
-
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
-
-      if (response.status === 200) {
-        alert("Email sent successfully");
-      } else {
-        alert("Error sending email");
-      }
-    } catch (error) {
-      console.error("There was a problem with the fetch operation:", error);
-    }
-  };
-
   return (
     <section>
       <div className="contact-container">
         <div className="contact-asset">{/* <Asset /> */}</div>
         <div className="contact">
-          <form onSubmit={handleSubmit}>
+          <form
+            action="https://formsubmit.co/9cc5775898fe7b24b684bc331c8d80c2"
+            method="POST"
+          >
             <div className="contact-text">
               <textarea
                 name="message"
                 placeholder="To discuss a project or comission, send me a message..."
-                value={formData.message}
-                onChange={handleChange}
                 required
               />
             </div>
@@ -63,30 +26,14 @@ const Contact = () => {
                   type="text"
                   name="subject"
                   placeholder="Subject"
-                  value={formData.subject}
-                  onChange={handleChange}
                   required
                 />
               </div>
               <div>
-                <input
-                  type="text"
-                  name="name"
-                  placeholder="Name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  required
-                />
+                <input type="text" name="name" placeholder="Name" required />
               </div>
               <div>
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="Email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  required
-                />
+                <input type="email" name="email" placeholder="Email" required />
               </div>
             </div>
             <div className="button-container">
