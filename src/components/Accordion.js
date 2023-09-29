@@ -13,31 +13,12 @@ import { motion } from "framer-motion";
 import ArrowIconComponent from "./Arrow";
 import ReturnTop from "./ReturnTop";
 
-const boxAnimate = {
-  offscreen: { y: 200, opacity: 0 },
-  onscreen: {
-    y: 0,
-    opacity: 1,
-    transition: {
-      type: "tween",
-      bounce: 0.5,
-      duration: 1,
-    },
-  },
-};
-
 export default function SimpleAccordion() {
   return (
     <div className="accordion-container">
       <ArrowIconComponent />
       <div className="latest-container">
-        <motion.div
-          initial={"offscreen"}
-          whileInView={"onscreen"}
-          variants={boxAnimate}
-          viewport={{ once: true, amount: 0.1 }}
-          className="latest-work"
-        >
+        <motion.div className="latest-work">
           SELECTED WORK
           <div className="latest-date">2022-2023</div>
         </motion.div>

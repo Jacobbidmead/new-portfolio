@@ -13,11 +13,11 @@ const Nav = () => {
         <div className="links">
           <Link to="/Projects" className="photo-link">
             {" "}
-            <span className="hover-underline-animation"> PROJECTS</span>{" "}
+            <span className="hover-underline-animation"> Projects</span>{" "}
           </Link>
 
           <Link to="/Photo" className="photo-link">
-            <span className="hover-underline-animation"> PHOTOGRAPHY</span>
+            <span className="hover-underline-animation"> Photography</span>
           </Link>
         </div>
       </div>
