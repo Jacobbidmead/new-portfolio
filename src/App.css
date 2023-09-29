@@ -555,7 +555,7 @@ button:hover {
   }
 
   .welcome {
-    padding: 10px;
+    padding: 0px;
     gap: 0;
   }
 
@@ -654,10 +654,6 @@ button:hover {
     font-size: 12px;
   }
 
-  .contact-text {
-    padding: 15px;
-  }
-
   .contact-container {
     display: block;
     padding-bottom: 20px;
@@ -665,6 +661,10 @@ button:hover {
 
   .return-top-homescreen {
     padding-right: 54px;
+  }
+
+  textarea {
+    width: 82%;
   }
 
   .contact-message {
@@ -716,7 +716,8 @@ button:hover {
 
   .nav-icons {
     font-size: 10px;
-    padding: 10px;
+    padding: 20px 10px 10px 10px;
+    gap: 10px;
   }
 
   .hover-underline-animation {
