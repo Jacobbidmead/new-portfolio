@@ -389,7 +389,6 @@ textarea {
   outline: none;
   color: rgb(37, 43, 44) hv;
   border: 1px solid white;
-
   border-radius: 8px;
   margin-top: 40px;
   font-family: PolySans;
@@ -408,7 +407,7 @@ input {
   width: 15rem;
   outline: none;
   padding: 10px;
-  border-radius: 20px;
+  border-radius: 5px;
   color: rgb(37, 43, 44);
   text-shadow: 0 0 8px #cccfcabf;
   border: 1px solid rgb(37, 43, 44);

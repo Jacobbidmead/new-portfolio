@@ -238,10 +238,9 @@ export default function SimpleAccordion() {
               <div className="project-description">
                 <div className="about-project">Goolge search style app.</div>
                 <div className="project-text">
-                  Google Search style app, made using React for the front end
-                  while creating our own API and connecting to the backend using
-                  Axios. Users are able to search for limited data contained in
-                  the MongoDB database.
+                  Google Search style app, made using React on the client side
+                  and connecting to the server using Axios. Users are able to
+                  search for limited data contained in the MongoDB database.
                 </div>
                 <div className="technologies">
                   Technologies used - React, Axios, MongoDb.
