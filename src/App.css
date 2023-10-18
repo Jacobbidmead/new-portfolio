@@ -28,6 +28,23 @@ body {
   width: 100% !important;
 }
 
+.MuiListItemButton-root {
+  background-color: black !important;
+}
+
+.MuiIconButton-root:hover {
+  border: none;
+}
+
+.MuiModalClose-root:hover {
+  border: none;
+  background-color: black;
+}
+
+.MuiListItemButton-colorNeutral {
+  background-color: black;
+}
+
 .burger-link {
   text-decoration: none;
   color: rgb(45, 255, 167);
