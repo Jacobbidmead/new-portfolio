@@ -6,6 +6,7 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import ImageSwiper from "./Swiper";
 import webstoreImg from "../imageData/webstoreImg";
 import airBnbImg from "../imageData/airBnBImg";
+import fetchImg from "../imageData/fetchImg";
 import bookmarksImg from "../imageData/bookmarksImg";
 import googleImg from "../imageData/googleImg";
 import claudiaImg from "../imageData/claudiaImg";
@@ -24,6 +25,54 @@ export default function SimpleAccordion() {
         </motion.div>
       </div>
       <div className="accordion-content">
+        <Accordion
+          sx={{
+            border: "none",
+            boxShadow: "none",
+            backgroundColor: "rgba(0, 0, 0, 0)",
+            color: "white",
+            margin: "none",
+          }}
+        >
+          <AccordionSummary
+            expandIcon={<ExpandMoreIcon />}
+            aria-controls="panel1a-content"
+            id="panel1a-header"
+          >
+            <div className="project-header"> FETCH PRODUCTS</div>
+          </AccordionSummary>
+          <AccordionDetails className="accordion-summary">
+            <div className="project">
+              <ImageSwiper images={fetchImg} />
+              <div className="project-description">
+                <div className="about-project"> Fetch products from API.</div>
+                <div className="project-text">
+                  Products are fetched from a dummy API and populated into a
+                  card, click on a product to see it in detail.
+                </div>
+                <div className="technologies">
+                  Technologies used - Next.js, Tailwind
+                </div>
+                <motion.div
+                  whileHover={{ scale: 1.3 }}
+                  whileTap={{ scale: 0.9 }}
+                  transition={{ type: "spring", stiffness: 400, damping: 17 }}
+                  className="project-link"
+                >
+                  <a
+                    href="https://get-products-app.vercel.app/"
+                    alt=""
+                    target="_blank"
+                    rel="noreferrer"
+                    className="link"
+                  >
+                    Live site
+                  </a>
+                </motion.div>
+              </div>
+            </div>
+          </AccordionDetails>
+        </Accordion>
         <Accordion
           sx={{
             border: "none",
