@@ -1,7 +1,6 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css";
 import { motion } from "framer-motion";
-// import TextBlur from "./components/TextBlur.js";
 import VueIconComponent from "./components/VueIcon";
 import JsIconComponet from "./components/JsIcon";
 import MongoDbIconComponent from "./components/MongoDbIcon";
@@ -11,9 +10,8 @@ import TsIconComponent from "./components/TsIcon";
 import NodeIconComponent from "./components/NodeIcon";
 import ThreejsIconComponent from "./components/Threejs";
 import Nav from "./components/Nav";
-// import Asset from "./components/Asset";
-// import AssetSml from "./components/AssetSml";
 import Contact from "./components/Contact";
+import Burger from "./components/Burger";
 
 const isMobile = window.innerWidth < 601;
 
@@ -69,57 +67,34 @@ const boxRight = isMobile
       },
     };
 
-// const colors = [
-//   "rgba(64, 56, 243, 0.73)",
-//   "rgba(38, 252, 198, 1)",
-//   "rgba(180, 195, 252, 1)",
-//   "rgba(79, 163, 246, 1)",
-// ];
-
 const App = () => {
-  // const [colorIndex, setColorIndex] = useState(0);
-  // const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  // Initial value for isMobile
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 601);
 
-  // useEffect(() => {
-  //   // Update window width upon resize
-  //   const handleResize = () => {
-  //     setWindowWidth(window.innerWidth);
-  //   };
+  // Event listener function
+  const checkMobile = () => {
+    setIsMobile(window.innerWidth < 601);
+  };
 
-  // window.addEventListener("resize", handleResize);
+  // Set up the event listener when the component mounts
+  useEffect(() => {
+    window.addEventListener("resize", checkMobile);
 
-  // Cleanup
-  //   return () => {
-  //     window.removeEventListener("resize", handleResize);
-  //   };
-  // }, []);
-
-  // useEffect(() => {
-  //   const intervalId = setInterval(() => {
-  //     setColorIndex((prevColorIndex) => (prevColorIndex + 1) % colors.length);
-  //   }, 5000);
-
-  //   return () => {
-  //     clearInterval(intervalId);
-  //   };
-  // }, []);
+    // Cleanup the listener when the component unmounts
+    return () => {
+      window.removeEventListener("resize", checkMobile);
+    };
+  }, []); // The empty array means this useEffect runs once when the component mounts.
 
   return (
     <>
-      <div
-        className="main-page-container"
-        // style={{
-        //   backgroundColor: colors[colorIndex],
-        // }}
-      >
-        <Nav />
+      <div className="main-page-container">
+        {isMobile ? <Burger /> : <Nav />}
 
         <div className="hi-container">
           <div className="hi">Hi, Im Jacob</div>
           <div className="hi-lower">I make things for the web.</div>
         </div>
-
-        {/* <TextBlur /> */}
 
         <motion.div
           initial={"offscreen"}
@@ -128,17 +103,6 @@ const App = () => {
           viewport={{ once: true, amount: 0.1 }}
           className="contents-container"
         ></motion.div>
-        {/* <div className="asset-container">
-          {windowWidth >= 866 ? (
-            <div>
-              <Asset />
-            </div>
-          ) : (
-            <div>
-              <AssetSml />
-            </div>
-          )}
-        </div> */}
       </div>
       <div>
         <div className="welcome-container">
@@ -190,7 +154,6 @@ const App = () => {
           </div>
         </div>
         <div className="my-stack">
-          {/* <div className="stack-header">My Tech Stack</div> */}
           <div>
             <motion.div
               initial={"offscreen"}

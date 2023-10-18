@@ -22,6 +22,17 @@ body {
   font-family: PolySans;
 }
 
+/* burger */
+.MuiDrawer-content {
+  background-color: black !important;
+  width: 100% !important;
+}
+
+.burger-link {
+  text-decoration: none;
+  color: rgb(45, 255, 167);
+}
+
 .main-page-container {
   height: 100vh;
   transition: background-color 1s ease-in-out;
@@ -206,7 +217,6 @@ body {
   align-items: flex-start;
   gap: 24px;
   display: flex;
-  padding-top: 100px;
   padding-right: 50px;
   text-align: center;
 }
@@ -705,7 +715,7 @@ button:hover {
     padding: 6px;
   }
 
-  .nav-bar {
+  /* .nav-bar {
     padding: 0px;
     width: 100%;
     display: flex;
@@ -717,7 +727,7 @@ button:hover {
     font-size: 10px;
     padding: 20px 10px 10px 10px;
     gap: 10px;
-  }
+  } */
 
   .hover-underline-animation {
     padding-top: 8px;
