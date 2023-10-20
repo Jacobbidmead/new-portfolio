@@ -34,12 +34,12 @@ body {
 
 .MuiIconButton-root:hover {
   border: none;
-  background-color: black;
+  background-color: rgb(37, 43, 44) !important;
 }
 
 .MuiModalClose-root:hover {
   border: none;
-  background-color: black;
+  background-color: black !important;
 }
 
 .MuiListItemButton-colorNeutral {
@@ -463,7 +463,7 @@ input {
   margin-top: 20px;
 }
 
-button {
+.send-button {
   height: fit-content;
   width: 5rem;
   font-family: PolySans;
@@ -478,7 +478,7 @@ button {
   background-color: rgba(255, 255, 255, 0.806);
 }
 
-button:hover {
+.send-button:hover {
   background-color: rgb(37, 43, 44);
   color: white;
   border: 1px solid white;
@@ -732,20 +732,6 @@ button:hover {
     font-size: 15px;
     padding: 6px;
   }
-
-  /* .nav-bar {
-    padding: 0px;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-  }
-
-  .nav-icons {
-    font-size: 10px;
-    padding: 20px 10px 10px 10px;
-    gap: 10px;
-  } */
 
   .hover-underline-animation {
     padding-top: 8px;

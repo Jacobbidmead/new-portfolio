@@ -89,7 +89,13 @@ const App = () => {
   return (
     <>
       <div className="main-page-container">
-        {isMobile ? <Burger /> : <Nav />}
+        {isMobile ? (
+          <div>
+            <Burger />{" "}
+          </div>
+        ) : (
+          <Nav />
+        )}
 
         <div className="hi-container">
           <div className="hi">Hi, Im Jacob</div>
