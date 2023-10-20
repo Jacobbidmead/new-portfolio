@@ -51,6 +51,7 @@ export default function Burger() {
               paddingTop: "230px",
               fontFamily: "Polysans",
               fontSize: "30px",
+              textShadow: "0 0 4px rgb(45, 255, 167)",
             }}
           >
             <Link className="burger-link" to="/Projects">
@@ -63,6 +64,7 @@ export default function Burger() {
               paddingTop: "50px",
               fontFamily: "Polysans",
               fontSize: "30px",
+              textShadow: "0 0 4px rgb(45, 255, 167)",
             }}
           >
             <Link className="burger-link" to="/Photo">
