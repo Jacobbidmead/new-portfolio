@@ -10,6 +10,7 @@ import fetchImg from "../imageData/fetchImg";
 import bookmarksImg from "../imageData/bookmarksImg";
 import googleImg from "../imageData/googleImg";
 import claudiaImg from "../imageData/claudiaImg";
+import matchShapesImageData from "../imageData/matchShapes";
 import { motion } from "framer-motion";
 import ArrowIconComponent from "./Arrow";
 import ReturnTop from "./ReturnTop";
@@ -25,6 +26,56 @@ export default function SimpleAccordion() {
         </motion.div>
       </div>
       <div className="accordion-content">
+        <Accordion
+          sx={{
+            border: "none",
+            boxShadow: "none",
+            backgroundColor: "rgba(0, 0, 0, 0)",
+            color: "white",
+            margin: "none",
+          }}
+        >
+          <AccordionSummary
+            expandIcon={<ExpandMoreIcon />}
+            aria-controls="panel1a-content"
+            id="panel1a-header"
+          >
+            <div className="project-header"> MATCH THE SHAPES</div>
+          </AccordionSummary>
+          <AccordionDetails className="accordion-summary">
+            <div className="project">
+              <ImageSwiper images={matchShapesImageData} />
+              <div className="project-description">
+                <div className="about-project">
+                  {" "}
+                  Match the shapes memory game
+                </div>
+                <div className="project-text">
+                  Match the cards by remembering you're previous moves.
+                </div>
+                <div className="technologies">
+                  Technologies used - TypeScript,Next.js, Tailwind
+                </div>
+                <motion.div
+                  whileHover={{ scale: 1.3 }}
+                  whileTap={{ scale: 0.9 }}
+                  transition={{ type: "spring", stiffness: 400, damping: 17 }}
+                  className="project-link"
+                >
+                  <a
+                    href="https://snap-app-git-main-jacobbidmead.vercel.app/"
+                    alt=""
+                    target="_blank"
+                    rel="noreferrer"
+                    className="link"
+                  >
+                    Live site
+                  </a>
+                </motion.div>
+              </div>
+            </div>
+          </AccordionDetails>
+        </Accordion>
         <Accordion
           sx={{
             border: "none",
