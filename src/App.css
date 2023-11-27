@@ -56,6 +56,8 @@ body {
   transition: background-color 1s ease-in-out;
   position: relative;
   background-color: rgb(37, 43, 44);
+  background-image: url("/public/images/gradient.webp");
+  background-size: cover;
 }
 
 .hi-container {
@@ -148,7 +150,7 @@ body {
   font-size: 2rem;
   font-family: "Rubik", sans-serif;
   text-transform: uppercase;
-  text-shadow: 0 0 4px rgb(45, 255, 167);
+  text-shadow: 0 0 6px #cccfcabf;
   color: rgb(198, 198, 198);
 }
 
@@ -157,9 +159,10 @@ body {
   margin-bottom: auto;
   padding-left: 100px;
   padding-right: 100px;
-  color: rgb(45, 255, 167);
-  background-color: rgb(45, 255, 167);
+  background-color: rgba(91, 91, 91, 0.2);
   border-radius: 10px;
+  background-image: url("/public/images/gradient.webp");
+  background-size: cover;
 }
 
 .about-left {
@@ -167,9 +170,10 @@ body {
   flex-direction: column;
   gap: 80px;
   padding: 30px;
-  background-color: rgb(45, 255, 167);
-  color: rgb(45, 255, 167);
+  background-color: rgba(91, 91, 91, 0.2);
   border-radius: 10px;
+  background-image: url("/public/images/gradient.webp");
+  background-size: cover;
 }
 
 .about > div > p {
@@ -185,7 +189,7 @@ body {
 } */
 
 .welcome {
-  background-color: rgb(241, 237, 237);
+  background-color: rgb(37, 43, 44);
   width: 100%;
   box-sizing: border-box;
   padding: 3em;
@@ -197,7 +201,6 @@ body {
 .my-stack {
   background-size: cover;
   background-color: rgb(37, 43, 44);
-  padding: 200px 0px;
 }
 
 .stack-header {
@@ -493,24 +496,25 @@ input {
 }
 
 .contact-container {
-  padding-top: 50px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   z-index: 3;
   overflow: hidden;
   position: sticky;
   position: relative;
-  background-color: rgb(45, 255, 167);
+  background-color: rgb(37, 43, 44);
 }
 
 .contact-message > p {
-  background-color: rgb(37, 43, 44);
-  padding: 5rem;
+  background-color: rgba(91, 91, 91, 0.2);
+  padding: 3rem;
   border-radius: 10px;
+  background-image: url("/public/images/gradient.webp");
+  background-size: cover;
 }
 
 .contact-message {
-  font-size: 52px;
+  font-size: 35px;
   padding: 0px 0px 0px 60px;
   color: rgb(198, 198, 198);
   text-shadow: 0 0 6px #cccfcabf;
@@ -747,6 +751,10 @@ input {
 
   button {
     margin-top: 8px;
+  }
+
+  .send-button {
+    margin-top: 10px;
   }
 
   textarea {
