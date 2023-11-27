@@ -5,11 +5,8 @@ import AccordionDetails from "@mui/material/AccordionDetails";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import ImageSwiper from "./Swiper";
 import webstoreImg from "../imageData/webstoreImg";
-import airBnbImg from "../imageData/airBnBImg";
 import fetchImg from "../imageData/fetchImg";
-import bookmarksImg from "../imageData/bookmarksImg";
-import googleImg from "../imageData/googleImg";
-import claudiaImg from "../imageData/claudiaImg";
+// import claudiaImg from "../imageData/claudiaImg";
 import matchShapesImageData from "../imageData/matchShapes";
 import { motion } from "framer-motion";
 import ArrowIconComponent from "./Arrow";
@@ -22,7 +19,7 @@ export default function SimpleAccordion() {
       <div className="latest-container">
         <motion.div className="latest-work">
           SELECTED WORK
-          <div className="latest-date">2022-2023</div>
+          <div className="latest-date">2022-2024</div>
         </motion.div>
       </div>
       <div className="accordion-content">
@@ -176,7 +173,7 @@ export default function SimpleAccordion() {
             </div>
           </AccordionDetails>
         </Accordion>
-        <Accordion
+        {/* <Accordion
           sx={{
             border: "none",
             boxShadow: "none",
@@ -206,8 +203,8 @@ export default function SimpleAccordion() {
                 <div className="technologies">
                   Technologies used - React, CSS, Swiper.js
                 </div>
-                {/* added link when page is finished and live */}
-                {/* <motion.div
+               
+                <motion.div
                   whileHover={{ scale: 1.3 }}
                   whileTap={{ scale: 0.9 }}
                   transition={{ type: "spring", stiffness: 400, damping: 17 }}
@@ -222,133 +219,11 @@ export default function SimpleAccordion() {
                   >
                     Live site
                   </a>
-                </motion.div> */}
-              </div>
-            </div>
-          </AccordionDetails>
-        </Accordion>
-        <Accordion
-          sx={{
-            border: "none",
-            boxShadow: "none",
-            backgroundColor: "rgba(0, 0, 0, 0)",
-            color: "white",
-            margin: "none",
-          }}
-        >
-          <AccordionSummary
-            expandIcon={<ExpandMoreIcon />}
-            aria-controls="panel2a-content"
-            id="panel2a-header"
-          >
-            <div className="project-header"> BOOKMARK URLS</div>
-          </AccordionSummary>
-          <AccordionDetails className="accordion-summary">
-            <div className="project">
-              <ImageSwiper images={bookmarksImg} />
-              <div className="project-description">
-                <div className="about-project">Bookmarker App.</div>
-                <div className="project-text">
-                  Users are able to add, edit & delete bookmarks (URLS). Front
-                  end app, data is saved on the brower and persists page reload.
-                  The page uses pagination, up too twenty links are shown per
-                  page.
-                </div>
-                <div className="technologies">
-                  TypeScript, React, Styled Components.
-                </div>
-                <motion.div
-                  whileHover={{ scale: 1.3 }}
-                  whileTap={{ scale: 0.9 }}
-                  transition={{ type: "spring", stiffness: 400, damping: 17 }}
-                  className="project-link"
-                >
-                  <a
-                    href="https://loquacious-sable-4df720.netlify.app/"
-                    alt=""
-                    target="_blank"
-                    rel="noreferrer"
-                    className="link"
-                  >
-                    Live site
-                  </a>
                 </motion.div>
               </div>
             </div>
           </AccordionDetails>
-        </Accordion>{" "}
-        <Accordion
-          sx={{
-            border: "none",
-            boxShadow: "none",
-            backgroundColor: "rgba(0, 0, 0, 0)",
-            color: "white",
-            margin: "none",
-          }}
-        >
-          <AccordionSummary
-            expandIcon={<ExpandMoreIcon />}
-            aria-controls="panel2a-content"
-            id="panel2a-header"
-            sx={{ margin: "0" }}
-          >
-            <div className="project-header"> AIR BNB CLONE</div>
-          </AccordionSummary>
-          <AccordionDetails className="accordion-summary">
-            <div className="project">
-              <ImageSwiper images={airBnbImg} />
-              <div className="project-description">
-                <div className="about-project">
-                  {" "}
-                  Full stack MVC Air Bnb Clone.
-                </div>
-                <div className="project-text">
-                  Users are able to create a profile and upload house data,
-                  which is populated onto the main app page. Users, while logged
-                  in, can also edit house data and leave comments. User data is
-                  stored in MongoDB and accessed with Express.js.
-                </div>
-                <div className="technologies">
-                  Technologies used - JavaScript, HTML, CSS, Bootstrap,
-                  Express.js, Node.js, MongoDB.
-                </div>
-              </div>
-            </div>
-          </AccordionDetails>
-        </Accordion>{" "}
-        <Accordion
-          sx={{
-            border: "none",
-            boxShadow: "none",
-            backgroundColor: "rgba(0, 0, 0, 0)",
-            color: "white",
-            margin: "none",
-          }}
-        >
-          <AccordionSummary
-            expandIcon={<ExpandMoreIcon />}
-            aria-controls="panel2a-content"
-            id="panel2a-header"
-          >
-            <div className="project-header"> GOOGLE SEARCH</div>
-          </AccordionSummary>
-          <AccordionDetails className="accordion-summary">
-            <div className="project">
-              <ImageSwiper images={googleImg} />
-              <div className="project-description">
-                <div className="about-project">Goolge search style app.</div>
-                <div className="project-text">
-                  Google Search style app, made using React on the client side
-                  and connecting to the server using Axios. Users are able to
-                  search for limited data contained in the MongoDB database.
-                </div>
-                <div className="technologies">
-                  Technologies used - React, Axios, MongoDb.
-                </div>
-              </div>
-            </div>
-          </AccordionDetails>
-        </Accordion>
+        </Accordion> */}
         <ReturnTop />
       </div>
     </div>
