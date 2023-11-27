@@ -281,6 +281,7 @@ body {
   padding-bottom: 80px;
   border-radius: 5px;
   border: 1px solid rgba(255, 255, 255, 0.509);
+  background-image: url("/public/images/gradient.webp");
 }
 
 .swiper-buttons {
