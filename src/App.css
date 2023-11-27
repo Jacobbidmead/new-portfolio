@@ -55,7 +55,7 @@ body {
   height: 100vh;
   transition: background-color 1s ease-in-out;
   position: relative;
-  background-color: rgb(37, 43, 44);
+  background-color: rgb(18, 22, 22);
   background-image: url("/public/images/gradient.webp");
   background-size: cover;
 }
@@ -159,25 +159,29 @@ body {
   margin-bottom: auto;
   padding-left: 100px;
   padding-right: 100px;
-  background-color: rgba(91, 91, 91, 0.2);
+  background-color: rgba(91, 91, 91, 0.1);
   border-radius: 10px;
   background-image: url("/public/images/gradient.webp");
   background-size: cover;
+  border: 1px solid rgba(194, 193, 193, 0.477);
+  box-shadow: rgba(255, 255, 255, 0.3) 0px 1px 2px 0px,
+    rgba(255, 255, 255, 0.15) 0px 2px 6px 2px;
 }
 
 .about-left {
   display: flex;
   flex-direction: column;
-  gap: 80px;
   padding: 30px;
-  background-color: rgba(91, 91, 91, 0.2);
+  background-color: rgba(91, 91, 91, 0.1);
   border-radius: 10px;
   background-image: url("/public/images/gradient.webp");
   background-size: cover;
+  border: 1px solid rgba(194, 193, 193, 0.477);
+  box-shadow: rgba(255, 255, 255, 0.3) 0px 1px 2px 0px,
+    rgba(255, 255, 255, 0.15) 0px 2px 6px 2px;
 }
 
 .about > div > p {
-  background-color: rgb(37, 43, 44);
   padding: 2rem;
   border-radius: 10px;
 }
@@ -189,7 +193,7 @@ body {
 } */
 
 .welcome {
-  background-color: rgb(37, 43, 44);
+  background-color: rgb(18, 22, 22);
   width: 100%;
   box-sizing: border-box;
   padding: 3em;
@@ -200,7 +204,7 @@ body {
 
 .my-stack {
   background-size: cover;
-  background-color: rgb(37, 43, 44);
+  background-color: rgb(18, 22, 22);
 }
 
 .stack-header {
@@ -228,7 +232,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   height: 100%;
-  background-color: rgb(37, 43, 44);
+  background-color: rgb(18, 22, 22);
 }
 
 .latest-container {
@@ -427,7 +431,9 @@ textarea {
   padding: 10px;
   text-shadow: 0 0 8px #cccfcabf;
   font-size: 17px;
-  border: 1px solid rgb(37, 43, 44);
+  border: 1px solid rgba(194, 193, 193, 0.477);
+  box-shadow: rgba(255, 255, 255, 0.3) 0px 1px 2px 0px,
+    rgba(255, 255, 255, 0.15) 0px 2px 6px 2px;
 }
 
 .contact-text {
@@ -442,7 +448,9 @@ input {
   border-radius: 5px;
   color: rgb(37, 43, 44);
   text-shadow: 0 0 8px #cccfcabf;
-  border: 1px solid rgb(37, 43, 44);
+  border: 1px solid rgba(194, 193, 193, 0.477);
+  box-shadow: rgba(255, 255, 255, 0.3) 0px 1px 2px 0px,
+    rgba(255, 255, 255, 0.15) 0px 2px 6px 2px;
 }
 
 .inputs {
@@ -503,7 +511,7 @@ input {
   overflow: hidden;
   position: sticky;
   position: relative;
-  background-color: rgb(37, 43, 44);
+  background-color: rgb(18, 22, 22);
 }
 
 .contact-message > p {
@@ -512,6 +520,9 @@ input {
   border-radius: 10px;
   background-image: url("/public/images/gradient.webp");
   background-size: cover;
+  border: 1px solid rgba(194, 193, 193, 0.477);
+  box-shadow: rgba(255, 255, 255, 0.3) 0px 1px 2px 0px,
+    rgba(255, 255, 255, 0.15) 0px 2px 6px 2px;
 }
 
 .contact-message {
