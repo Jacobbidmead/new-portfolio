@@ -59,6 +59,10 @@ body {
   z-index: -1;
 }
 
+.hero-img {
+  width: 100%;
+}
+
 /* Ensure elements above the SVG are positioned and have a higher z-index */
 
 .hi-container {
