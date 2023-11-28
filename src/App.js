@@ -12,6 +12,7 @@ import ThreejsIconComponent from "./components/Threejs";
 import Nav from "./components/Nav";
 import Contact from "./components/Contact";
 import Burger from "./components/Burger";
+import StarsSvg from "./components/Stars";
 
 const isMobile = window.innerWidth < 601;
 
@@ -89,6 +90,7 @@ const App = () => {
   return (
     <>
       <div className="main-page-container">
+        <img src="images/gradient.webp" alt="" className="hero-img" />
         {isMobile ? (
           <div>
             <Burger />{" "}
@@ -96,11 +98,11 @@ const App = () => {
         ) : (
           <Nav />
         )}
-
         <div className="hi-container">
           <div className="hi">Hi, Im Jacob</div>
           <div className="hi-lower">I make things for the web.</div>
         </div>
+        <StarsSvg className="overlay-svg" />
 
         <motion.div
           initial={"offscreen"}

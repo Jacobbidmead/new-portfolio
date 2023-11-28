@@ -51,15 +51,15 @@ body {
   color: rgb(45, 255, 167);
 }
 
-.main-page-container {
-  height: 100vh;
-  transition: background-color 1s ease-in-out;
-  position: relative;
-  background-color: rgb(4, 4, 4);
-  background-image: url("/public/images/gradient.webp");
-  background-size: contain;
-  background-repeat: no-repeat;
+.hero-stars {
+  top: -1px;
+  width: 100%;
+  max-width: 1400px;
+  position: absolute;
+  z-index: -1;
 }
+
+/* Ensure elements above the SVG are positioned and have a higher z-index */
 
 .hi-container {
   display: flex;
@@ -67,6 +67,24 @@ body {
   place-items: center;
   height: 63%;
   justify-content: center;
+  position: relative;
+  z-index: 1; /* Higher than the SVG */
+}
+
+.main-page-container {
+  height: 100vh;
+  transition: background-color 1s ease-in-out;
+  position: relative;
+  background-color: rgb(4, 4, 4);
+  /* background-image: url("/public/images/gradient.webp");
+  background-size: contain;
+  background-repeat: no-repeat; */
+  z-index: 1; /* Higher than the SVG */
+}
+
+.hero-img {
+  position: absolute;
+  top: -1;
 }
 
 .hi {
@@ -102,6 +120,7 @@ body {
   cursor: pointer;
   font-family: PolySans;
   text-shadow: 0 0 6px #cccfcabf;
+  z-index: 1;
 }
 
 .links {
@@ -125,6 +144,7 @@ body {
   flex-direction: row;
   gap: 30px;
   border-radius: 4px;
+  z-index: 1;
 }
 
 /* text */
@@ -562,6 +582,14 @@ input {
 }
 
 @media screen and (max-width: 601px) {
+  .hero-img {
+    width: 100%;
+  }
+
+  .hero-stars {
+    width: 100%;
+  }
+
   .main-page-container {
     display: flex;
     flex-direction: column;
