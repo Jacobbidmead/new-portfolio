@@ -124,10 +124,10 @@ const App = () => {
             >
               <motion.div>
                 <p>
-                  Im a creative front end developer JavaScript developer with a
-                  passion for design and intuatuive UI. I build web applications
-                  with TypeScript, React & Next.js. Im also experienced with Vue
-                  & Nuxt.
+                  Im a creative Front End JavaScript developer with a passion
+                  for design and creating intuatuive UI. I build web
+                  applications with TypeScript, React & Next.js. Im also
+                  experienced with Vue & Nuxt.
                 </p>
               </motion.div>
 
