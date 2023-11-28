@@ -57,18 +57,20 @@ body {
   position: relative;
   background-color: rgb(4, 4, 4);
   background-image: url("/public/images/gradient.webp");
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .hi-container {
   display: flex;
   flex-direction: column;
+  place-items: center;
+  height: 63%;
   justify-content: center;
-  padding: 100px 0px 0px 100px;
 }
 
 .hi {
-  font-size: 200px;
+  font-size: 100px;
   color: rgb(45, 255, 167);
   text-shadow: 0 0 6px rgb(45, 255, 167);
 }
