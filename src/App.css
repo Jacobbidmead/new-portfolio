@@ -569,12 +569,29 @@ input {
   }
 
   .about-left {
-    border-radius: 1px;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
   }
 
   .about-right {
-    padding: 30px;
-    border-radius: 1px;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  .contact-message > p {
+    margin-top: 0;
+    padding: 5px;
+    font-size: 14px;
+  }
+
+  textarea {
+    width: 50%;
   }
 
   .hi-container {
@@ -716,6 +733,8 @@ input {
 
   textarea {
     width: 82%;
+    margin-top: 0;
+    height: 120px;
   }
 
   .contact-message {
@@ -775,10 +794,6 @@ input {
 
   .send-button {
     margin-top: 10px;
-  }
-
-  textarea {
-    margin-top: 0px;
   }
 
   .links {
