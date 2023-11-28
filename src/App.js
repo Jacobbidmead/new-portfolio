@@ -124,11 +124,10 @@ const App = () => {
             >
               <motion.div>
                 <p>
-                  Im a creative front end developer with experience in{" "}
-                  <span className="highlight-1">UX/UI design,</span>
-                  <span className="highlight-2"> 3D imaging</span> and{" "}
-                  <span className="highlight-3"> photography.</span> I build web
-                  applications with TypeScript, React & Vue.{" "}
+                  Im a creative front end developer JavaScript developer with a
+                  passion for design and intuatuive UI. I build web applications
+                  with TypeScript, React & Next.js. Im also experienced with Vue
+                  & Nuxt.
                 </p>
               </motion.div>
 
@@ -152,7 +151,7 @@ const App = () => {
               {" "}
               <div>
                 <p>
-                  My journey started with haiku academys full stack web
+                  My journey started with Haiku Academy's full stack web
                   development bootcamp, which I completed in october 2022. since
                   graduating, I have learnt to utilise my problem-solving skills
                   to create intuative and responsive web applications.

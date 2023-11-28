@@ -175,7 +175,6 @@ body {
 .about {
   font-size: 2rem;
   font-family: "Rubik", sans-serif;
-  text-transform: uppercase;
   text-shadow: 0 0 6px #cccfcabf;
   color: rgb(198, 198, 198);
 }
@@ -183,8 +182,8 @@ body {
 .about-right {
   margin-top: auto;
   margin-bottom: auto;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 30px;
+  padding-right: 30px;
   background-color: rgba(91, 91, 91, 0.1);
   border-radius: 10px;
   background-image: url("/public/images/gradient.webp");
@@ -197,7 +196,7 @@ body {
 .about-left {
   display: flex;
   flex-direction: column;
-  padding: 30px;
+  padding: 20px;
   background-color: rgba(91, 91, 91, 0.1);
   border-radius: 10px;
   background-image: url("/public/images/gradient.webp");
@@ -559,6 +558,7 @@ input {
   border: 1px solid rgba(194, 193, 193, 0.477);
   box-shadow: rgba(255, 255, 255, 0.3) 0px 1px 2px 0px,
     rgba(255, 255, 255, 0.15) 0px 2px 6px 2px;
+  font-family: "Rubik", sans-serif;
 }
 
 .contact-message {
