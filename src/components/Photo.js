@@ -99,12 +99,12 @@ const Photo = () => {
           change things slightly, you leave marks behind, however small. And in
           return, life — and travel — leaves marks on you."{" "}
           <p> - Anthony Bourdain</p>{" "}
-          <p>
+          <p className="quote-break">
             Over the last 10 years, I've been shooting street photography.
             Capturing moments from my life & travels; cultures, experiences,
             landscapes and compositions.
           </p>
-          <p>
+          <p className="quote-break">
             {" "}
             Through my work, I attempt to describe my love of anthropology &
             discovering new cultures.

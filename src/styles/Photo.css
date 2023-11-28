@@ -104,6 +104,10 @@
   text-shadow: 0 0 6px #cccfcabf;
 }
 
+.quote-break {
+  margin-top: 10px;
+}
+
 .photo-subtitle {
   color: white;
   margin-left: 100px;
@@ -130,7 +134,7 @@
 
 @media screen and (max-width: 600px) {
   .quote {
-    font-size: 20px;
+    font-size: 14px;
     margin: 0px;
   }
   .photo-subtitle {
