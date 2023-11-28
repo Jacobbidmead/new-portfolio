@@ -11,7 +11,7 @@ const textAnimate = isMobile
       onscreen: { y: 0 },
     }
   : {
-      offscreen: { y: 200 },
+      offscreen: { y: 300 },
       onscreen: {
         y: 0,
         transition: {
@@ -38,7 +38,13 @@ const Contact = () => {
             MESSAGE.
           </p>
         </motion.div>
-        <div className="contact">
+        <motion.div
+          className="contact"
+          initial={"offscreen"}
+          whileInView={"onscreen"}
+          variants={textAnimate}
+          viewport={{ once: true, amount: 0.1 }}
+        >
           <form
             action="https://formsubmit.co/9cc5775898fe7b24b684bc331c8d80c2"
             method="POST"
@@ -75,7 +81,7 @@ const Contact = () => {
               <ReturnTop />
             </div>
           </form>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

@@ -15,8 +15,8 @@ import ReturnTop from "./ReturnTop";
 export default function SimpleAccordion() {
   return (
     <div className="accordion-container">
-      <ArrowIconComponent />
       <div className="latest-container">
+        <ArrowIconComponent />
         <motion.div className="latest-work">
           SELECTED WORK
           <div className="latest-date">2022-2024</div>
@@ -87,54 +87,6 @@ export default function SimpleAccordion() {
             aria-controls="panel1a-content"
             id="panel1a-header"
           >
-            <div className="project-header"> FETCH PRODUCTS</div>
-          </AccordionSummary>
-          <AccordionDetails className="accordion-summary">
-            <div className="project">
-              <ImageSwiper images={fetchImg} />
-              <div className="project-description">
-                <div className="about-project"> Fetch products from API.</div>
-                <div className="project-text">
-                  Products are fetched from a dummy API and populated into a
-                  card, click on a product to see it in detail.
-                </div>
-                <div className="technologies">
-                  Technologies used - Next.js, Tailwind
-                </div>
-                <motion.div
-                  whileHover={{ scale: 1.3 }}
-                  whileTap={{ scale: 0.9 }}
-                  transition={{ type: "spring", stiffness: 400, damping: 17 }}
-                  className="project-link"
-                >
-                  <a
-                    href="https://get-products-app.vercel.app/"
-                    alt=""
-                    target="_blank"
-                    rel="noreferrer"
-                    className="link"
-                  >
-                    Live site
-                  </a>
-                </motion.div>
-              </div>
-            </div>
-          </AccordionDetails>
-        </Accordion>
-        <Accordion
-          sx={{
-            border: "none",
-            boxShadow: "none",
-            backgroundColor: "rgba(0, 0, 0, 0)",
-            color: "white",
-            margin: "none",
-          }}
-        >
-          <AccordionSummary
-            expandIcon={<ExpandMoreIcon />}
-            aria-controls="panel1a-content"
-            id="panel1a-header"
-          >
             <div className="project-header"> E-COMMERCE STORE</div>
           </AccordionSummary>
           <AccordionDetails className="accordion-summary">
@@ -173,6 +125,55 @@ export default function SimpleAccordion() {
             </div>
           </AccordionDetails>
         </Accordion>
+        <Accordion
+          sx={{
+            border: "none",
+            boxShadow: "none",
+            backgroundColor: "rgba(0, 0, 0, 0)",
+            color: "white",
+            margin: "none",
+          }}
+        >
+          <AccordionSummary
+            expandIcon={<ExpandMoreIcon />}
+            aria-controls="panel1a-content"
+            id="panel1a-header"
+          >
+            <div className="project-header"> FETCH PRODUCTS</div>
+          </AccordionSummary>
+          <AccordionDetails className="accordion-summary">
+            <div className="project">
+              <ImageSwiper images={fetchImg} />
+              <div className="project-description">
+                <div className="about-project"> Fetch products from API.</div>
+                <div className="project-text">
+                  Products are fetched from a dummy API and populated into a
+                  card, click on a product to see it in detail.
+                </div>
+                <div className="technologies">
+                  Technologies used - Next.js, Tailwind
+                </div>
+                <motion.div
+                  whileHover={{ scale: 1.3 }}
+                  whileTap={{ scale: 0.9 }}
+                  transition={{ type: "spring", stiffness: 400, damping: 17 }}
+                  className="project-link"
+                >
+                  <a
+                    href="https://get-products-app.vercel.app/"
+                    alt=""
+                    target="_blank"
+                    rel="noreferrer"
+                    className="link"
+                  >
+                    Live site
+                  </a>
+                </motion.div>
+              </div>
+            </div>
+          </AccordionDetails>
+        </Accordion>
+
         {/* <Accordion
           sx={{
             border: "none",
