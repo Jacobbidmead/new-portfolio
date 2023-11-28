@@ -34,8 +34,8 @@ const Contact = () => {
           className="contact-message"
         >
           <p>
-            Lets work togther; to discuss a project or comission, send me a
-            message.
+            LETS WORK TOGETHER; TO DISCUSS A PROJECT OR COMISSION, SEND ME A
+            MESSAGE.
           </p>
         </motion.div>
         <div className="contact">

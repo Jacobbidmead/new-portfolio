@@ -34,7 +34,7 @@ body {
 
 .MuiIconButton-root:hover {
   border: none;
-  background-color: rgb(37, 43, 44) !important;
+  background-color: rgb(18, 22, 22) !important;
 }
 
 .MuiModalClose-root:hover {
@@ -205,6 +205,7 @@ body {
 .my-stack {
   background-size: cover;
   background-color: rgb(18, 22, 22);
+  padding: 200px 0px;
 }
 
 .stack-header {
@@ -423,7 +424,7 @@ textarea {
   height: 190px;
   resize: none;
   outline: none;
-  color: rgb(37, 43, 44) hv;
+  color: white;
   border: 1px solid white;
   border-radius: 8px;
   margin-top: 40px;
@@ -434,6 +435,9 @@ textarea {
   border: 1px solid rgba(194, 193, 193, 0.477);
   box-shadow: rgba(255, 255, 255, 0.3) 0px 1px 2px 0px,
     rgba(255, 255, 255, 0.15) 0px 2px 6px 2px;
+  background-image: url("/public/images/gradient.webp");
+  background-size: cover;
+  background-color: rgb(18, 22, 22);
 }
 
 .contact-text {
@@ -446,11 +450,14 @@ input {
   outline: none;
   padding: 10px;
   border-radius: 5px;
-  color: rgb(37, 43, 44);
+  color: white;
   text-shadow: 0 0 8px #cccfcabf;
   border: 1px solid rgba(194, 193, 193, 0.477);
   box-shadow: rgba(255, 255, 255, 0.3) 0px 1px 2px 0px,
     rgba(255, 255, 255, 0.15) 0px 2px 6px 2px;
+  background-image: url("/public/images/gradient.webp");
+  background-size: cover;
+  background-color: rgb(18, 22, 22);
 }
 
 .inputs {
@@ -464,7 +471,7 @@ input {
 }
 
 ::placeholder {
-  color: rgb(37, 43, 44);
+  color: white;
   text-shadow: 0 0 8px #cccfcabf;
 }
 
@@ -515,8 +522,9 @@ input {
 }
 
 .contact-message > p {
+  margin-top: 40px;
   background-color: rgba(91, 91, 91, 0.2);
-  padding: 3rem;
+  padding: 4rem;
   border-radius: 10px;
   background-image: url("/public/images/gradient.webp");
   background-size: cover;
@@ -526,7 +534,7 @@ input {
 }
 
 .contact-message {
-  font-size: 35px;
+  font-size: 25px;
   padding: 0px 0px 0px 60px;
   color: rgb(198, 198, 198);
   text-shadow: 0 0 6px #cccfcabf;
