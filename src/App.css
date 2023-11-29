@@ -173,17 +173,27 @@ body {
 }
 
 .about {
-  font-size: 2rem;
-  font-family: "Rubik", sans-serif;
+  font-size: 20px;
   text-shadow: 0 0 6px #cccfcabf;
   color: rgb(198, 198, 198);
+  text-align: center;
 }
 
 .about-right {
+  padding: 20px;
   margin-top: auto;
   margin-bottom: auto;
-  padding-left: 30px;
-  padding-right: 30px;
+  background-color: rgba(91, 91, 91, 0.1);
+  border-radius: 10px;
+  background-image: url("/public/images/gradient.webp");
+  background-size: cover;
+  border: 1px solid rgba(194, 193, 193, 0.477);
+  box-shadow: rgba(255, 255, 255, 0.3) 0px 1px 2px 0px,
+    rgba(255, 255, 255, 0.15) 0px 2px 6px 2px;
+}
+
+.about-center {
+  padding: 40px 20px 20px 20px;
   background-color: rgba(91, 91, 91, 0.1);
   border-radius: 10px;
   background-image: url("/public/images/gradient.webp");
@@ -223,14 +233,14 @@ body {
   box-sizing: border-box;
   padding: 3em;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 24px;
 }
 
 .my-stack {
   background-size: cover;
   background-color: rgb(4, 4, 4);
-  padding: 200px 0px;
+  padding: 200px 0px 100px 0px;
 }
 
 .stack-header {
@@ -270,6 +280,7 @@ body {
   display: flex;
   padding-right: 50px;
   text-align: center;
+  margin-bottom: 100px;
 }
 
 .latest-work {
@@ -279,12 +290,13 @@ body {
   font-family: "Polysans";
   padding-top: 20px;
   border-radius: 5px;
-  color: rgb(198, 198, 198);
-  text-shadow: 0 0 6px #cccfcabf;
+  color: rgb(45, 255, 167);
+  text-shadow: 0 0 6px rgb(45, 255, 167);
 }
 
 .latest-date {
-  color: white;
+  color: rgb(45, 255, 167);
+  text-shadow: 0 0 6px rgb(45, 255, 167);
   text-align: right;
   font-size: 20px;
 }
@@ -616,6 +628,12 @@ input {
     text-align: center;
   }
 
+  .about-center {
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+  }
+
   p {
     margin: 0;
   }
@@ -656,6 +674,7 @@ input {
 
   .about {
     font-size: 20px;
+    gap: 20px;
   }
 
   .welcome {

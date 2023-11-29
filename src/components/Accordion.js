@@ -18,7 +18,7 @@ export default function SimpleAccordion() {
       <div className="latest-container">
         <ArrowIconComponent />
         <motion.div className="latest-work">
-          SELECTED WORK
+          Selected work.
           <div className="latest-date">2022-2024</div>
         </motion.div>
       </div>
@@ -37,7 +37,7 @@ export default function SimpleAccordion() {
             aria-controls="panel1a-content"
             id="panel1a-header"
           >
-            <div className="project-header"> MATCH THE SHAPES</div>
+            <div className="project-header"> Match the shapes.</div>
           </AccordionSummary>
           <AccordionDetails className="accordion-summary">
             <div className="project">
@@ -51,7 +51,7 @@ export default function SimpleAccordion() {
                   Match the cards by remembering you're previous moves.
                 </div>
                 <div className="technologies">
-                  Technologies used - TypeScript,Next.js, Tailwind
+                  Technologies used - TypeScript, Next.js, Tailwind
                 </div>
                 <motion.div
                   whileHover={{ scale: 1.3 }}
@@ -87,7 +87,7 @@ export default function SimpleAccordion() {
             aria-controls="panel1a-content"
             id="panel1a-header"
           >
-            <div className="project-header"> E-COMMERCE STORE</div>
+            <div className="project-header"> E-commerce app.</div>
           </AccordionSummary>
           <AccordionDetails className="accordion-summary">
             <div className="project">
@@ -139,7 +139,7 @@ export default function SimpleAccordion() {
             aria-controls="panel1a-content"
             id="panel1a-header"
           >
-            <div className="project-header"> FETCH PRODUCTS</div>
+            <div className="project-header"> Fetch Products.</div>
           </AccordionSummary>
           <AccordionDetails className="accordion-summary">
             <div className="project">

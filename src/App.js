@@ -34,6 +34,24 @@ const boxAnimate = isMobile
       },
     };
 
+const boxAnimateTop = isMobile
+  ? {
+      offscreen: { y: 0, opacity: 1 },
+      onscreen: { y: 0, opacity: 1 },
+    }
+  : {
+      offscreen: { y: 0, opacity: 0 },
+      onscreen: {
+        y: 100,
+        opacity: 1,
+        transition: {
+          type: "tween",
+          bounce: 0.5,
+          duration: 1,
+        },
+      },
+    };
+
 const textAnimate = isMobile
   ? {
       offscreen: { y: 0 },
@@ -43,23 +61,6 @@ const textAnimate = isMobile
       offscreen: { y: 200 },
       onscreen: {
         y: 0,
-        transition: {
-          type: "tween",
-          bounce: 0.5,
-          duration: 1,
-        },
-      },
-    };
-
-const boxRight = isMobile
-  ? {
-      offscreen: { x: 0 },
-      onscreen: { x: 0 },
-    }
-  : {
-      offscreen: { x: 200 },
-      onscreen: {
-        x: 0,
         transition: {
           type: "tween",
           bounce: 0.5,
@@ -130,7 +131,15 @@ const App = () => {
                   experienced with Vue & Nuxt.
                 </p>
               </motion.div>
+            </motion.div>
 
+            <motion.div
+              initial={"offscreen"}
+              whileInView={"onscreen"}
+              variants={boxAnimateTop}
+              viewport={{ once: true, amount: 0.1 }}
+              className="about about-center"
+            >
               <motion.div>
                 <p>
                   {" "}
@@ -141,10 +150,11 @@ const App = () => {
                 </p>
               </motion.div>
             </motion.div>
+
             <motion.div
               initial={"offscreen"}
               whileInView={"onscreen"}
-              variants={boxRight}
+              variants={boxAnimate}
               viewport={{ once: true, amount: 0.1 }}
               className="about about-right"
             >
