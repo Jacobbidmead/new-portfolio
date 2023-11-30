@@ -34,7 +34,7 @@ body {
 
 .MuiIconButton-root:hover {
   border: none;
-  background-color: rgb(18, 22, 22) !important;
+  background-color: black !important;
 }
 
 .MuiModalClose-root:hover {
