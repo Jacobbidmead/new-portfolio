@@ -143,10 +143,11 @@ const App = () => {
               <motion.div>
                 <p>
                   {" "}
-                  I have a creative background, studying print & time based
-                  media at UAL. A passionate photographer & explorer, I have
-                  documented my travels around the world over the last ten
-                  years.
+                  My journey started with Haiku Academy's full stack web
+                  development bootcamp, which I completed in October 2022. since
+                  graduating, I have learnt to utilise my problem-solving skills
+                  to create intuative and responsive web applications in a
+                  professional enviroment.
                 </p>
               </motion.div>
             </motion.div>
@@ -161,10 +162,10 @@ const App = () => {
               {" "}
               <div>
                 <p>
-                  My journey started with Haiku Academy's full stack web
-                  development bootcamp, which I completed in october 2022. since
-                  graduating, I have learnt to utilise my problem-solving skills
-                  to create intuative and responsive web applications.
+                  I have a creative background, studying print & time based
+                  media at UAL. A passionate photographer & explorer, I have
+                  documented my travels around the world over the last ten
+                  years.
                 </p>
               </div>
             </motion.div>

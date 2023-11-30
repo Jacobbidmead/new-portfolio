@@ -47,7 +47,7 @@ const Photo = () => {
         <div className="photo-head-container">
           <ArrowIconComponent />
           <div className="photo-header">
-            <span>MOMENTS</span>
+            <span>Moments.</span>
           </div>
         </div>
         <div className="container">

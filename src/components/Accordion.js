@@ -3,11 +3,6 @@ import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import ImageSwiper from "./Swiper";
-import webstoreImg from "../imageData/webstoreImg";
-import fetchImg from "../imageData/fetchImg";
-// import claudiaImg from "../imageData/claudiaImg";
-import matchShapesImageData from "../imageData/matchShapes";
 import { motion } from "framer-motion";
 import ArrowIconComponent from "./Arrow";
 import ReturnTop from "./ReturnTop";
@@ -41,7 +36,13 @@ export default function SimpleAccordion() {
           </AccordionSummary>
           <AccordionDetails className="accordion-summary">
             <div className="project">
-              <ImageSwiper images={matchShapesImageData} />
+              <div>
+                <img
+                  src="/images/project-img/match1.png"
+                  alt=""
+                  className="swiper-img"
+                />
+              </div>
               <div className="project-description">
                 <div className="about-project">
                   {" "}
@@ -91,7 +92,13 @@ export default function SimpleAccordion() {
           </AccordionSummary>
           <AccordionDetails className="accordion-summary">
             <div className="project">
-              <ImageSwiper images={webstoreImg} />
+              <div>
+                <img
+                  src="/images/project-img/webstorehome.png"
+                  alt=""
+                  className="swiper-img"
+                />
+              </div>
               <div className="project-description">
                 <div className="about-project">
                   {" "}
@@ -143,7 +150,13 @@ export default function SimpleAccordion() {
           </AccordionSummary>
           <AccordionDetails className="accordion-summary">
             <div className="project">
-              <ImageSwiper images={fetchImg} />
+              <div>
+                <img
+                  src="/images/project-img/fetch.png"
+                  alt=""
+                  className="swiper-img"
+                />
+              </div>
               <div className="project-description">
                 <div className="about-project"> Fetch products from API.</div>
                 <div className="project-text">
