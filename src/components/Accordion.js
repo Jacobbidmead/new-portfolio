@@ -5,7 +5,7 @@ import AccordionDetails from "@mui/material/AccordionDetails";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { motion } from "framer-motion";
 import ArrowIconComponent from "./Arrow";
-import ReturnTop from "./ReturnTop";
+// import ReturnTop from "./ReturnTop";
 
 export default function SimpleAccordion() {
   return (
@@ -238,7 +238,7 @@ export default function SimpleAccordion() {
             </div>
           </AccordionDetails>
         </Accordion> */}
-        <ReturnTop />
+        {/* <ReturnTop /> */}
       </div>
     </div>
   );
