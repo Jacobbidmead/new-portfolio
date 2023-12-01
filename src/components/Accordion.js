@@ -5,6 +5,8 @@ import AccordionDetails from "@mui/material/AccordionDetails";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { motion } from "framer-motion";
 import ArrowIconComponent from "./Arrow";
+import Link from "./Link";
+import Git from "./Git";
 // import ReturnTop from "./ReturnTop";
 
 export default function SimpleAccordion() {
@@ -44,32 +46,32 @@ export default function SimpleAccordion() {
                 />
               </div>
               <div className="project-description">
-                <div className="about-project">
-                  {" "}
-                  Match the shapes memory game
-                </div>
                 <div className="project-text">
                   Match the cards by remembering you're previous moves.
+                  <p className="technologies">
+                    TypeScript Next.js Tailwind DALL-E
+                  </p>
+                  <div className="project-link">
+                    <a
+                      href="https://snap-app-git-main-jacobbidmead.vercel.app/"
+                      alt=""
+                      target="_blank"
+                      rel="noreferrer"
+                      className="link"
+                    >
+                      <Link />
+                    </a>
+                    <a
+                      href="https://github.com/Jacobbidmead/snap-app"
+                      alt=""
+                      target="_blank"
+                      rel="noreferrer"
+                      className="link"
+                    >
+                      <Git />
+                    </a>
+                  </div>
                 </div>
-                <div className="technologies">
-                  Technologies used - TypeScript, Next.js, Tailwind
-                </div>
-                <motion.div
-                  whileHover={{ scale: 1.3 }}
-                  whileTap={{ scale: 0.9 }}
-                  transition={{ type: "spring", stiffness: 400, damping: 17 }}
-                  className="project-link"
-                >
-                  <a
-                    href="https://snap-app-git-main-jacobbidmead.vercel.app/"
-                    alt=""
-                    target="_blank"
-                    rel="noreferrer"
-                    className="link"
-                  >
-                    Live site
-                  </a>
-                </motion.div>
               </div>
             </div>
           </AccordionDetails>
@@ -100,34 +102,34 @@ export default function SimpleAccordion() {
                 />
               </div>
               <div className="project-description">
-                <div className="about-project">
-                  {" "}
-                  Front end E-commerce store.
-                </div>
                 <div className="project-text">
-                  Users are able to browse items by brand & category, add &
-                  remove items from the basket.
+                  Browse items by brand & category, add & remove items from the
+                  basket.
+                  <p className="technologies">
+                    TypeScript Next.js MUI library UseContext
+                  </p>
+                  <div className="project-link">
+                    <a
+                      href="https://webstore-react-app-git-main-jacobbidmead.vercel.app/
+"
+                      alt=""
+                      target="_blank"
+                      rel="noreferrer"
+                      className="link"
+                    >
+                      <Link />
+                    </a>
+                    <a
+                      href="https://github.com/Jacobbidmead/webstore-react-app"
+                      alt=""
+                      target="_blank"
+                      rel="noreferrer"
+                      className="link"
+                    >
+                      <Git />
+                    </a>
+                  </div>
                 </div>
-                <div className="technologies">
-                  Technologies used - TypeScript, Next.js, MUI library, React
-                  context API.
-                </div>
-                <motion.div
-                  whileHover={{ scale: 1.3 }}
-                  whileTap={{ scale: 0.9 }}
-                  transition={{ type: "spring", stiffness: 400, damping: 17 }}
-                  className="project-link"
-                >
-                  <a
-                    href="https://webstore-react-app-git-main-jacobbidmead.vercel.app/"
-                    alt=""
-                    target="_blank"
-                    rel="noreferrer"
-                    className="link"
-                  >
-                    Live site
-                  </a>
-                </motion.div>
               </div>
             </div>
           </AccordionDetails>
@@ -158,30 +160,33 @@ export default function SimpleAccordion() {
                 />
               </div>
               <div className="project-description">
-                <div className="about-project"> Fetch products from API.</div>
                 <div className="project-text">
                   Products are fetched from a dummy API and populated into a
                   card, click on a product to see it in detail.
+                  <p className="technologies">React Next.js Tailwind </p>
+                  <div className="project-link">
+                    <a
+                      href="https://get-products-app.vercel.app/
+
+"
+                      alt=""
+                      target="_blank"
+                      rel="noreferrer"
+                      className="link"
+                    >
+                      <Link />
+                    </a>
+                    <a
+                      href="https://github.com/Jacobbidmead/get-products-app"
+                      alt=""
+                      target="_blank"
+                      rel="noreferrer"
+                      className="link"
+                    >
+                      <Git />
+                    </a>
+                  </div>
                 </div>
-                <div className="technologies">
-                  Technologies used - Next.js, Tailwind
-                </div>
-                <motion.div
-                  whileHover={{ scale: 1.3 }}
-                  whileTap={{ scale: 0.9 }}
-                  transition={{ type: "spring", stiffness: 400, damping: 17 }}
-                  className="project-link"
-                >
-                  <a
-                    href="https://get-products-app.vercel.app/"
-                    alt=""
-                    target="_blank"
-                    rel="noreferrer"
-                    className="link"
-                  >
-                    Live site
-                  </a>
-                </motion.div>
               </div>
             </div>
           </AccordionDetails>

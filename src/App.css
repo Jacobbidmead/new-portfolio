@@ -424,37 +424,42 @@ body {
 
 .technologies {
   padding-top: 10px;
+  font-size: 12px;
 }
 
 .project-link {
   text-decoration: none;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 40px;
 }
 
 .link {
   text-decoration: none;
   color: white;
-  cursor: pointer;
-  background-color: rgba(251, 250, 250, 0.1);
-  padding: 10px;
-  border-radius: 50px;
-  border: 1px rgb(255, 255, 255) solid;
+  padding-top: 10px;
+}
+
+.link:hover {
+  color: rgb(45, 255, 167);
+}
+
+.project-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 8px;
 }
 
 .project-description {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   text-align: center;
   color: rgb(198, 198, 198);
-  font-family: Polysans;
-  width: 80%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 50px;
   padding: 50px;
   border-radius: 5px;
+  width: 50%;
   text-shadow: 0 0 8px #cccfcabf;
 }
 
