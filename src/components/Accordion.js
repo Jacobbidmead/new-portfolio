@@ -49,7 +49,10 @@ export default function SimpleAccordion() {
                 <div className="project-text">
                   Match the cards by remembering you're previous moves.
                   <p className="technologies">
-                    TypeScript &bull; Next.js &bull; Tailwind &bull; DALL-E
+                    <span className="project-techs">TypeScript </span>{" "}
+                    <span className="project-techs">Next.js</span>{" "}
+                    <span className="project-techs">Tailwind</span>
+                    <span className="project-techs">DALLE-E </span>
                   </p>
                   <div className="project-link">
                     <a
@@ -106,8 +109,10 @@ export default function SimpleAccordion() {
                   Browse items by brand & category, add & remove items from the
                   basket.
                   <p className="technologies">
-                    TypeScript &bull; Next.js &bull; MUI library &bull;
-                    UseContext
+                    <span className="project-techs">TypeScript </span>{" "}
+                    <span className="project-techs">Next.js </span>{" "}
+                    <span className="project-techs">MUI Library </span>
+                    <span className="project-techs">UseContext </span>
                   </p>
                   <div className="project-link">
                     <a
@@ -165,7 +170,9 @@ export default function SimpleAccordion() {
                   Products are fetched from a dummy API and populated into a
                   card, click on a product to see it in detail.
                   <p className="technologies">
-                    React &bull; Next.js &bull; Tailwind{" "}
+                    <span className="project-techs">React </span>{" "}
+                    <span className="project-techs">Next.js </span>{" "}
+                    <span className="project-techs">Tailwind </span>
                   </p>
                   <div className="project-link">
                     <a

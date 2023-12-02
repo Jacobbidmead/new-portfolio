@@ -7,8 +7,8 @@ const Nav = () => {
     <>
       <div className="nav-bar">
         <div className="nav-icons">
-          <GitHubIconComponent />
-          <SpotifyIconComponent />
+          <GitHubIconComponent className="github-icon" />
+          <SpotifyIconComponent className="spotify-icon" />
         </div>
         <div className="links">
           <Link to="/Projects" className="photo-link">

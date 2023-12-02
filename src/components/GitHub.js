@@ -8,7 +8,7 @@ const GitHubIconComponent = () => {
         target="_blank"
         rel="noreferrer"
       >
-        <Icon />
+        <Icon className="github-icon" />
       </a>
     </div>
   );
