@@ -49,7 +49,7 @@ export default function SimpleAccordion() {
                 <div className="project-text">
                   Match the cards by remembering you're previous moves.
                   <p className="technologies">
-                    TypeScript Next.js Tailwind DALL-E
+                    TypeScript &bull; Next.js &bull; Tailwind &bull; DALL-E
                   </p>
                   <div className="project-link">
                     <a
@@ -106,7 +106,8 @@ export default function SimpleAccordion() {
                   Browse items by brand & category, add & remove items from the
                   basket.
                   <p className="technologies">
-                    TypeScript Next.js MUI library UseContext
+                    TypeScript &bull; Next.js &bull; MUI library &bull;
+                    UseContext
                   </p>
                   <div className="project-link">
                     <a
@@ -163,7 +164,9 @@ export default function SimpleAccordion() {
                 <div className="project-text">
                   Products are fetched from a dummy API and populated into a
                   card, click on a product to see it in detail.
-                  <p className="technologies">React Next.js Tailwind </p>
+                  <p className="technologies">
+                    React &bull; Next.js &bull; Tailwind{" "}
+                  </p>
                   <div className="project-link">
                     <a
                       href="https://get-products-app.vercel.app/
