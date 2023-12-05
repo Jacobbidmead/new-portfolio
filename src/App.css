@@ -489,8 +489,6 @@ textarea {
   text-shadow: 0 0 8px #cccfcabf;
   font-size: 14px;
   border: 1px solid rgba(194, 193, 193, 0.477);
-  box-shadow: rgba(255, 255, 255, 0.3) 0px 1px 2px 0px,
-    rgba(255, 255, 255, 0.15) 0px 2px 6px 2px;
   background-image: url("/public/images/gradient.webp");
   background-size: cover;
   background-color: rgba(4, 4, 4, 0.1);
@@ -509,8 +507,6 @@ input {
   color: white;
   text-shadow: 0 0 8px #cccfcabf;
   border: 1px solid rgba(194, 193, 193, 0.477);
-  box-shadow: rgba(255, 255, 255, 0.3) 0px 1px 2px 0px,
-    rgba(255, 255, 255, 0.15) 0px 2px 6px 2px;
   background-image: url("/public/images/gradient.webp");
   background-size: cover;
   background-color: rgba(4, 4, 4, 0.1);
@@ -586,8 +582,6 @@ input {
   background-image: url("/public/images/gradient.webp");
   background-size: cover;
   border: 1px solid rgba(194, 193, 193, 0.477);
-  box-shadow: rgba(255, 255, 255, 0.3) 0px 1px 2px 0px,
-    rgba(255, 255, 255, 0.15) 0px 2px 6px 2px;
   font-family: Inter;
   color: white;
 }
