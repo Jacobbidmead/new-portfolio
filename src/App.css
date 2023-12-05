@@ -77,14 +77,14 @@ body {
   z-index: 1; /* Higher than the SVG */
 }
 
+.bg {
+  transition: background-color 1s ease-in-out;
+}
+
 .main-page-container {
   height: 100vh;
-  transition: background-color 1s ease-in-out;
+
   position: relative;
-  background-color: rgb(4, 4, 4);
-  /* background-image: url("/public/images/gradient.webp");
-  background-size: contain;
-  background-repeat: no-repeat; */
   z-index: 1; /* Higher than the SVG */
 }
 
@@ -231,7 +231,6 @@ body {
 } */
 
 .welcome {
-  background-color: rgb(4, 4, 4);
   width: 100%;
   box-sizing: border-box;
   padding: 3em;
@@ -242,7 +241,6 @@ body {
 
 .my-stack {
   background-size: cover;
-  background-color: rgb(4, 4, 4);
   padding: 200px 0px 100px 0px;
 }
 
@@ -422,7 +420,7 @@ body {
 .project-text {
   padding-top: 20px;
   font-family: Inter;
-  ]color: white;
+  color: white;
 }
 
 .project-techs {
@@ -466,6 +464,7 @@ body {
   display: flex;
   flex-direction: row;
   text-align: center;
+
   margin-left: auto;
   margin-right: auto;
   padding: 50px;
@@ -577,7 +576,6 @@ input {
   overflow: hidden;
   position: sticky;
   position: relative;
-  background-color: rgb(4, 4, 4);
 }
 
 .contact-message > p {

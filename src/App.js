@@ -72,6 +72,7 @@ const textAnimate = isMobile
 const App = () => {
   // Initial value for isMobile
   const [isMobile, setIsMobile] = useState(window.innerWidth < 601);
+  const [backgroundColor, setBackgroundColor] = useState("rgb(4, 4, 4)");
 
   // Event listener function
   const checkMobile = () => {
@@ -88,111 +89,125 @@ const App = () => {
     };
   }, []); // The empty array means this useEffect runs once when the component mounts.
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 200) {
+        setBackgroundColor("rgb(12, 9, 16 )");
+      } else setBackgroundColor("rgb(4, 4, 4)");
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <>
-      <div className="main-page-container">
-        <img src="images/gradient.webp" alt="" className="hero-img" />
-        {isMobile ? (
-          <div>
-            <Burger />{" "}
+      <div style={{ backgroundColor: backgroundColor }} className="bg">
+        <div className="main-page-container">
+          <img src="images/gradient.webp" alt="" className="hero-img" />
+          {isMobile ? (
+            <div>
+              <Burger />{" "}
+            </div>
+          ) : (
+            <Nav />
+          )}
+          <div className="hi-container">
+            <div className="hi">Hi, Im Jacob</div>
+            <div className="hi-lower">I make things for the web.</div>
           </div>
-        ) : (
-          <Nav />
-        )}
-        <div className="hi-container">
-          <div className="hi">Hi, Im Jacob</div>
-          <div className="hi-lower">I make things for the web.</div>
-        </div>
-        <StarsSvg className="overlay-svg" />
+          <StarsSvg className="overlay-svg" />
 
-        <motion.div
-          initial={"offscreen"}
-          whileInView={"onscreen"}
-          variants={textAnimate}
-          viewport={{ once: true, amount: 0.1 }}
-          className="contents-container"
-        ></motion.div>
-      </div>
-      <div>
-        <div className="welcome-container">
-          <div className="welcome">
-            <motion.div
-              initial={"offscreen"}
-              whileInView={"onscreen"}
-              variants={textAnimate}
-              viewport={{ once: true, amount: 0.1 }}
-              className="about about-left"
-            >
-              <motion.div>
-                <p>
-                  Im a creative Front End JavaScript developer with a passion
-                  for design and creating intuatuive UI. I build web
-                  applications with TypeScript, React & Next.js. Im also
-                  experienced with Vue & Nuxt.
-                </p>
+          <motion.div
+            initial={"offscreen"}
+            whileInView={"onscreen"}
+            variants={textAnimate}
+            viewport={{ once: true, amount: 0.1 }}
+            className="contents-container"
+          ></motion.div>
+        </div>
+        <div>
+          <div className="welcome-container">
+            <div className="welcome">
+              <motion.div
+                initial={"offscreen"}
+                whileInView={"onscreen"}
+                variants={textAnimate}
+                viewport={{ once: true, amount: 0.1 }}
+                className="about about-left"
+              >
+                <motion.div>
+                  <p>
+                    Im a creative Front End JavaScript developer with a passion
+                    for design and creating intuatuive UI. I build web
+                    applications with TypeScript, React & Next.js. Im also
+                    experienced with Vue & Nuxt.
+                  </p>
+                </motion.div>
               </motion.div>
-            </motion.div>
 
-            <motion.div
-              initial={"offscreen"}
-              whileInView={"onscreen"}
-              variants={boxAnimateTop}
-              viewport={{ once: true, amount: 0.1 }}
-              className="about about-center"
-            >
-              <motion.div>
-                <p>
-                  {" "}
-                  My journey started with Haiku Academy's full stack web
-                  development bootcamp, which I completed in October 2022. since
-                  graduating, I have learnt to utilise my problem-solving skills
-                  to create intuative and responsive web applications in a
-                  professional enviroment.
-                </p>
+              <motion.div
+                initial={"offscreen"}
+                whileInView={"onscreen"}
+                variants={boxAnimateTop}
+                viewport={{ once: true, amount: 0.1 }}
+                className="about about-center"
+              >
+                <motion.div>
+                  <p>
+                    {" "}
+                    My journey started with Haiku Academy's full stack web
+                    development bootcamp, which I completed in October 2022.
+                    since graduating, I have learnt to utilise my
+                    problem-solving skills to create intuative and responsive
+                    web applications in a professional enviroment.
+                  </p>
+                </motion.div>
               </motion.div>
-            </motion.div>
 
-            <motion.div
-              initial={"offscreen"}
-              whileInView={"onscreen"}
-              variants={boxAnimate}
-              viewport={{ once: true, amount: 0.1 }}
-              className="about about-right"
-            >
-              {" "}
-              <div>
-                <p>
-                  I have a creative background, studying print & time based
-                  media at UAL. A passionate photographer & explorer, I have
-                  documented my travels around the world over the last ten
-                  years.
-                </p>
-              </div>
-            </motion.div>
+              <motion.div
+                initial={"offscreen"}
+                whileInView={"onscreen"}
+                variants={boxAnimate}
+                viewport={{ once: true, amount: 0.1 }}
+                className="about about-right"
+              >
+                {" "}
+                <div>
+                  <p>
+                    I have a creative background, studying print & time based
+                    media at UAL. A passionate photographer & explorer, I have
+                    documented my travels around the world over the last ten
+                    years.
+                  </p>
+                </div>
+              </motion.div>
+            </div>
           </div>
-        </div>
-        <div className="my-stack">
-          <div>
-            <motion.div
-              initial={"offscreen"}
-              whileInView={"onscreen"}
-              variants={boxAnimate}
-              viewport={{ once: true, amount: 0.3 }}
-              className="icons"
-            >
-              <JsIconComponet />
-              <TsIconComponent />
-              <NextIconComponent />
-              <ReactIconComponent />
-              <NodeIconComponent />
-              <VueIconComponent />
-              <MongoDbIconComponent />
-              <ThreejsIconComponent />
-            </motion.div>
+          <div className="my-stack">
+            <div>
+              <motion.div
+                initial={"offscreen"}
+                whileInView={"onscreen"}
+                variants={boxAnimate}
+                viewport={{ once: true, amount: 0.3 }}
+                className="icons"
+              >
+                <JsIconComponet />
+                <TsIconComponent />
+                <NextIconComponent />
+                <ReactIconComponent />
+                <NodeIconComponent />
+                <VueIconComponent />
+                <MongoDbIconComponent />
+                <ThreejsIconComponent />
+              </motion.div>
+            </div>
           </div>
-        </div>
-        <div className="contact">
-          <Contact />
+          <div className="contact">
+            <Contact />
+          </div>
         </div>
       </div>
     </>
