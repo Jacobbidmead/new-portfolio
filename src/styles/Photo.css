@@ -7,8 +7,6 @@
   margin: 0px 2px 20px 20px;
   object-fit: cover;
   border-radius: 5px;
-  box-shadow: rgba(255, 255, 255, 0.3) 0px 1px 2px 0px,
-    rgba(255, 255, 255, 0.15) 0px 2px 6px 2px;
 }
 
 .main-photo {
@@ -61,7 +59,7 @@
 }
 
 .change-photos {
-  font-family: "Rubik", sans-serif;
+  font-family: Inter;
   font-size: 20px;
   cursor: pointer;
   color: white;
@@ -106,7 +104,7 @@
   font-size: 25px;
   padding: 40px;
   text-shadow: 0 0 6px #cccfcabf;
-  font-family: "Rubik", sans-serif;
+  font-family: Inter;
 }
 
 .quote-break {
@@ -116,7 +114,7 @@
 .photo-subtitle {
   color: white;
   margin-left: 100px;
-  font-family: PolySans;
+  font-family: Inter;
 }
 
 .photo-head-container {
@@ -126,8 +124,9 @@
 }
 
 .photo-header {
-  font-size: 50px;
-  text-shadow: 0 0 6px #cccfcabf;
+  font-size: 28px;
+  color: rgb(45, 255, 167);
+  text-shadow: 0 0 6px rgb(45, 255, 167);
   padding-top: 40px;
   padding-right: 100px;
   margin-left: auto;
