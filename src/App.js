@@ -42,7 +42,7 @@ const boxAnimateTop = isMobile
   : {
       offscreen: { y: 0, opacity: 0 },
       onscreen: {
-        y: 100,
+        y: 50,
         opacity: 1,
         transition: {
           type: "tween",

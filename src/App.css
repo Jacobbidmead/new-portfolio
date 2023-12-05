@@ -12,7 +12,7 @@
 
 ::selection {
   color: white;
-  background: rgb(6, 6, 6);
+  background: rgb(27, 26, 26);
 }
 
 html,
@@ -263,7 +263,7 @@ body {
 .accordion-container {
   position: relative;
   z-index: 2;
-  background-color: rgb(4, 4, 4);
+  background-color: rgb(12, 9, 16);
   color: white;
   padding: 40px;
   background-size: cover;
