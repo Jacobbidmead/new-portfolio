@@ -16,12 +16,10 @@
   animation: fadein 1.5s;
   border-radius: 5px;
   object-fit: cover;
-  box-shadow: rgba(255, 255, 255, 0.3) 0px 1px 2px 0px,
-    rgba(255, 255, 255, 0.15) 0px 2px 6px 2px;
 }
 
 .photo-view {
-  background-color: rgba(0, 0, 0, 1);
+  background-color: rgb(12, 9, 16);
 }
 
 .photo-bg {
