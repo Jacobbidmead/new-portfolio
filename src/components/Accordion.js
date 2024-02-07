@@ -34,6 +34,67 @@ export default function SimpleAccordion() {
             aria-controls="panel1a-content"
             id="panel1a-header"
           >
+            <div className="project-header"> MediaBook AI</div>
+          </AccordionSummary>
+          <AccordionDetails className="accordion-summary">
+            <div className="project">
+              <div>
+                <img
+                  src="/images/project-img/mediabook.png"
+                  alt=""
+                  className="swiper-img"
+                />
+              </div>
+              <div className="project-description">
+                <div className="project-text">
+                  Save your favourite movies and films, then get recommendations
+                  based on your choices with integrated AI. Currently in beta.
+                  <p className="technologies">
+                    <span className="project-techs">TypeScript</span>{" "}
+                    <span className="project-techs">Next.js</span>{" "}
+                    <span className="project-techs">Tailwind</span>
+                    <span className="project-techs">OpenAI API</span>
+                    <span className="project-techs">tmdb API</span>
+                  </p>
+                  <div className="project-link">
+                    {/* <a
+                      href="https://snap-app-git-main-jacobbidmead.vercel.app/"
+                      alt=""
+                      target="_blank"
+                      rel="noreferrer"
+                      className="link"
+                    >
+                      <Link />
+                    </a> */}
+                    <a
+                      href="https://github.com/Jacobbidmead/movie-book-next"
+                      alt=""
+                      target="_blank"
+                      rel="noreferrer"
+                      className="link"
+                    >
+                      <Git />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </AccordionDetails>
+        </Accordion>
+        <Accordion
+          sx={{
+            border: "none",
+            boxShadow: "none",
+            backgroundColor: "rgba(0, 0, 0, 0)",
+            color: "white",
+            margin: "none",
+          }}
+        >
+          <AccordionSummary
+            expandIcon={<ExpandMoreIcon />}
+            aria-controls="panel1a-content"
+            id="panel1a-header"
+          >
             <div className="project-header"> Match the shapes.</div>
           </AccordionSummary>
           <AccordionDetails className="accordion-summary">
