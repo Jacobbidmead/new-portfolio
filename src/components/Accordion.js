@@ -54,7 +54,6 @@ export default function SimpleAccordion() {
                     <span className="project-techs">Next.js</span>{" "}
                     <span className="project-techs">Tailwind</span>
                     <span className="project-techs">OpenAI API</span>
-                    <span className="project-techs">tmdb API</span>
                   </p>
                   <div className="project-link">
                     {/* <a
