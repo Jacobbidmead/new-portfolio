@@ -48,7 +48,7 @@ export default function SimpleAccordion() {
               <div className="project-description">
                 <div className="project-text">
                   Save your favourite movies and films, then get recommendations
-                  based on your choices with integrated AI. Currently in beta.
+                  based on your choices with integrated AI.
                   <p className="technologies">
                     <span className="project-techs">TypeScript</span>{" "}
                     <span className="project-techs">Next.js</span>{" "}
@@ -56,15 +56,15 @@ export default function SimpleAccordion() {
                     <span className="project-techs">OpenAI API</span>
                   </p>
                   <div className="project-link">
-                    {/* <a
-                      href="https://snap-app-git-main-jacobbidmead.vercel.app/"
+                    <a
+                      href="https://movie-book-next.vercel.app/"
                       alt=""
                       target="_blank"
                       rel="noreferrer"
                       className="link"
                     >
                       <Link />
-                    </a> */}
+                    </a>
                     <a
                       href="https://github.com/Jacobbidmead/movie-book-next"
                       alt=""
