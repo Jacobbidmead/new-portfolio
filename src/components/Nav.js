@@ -11,13 +11,8 @@ const Nav = () => {
           <SpotifyIconComponent className="spotify-icon" />
         </div>
         <div className="links">
-          <Link to="/Projects" className="photo-link">
-            {" "}
-            <span className="hover-underline-animation"> Projects</span>{" "}
-          </Link>
-
           <Link to="/Photo" className="photo-link">
-            <span className="hover-underline-animation"> Photography</span>
+            <span className="hover-underline-animation"> Photos</span>
           </Link>
         </div>
       </div>

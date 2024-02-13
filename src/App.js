@@ -9,10 +9,11 @@ import ReactIconComponent from "./components/ReactIcon";
 import TsIconComponent from "./components/TsIcon";
 import NodeIconComponent from "./components/NodeIcon";
 import ThreejsIconComponent from "./components/Threejs";
-import Nav from "./components/Nav";
+import Footer from "./components/Footer";
 import Contact from "./components/Contact";
 import Burger from "./components/Burger";
 import StarsSvg from "./components/Stars";
+import Projects from "./components/Projects";
 
 const isMobile = window.innerWidth < 601;
 
@@ -110,9 +111,7 @@ const App = () => {
             <div>
               <Burger />{" "}
             </div>
-          ) : (
-            <Nav />
-          )}
+          ) : null}
           <div className="hi-container">
             <div className="hi">Hi, Im Jacob</div>
             <div className="hi-lower">I make things for the web.</div>
@@ -205,9 +204,13 @@ const App = () => {
               </motion.div>
             </div>
           </div>
+          <div>
+            <Projects />
+          </div>
           <div className="contact">
             <Contact />
           </div>
+          <Footer />
         </div>
       </div>
     </>

@@ -48,29 +48,16 @@ export default function Burger() {
         >
           <ListItemButton
             sx={{
-              paddingTop: "230px",
+              paddingTop: "150px",
               fontFamily: "Polysans",
               fontSize: "30px",
-              textShadow: "0 0 4px rgb(45, 255, 167)",
-            }}
-          >
-            <Link className="burger-link" to="/Projects">
-              {" "}
-              Projects
-            </Link>
-          </ListItemButton>
-          <ListItemButton
-            sx={{
-              paddingTop: "50px",
-              fontFamily: "Polysans",
-              fontSize: "30px",
-              textShadow: "0 0 4px rgb(45, 255, 167)",
             }}
           >
             <Link className="burger-link" to="/Photo">
               Photography
             </Link>
           </ListItemButton>
+
           <ListItemButton sx={{ paddingTop: "55px" }}>
             {" "}
             <GitHubIconComponent /> <SpotifyIconComponent />

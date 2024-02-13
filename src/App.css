@@ -83,7 +83,6 @@ body {
 
 .main-page-container {
   height: 100vh;
-
   position: relative;
   z-index: 1; /* Higher than the SVG */
 }
@@ -94,6 +93,7 @@ body {
 }
 
 .hi {
+  padding-top: 300px;
   font-size: 100px;
   color: rgb(45, 255, 167);
   text-shadow: 0 0 6px rgb(45, 255, 167);
@@ -138,19 +138,33 @@ body {
 .photo-link {
   text-decoration: none;
   color: rgb(198, 198, 198);
-  font-size: 30px;
-  padding: 6px;
-  margin-top: 10px;
-  border-radius: 4px;
+  font-size: 14px;
+  padding: 0px 5px;
 }
 
 .nav-icons {
   padding: 10px;
   display: flex;
   flex-direction: row;
-  gap: 30px;
   border-radius: 4px;
   z-index: 1;
+  padding-right: 20px;
+}
+
+.github-icon {
+  padding-left: 10px;
+}
+
+.footer {
+  border-top: 1px solid rgba(194, 193, 193, 0.477);
+  display: flex;
+  justify-content: space-between;
+}
+
+.name {
+  padding: 10px;
+  color: rgb(45, 255, 167);
+  font-size: 14px;
 }
 
 /* text */
@@ -177,7 +191,6 @@ body {
 .about {
   font-family: Inter;
   font-size: 16px;
-  text-shadow: 0 0 6px #ffffffbf;
   color: white;
   text-align: center;
 }
@@ -186,42 +199,57 @@ body {
   padding: 30px;
   margin-top: auto;
   margin-bottom: auto;
-  background-color: rgba(4, 4, 4, 0.1);
   border-radius: 10px;
-  background-image: url("/public/images/gradient.webp");
+  background-color: rgba(64, 63, 63, 0.033);
   background-size: cover;
   border: 1px solid rgba(194, 193, 193, 0.477);
-  box-shadow: rgba(255, 255, 255, 0.3) 0px 1px 2px 0px,
-    rgba(255, 255, 255, 0.15) 0px 2px 6px 2px;
 }
 
 .about-center {
   padding: 20px;
-  background-color: rgba(4, 4, 4, 0.1);
+  background-color: rgba(64, 63, 63, 0.033);
   border-radius: 10px;
-  background-image: url("/public/images/gradient.webp");
   background-size: cover;
   border: 1px solid rgba(194, 193, 193, 0.477);
-  box-shadow: rgba(255, 255, 255, 0.3) 0px 1px 2px 0px,
-    rgba(255, 255, 255, 0.15) 0px 2px 6px 2px;
 }
 
 .about-left {
   display: flex;
   flex-direction: column;
   padding: 40px 20px 20px 20px;
-  background-color: rgba(4, 4, 4, 0.1);
+  background-color: rgba(64, 63, 63, 0.033);
   border-radius: 10px;
-  background-image: url("/public/images/gradient.webp");
   background-size: cover;
   border: 1px solid rgba(194, 193, 193, 0.477);
-  box-shadow: rgba(255, 255, 255, 0.3) 0px 1px 2px 0px,
-    rgba(255, 255, 255, 0.15) 0px 2px 6px 2px;
 }
 
 .about > div > p {
   padding: 2rem;
   border-radius: 10px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 50px;
+  gap: 2rem;
+}
+
+.project-box {
+  display: flex;
+  justify-content: center;
+  padding: 50px 60px;
+  border: 1px solid rgba(194, 193, 193, 0.477);
+  border-radius: 10px;
+  flex-direction: column;
+  place-items: center;
+  color: white;
+  font-family: Inter;
+  background-color: rgba(64, 63, 63, 0.033);
+}
+
+.project-box:hover {
+  background-color: rgba(61, 60, 60, 0.1);
 }
 
 /* .welcome-container {
@@ -241,7 +269,7 @@ body {
 
 .my-stack {
   background-size: cover;
-  padding: 200px 0px 100px 0px;
+  padding: 50px 0px 0px 0px;
 }
 
 .stack-header {
@@ -476,20 +504,18 @@ body {
 /* contact form */
 
 textarea {
-  width: 70%;
+  width: 85%;
   height: 190px;
   resize: none;
   outline: none;
   color: white;
   border: 1px solid white;
   border-radius: 8px;
-  margin-top: 40px;
+  margin-top: 80px;
   font-family: Inter;
   padding: 10px;
-  text-shadow: 0 0 8px #cccfcabf;
   font-size: 14px;
   border: 1px solid rgba(194, 193, 193, 0.477);
-  background-image: url("/public/images/gradient.webp");
   background-size: cover;
   background-color: rgba(4, 4, 4, 0.1);
 }
@@ -505,9 +531,7 @@ input {
   padding: 10px;
   border-radius: 5px;
   color: white;
-  text-shadow: 0 0 8px #cccfcabf;
   border: 1px solid rgba(194, 193, 193, 0.477);
-  background-image: url("/public/images/gradient.webp");
   background-size: cover;
   background-color: rgba(4, 4, 4, 0.1);
   font-family: Inter;
@@ -520,12 +544,11 @@ input {
   padding-top: 30px;
   gap: 20px;
   place-items: end center;
-  padding-right: 100px;
+  padding-right: 45px;
 }
 
 ::placeholder {
   color: white;
-  text-shadow: 0 0 8px #cccfcabf;
 }
 
 .button-container {
@@ -551,14 +574,12 @@ input {
 }
 
 .send-button:hover {
-  background-color: rgb(37, 43, 44);
   color: white;
   border: 1px solid white;
 }
 
 .contact {
   font-family: PolySans;
-  text-shadow: 0 0 8px #cccfcabf;
   border-radius: 5px;
   color: rgb(255, 255, 255);
   z-index: 2;
@@ -579,7 +600,6 @@ input {
   background-color: rgba(4, 4, 4, 0.1);
   padding: 4rem;
   border-radius: 10px;
-  background-image: url("/public/images/gradient.webp");
   background-size: cover;
   border: 1px solid rgba(194, 193, 193, 0.477);
   font-family: Inter;
@@ -590,7 +610,6 @@ input {
   font-size: 18px;
   padding: 0px 0px 0px 60px;
   color: rgb(198, 198, 198);
-  text-shadow: 0 0 6px #cccfcabf;
 }
 
 .top-button {
@@ -640,7 +659,7 @@ input {
 
   .about-right {
     padding: 20px;
-    margin: 20px;
+    margin: 120px 20px 20px 20px;
     text-align: center;
   }
 
@@ -675,6 +694,7 @@ input {
   .hi {
     font-size: 60px;
     padding-bottom: 20px;
+    padding-top: 0;
   }
 
   .hi-lower {
@@ -689,7 +709,7 @@ input {
   }
 
   .about {
-    font-size: 20px;
+    font-size: 14px;
     gap: 20px;
   }
 
@@ -835,7 +855,7 @@ input {
   }
 
   .photo-link {
-    font-size: 15px;
+    font-size: 10px;
     padding: 6px;
   }
 
@@ -863,5 +883,27 @@ input {
   .links {
     gap: 10px;
     padding-right: 20px;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+
+  .project-box {
+    margin: 6px;
+    gap: 7px;
+  }
+
+  .name {
+    font-size: 12px;
+  }
+
+  .nav-icons {
+    padding: 0;
+  }
+
+  .hover-underline-animation {
+    padding-top: 5px;
   }
 }
