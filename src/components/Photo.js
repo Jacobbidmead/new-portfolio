@@ -67,7 +67,6 @@ const Photo = () => {
         </div>
         <div className="photo-nav">
           <motion.div
-            whileHover={{ scale: 1.2 }}
             whileTap={{ scale: 0.9 }}
             transition={{ type: "spring", stiffness: 400, damping: 17 }}
             onClick={changeToAsia}
@@ -76,7 +75,6 @@ const Photo = () => {
             Far East
           </motion.div>
           <motion.div
-            whileHover={{ scale: 1.2 }}
             whileTap={{ scale: 0.9 }}
             transition={{ type: "spring", stiffness: 400, damping: 17 }}
             onClick={changeToSa}
@@ -85,7 +83,6 @@ const Photo = () => {
             Americas
           </motion.div>
           <motion.div
-            whileHover={{ scale: 1.2 }}
             whileTap={{ scale: 0.9 }}
             transition={{ type: "spring", stiffness: 400, damping: 17 }}
             onClick={changeToEurope}

@@ -8,7 +8,6 @@ import NextIconComponent from "./components/NextIcon";
 import ReactIconComponent from "./components/ReactIcon";
 import TsIconComponent from "./components/TsIcon";
 import NodeIconComponent from "./components/NodeIcon";
-import ThreejsIconComponent from "./components/Threejs";
 import Footer from "./components/Footer";
 import Contact from "./components/Contact";
 import Burger from "./components/Burger";
@@ -200,7 +199,6 @@ const App = () => {
                 <NodeIconComponent />
                 <VueIconComponent />
                 <MongoDbIconComponent />
-                <ThreejsIconComponent />
               </motion.div>
             </div>
           </div>
