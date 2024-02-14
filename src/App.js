@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import { motion } from "framer-motion";
-import VueIconComponent from "./components/VueIcon";
 import JsIconComponet from "./components/JsIcon";
 import MongoDbIconComponent from "./components/MongoDbIcon";
 import NextIconComponent from "./components/NextIcon";
@@ -139,8 +138,7 @@ const App = () => {
                   <p>
                     Im a creative Front End JavaScript developer with a passion
                     for design and creating intuatuive UI. I build web
-                    applications with TypeScript, React & Next.js. Im also
-                    experienced with Vue & Nuxt.
+                    applications with TypeScript, React & Next.js.
                   </p>
                 </motion.div>
               </motion.div>
@@ -197,7 +195,6 @@ const App = () => {
                 <NextIconComponent />
                 <ReactIconComponent />
                 <NodeIconComponent />
-                <VueIconComponent />
                 <MongoDbIconComponent />
               </motion.div>
             </div>
