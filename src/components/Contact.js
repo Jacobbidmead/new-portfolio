@@ -13,7 +13,7 @@ const Contact = () => {
             method="POST"
           >
             <div className="contact-text">
-              <textarea name="message" placeholder="....." required />
+              <textarea name="message" placeholder="" required />
             </div>
             <div className="inputs">
               <div>
