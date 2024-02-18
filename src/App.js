@@ -33,24 +33,6 @@ const boxAnimate = isMobile
       },
     };
 
-const boxAnimateTop = isMobile
-  ? {
-      offscreen: { y: 0, opacity: 1 },
-      onscreen: { y: 0, opacity: 1 },
-    }
-  : {
-      offscreen: { y: 0, opacity: 0 },
-      onscreen: {
-        y: 50,
-        opacity: 1,
-        transition: {
-          type: "tween",
-          bounce: 0.5,
-          duration: 1,
-        },
-      },
-    };
-
 const textAnimate = isMobile
   ? {
       offscreen: { y: 0 },
