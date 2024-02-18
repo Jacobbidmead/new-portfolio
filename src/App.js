@@ -130,7 +130,7 @@ const App = () => {
               <motion.div
                 initial={"offscreen"}
                 whileInView={"onscreen"}
-                variants={textAnimate}
+                variants={boxAnimate}
                 viewport={{ once: true, amount: 0.1 }}
                 className="about about-left"
               >
@@ -146,7 +146,7 @@ const App = () => {
               <motion.div
                 initial={"offscreen"}
                 whileInView={"onscreen"}
-                variants={boxAnimateTop}
+                variants={boxAnimate}
                 viewport={{ once: true, amount: 0.1 }}
                 className="about about-center"
               >
@@ -167,7 +167,7 @@ const App = () => {
                 whileInView={"onscreen"}
                 variants={boxAnimate}
                 viewport={{ once: true, amount: 0.1 }}
-                className="about about-right"
+                className="about about-center"
               >
                 {" "}
                 <div>
