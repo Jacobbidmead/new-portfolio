@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import Git from "./Git";
 import SpotifyIconComponent from "./Spotify";
 import CameraIcon from "./Camera";

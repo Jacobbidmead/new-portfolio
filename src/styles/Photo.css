@@ -1,7 +1,7 @@
 .photo {
   width: 200px;
   height: 130px;
-  -webkit-transition: -webkit-transform 0.8s;
+  -webkit-transition: -webkit-transform 0.1s;
   transition: transform 0.8s;
   opacity: 0.6;
   margin: 0px 2px 20px 20px;
@@ -19,7 +19,7 @@
 }
 
 .photo-view {
-  background-color: rgb(12, 9, 16);
+  background-color: black;
 }
 
 .photo-bg {
@@ -29,8 +29,8 @@
 .photo:hover {
   opacity: 1;
   cursor: pointer;
-  -webkit-transform: scale(1.15) rotate(0.01deg);
-  transform: scale(1.15) rotate(0.01deg);
+  -webkit-transform: scale(1.1) rotate(0.01deg);
+  transform: scale(1.1) rotate(0.01deg);
 }
 
 .photo-quote-container {
@@ -100,7 +100,6 @@
   text-align: center;
   font-size: 25px;
   padding: 40px;
-  text-shadow: 0 0 6px #cccfcabf;
   font-family: Inter;
 }
 
@@ -122,8 +121,7 @@
 
 .photo-header {
   font-size: 28px;
-  color: rgb(45, 255, 167);
-  text-shadow: 0 0 6px rgb(45, 255, 167);
+  color: white;
   padding-top: 40px;
   padding-right: 100px;
   margin-left: auto;
