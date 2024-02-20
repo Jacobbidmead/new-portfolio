@@ -732,7 +732,8 @@ input {
   .icons {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 40px;
+    grid-column-gap: 38px;
+    padding: 8px;
   }
 
   .mongodb-icon {
