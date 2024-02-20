@@ -732,7 +732,7 @@ input {
   .icons {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 38px;
+    grid-column-gap: 25px;
     padding: 50px;
   }
 
