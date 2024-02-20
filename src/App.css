@@ -82,7 +82,7 @@ body {
 }
 
 .main-page-container {
-  height: 100vh;
+  padding-bottom: 100px;
   position: relative;
   z-index: 1; /* Higher than the SVG */
 }
@@ -204,16 +204,12 @@ body {
   margin-bottom: auto;
   border-radius: 10px;
   background-color: rgba(64, 63, 63, 0.033);
-
-  border: 1px solid rgba(194, 193, 193, 0.477);
 }
 
 .about-center {
   padding: 20px;
   background-color: rgba(64, 63, 63, 0.033);
   border-radius: 10px;
-
-  border: 1px solid rgba(194, 193, 193, 0.477);
 }
 
 .about-left {
@@ -222,8 +218,6 @@ body {
   padding: 40px 20px 20px 20px;
   background-color: rgba(64, 63, 63, 0.033);
   border-radius: 10px;
-
-  border: 1px solid rgba(194, 193, 193, 0.477);
 }
 
 .about > div > p {
@@ -687,7 +681,7 @@ input {
   }
 
   .hi-container {
-    padding: 0;
+    padding: 100px 0 0 0;
     display: flex;
     place-items: center;
     margin-top: auto;
@@ -737,7 +731,7 @@ input {
 
   .icons {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     padding-left: 80px;
   }
 
