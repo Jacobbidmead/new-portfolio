@@ -15,11 +15,7 @@ export default function Burger() {
 
   return (
     <React.Fragment>
-      <IconButton
-        color="neutral"
-        style={{ padding: "20px" }}
-        onClick={() => setOpen(true)}
-      >
+      <IconButton color="neutral" style={{ padding: "20px" }} onClick={() => setOpen(true)}>
         <Menu />
       </IconButton>
       <Drawer open={open} onClose={() => setOpen(false)}>
@@ -32,8 +28,7 @@ export default function Burger() {
             mt: 1,
             mr: 2,
             backgroundColor: "black",
-          }}
-        >
+          }}>
           <ModalClose id="close-icon" sx={{ padding: "14px" }} />
         </Box>
         <List
@@ -44,23 +39,25 @@ export default function Burger() {
             fontSize: "xl",
             "& > div": { paddingLeft: "40px" },
             backgroundColor: "black",
-          }}
-        >
+          }}>
           <ListItemButton
             sx={{
-              paddingTop: "150px",
-              fontFamily: "Polysans",
-              fontSize: "30px",
-            }}
-          >
+              paddingTop: "50px",
+              fontSize: "20px",
+            }}>
             <Link className="burger-link" to="/Photo">
               Photography
             </Link>
           </ListItemButton>
 
-          <ListItemButton sx={{ paddingTop: "55px" }}>
-            {" "}
-            <GitHubIconComponent /> <SpotifyIconComponent />
+          <ListItemButton sx={{ paddingTop: "55px", fontSize: "20px" }}>
+            <a
+              href="https://github.com/Jacobbidmead"
+              target="_blank"
+              rel="noreferrer"
+              className="burger-link">
+              GitHub
+            </a>
           </ListItemButton>
         </List>
       </Drawer>

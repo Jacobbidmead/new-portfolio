@@ -1,12 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import { motion } from "framer-motion";
-import JsIconComponet from "./components/JsIcon";
-import MongoDbIconComponent from "./components/MongoDbIcon";
-import NextIconComponent from "./components/NextIcon";
-import ReactIconComponent from "./components/ReactIcon";
-import TsIconComponent from "./components/TsIcon";
-import NodeIconComponent from "./components/NodeIcon";
 import Footer from "./components/Footer";
 import Contact from "./components/Contact";
 import Burger from "./components/Burger";
@@ -103,8 +97,7 @@ const App = () => {
             whileInView={"onscreen"}
             variants={textAnimate}
             viewport={{ once: true, amount: 0.1 }}
-            className="contents-container"
-          ></motion.div>
+            className="contents-container"></motion.div>
         </div>
         <div>
           <div className="welcome-container">
@@ -114,13 +107,12 @@ const App = () => {
                 whileInView={"onscreen"}
                 variants={boxAnimate}
                 viewport={{ once: true, amount: 0.1 }}
-                className="about about-left"
-              >
+                className="about about-left">
                 <motion.div>
                   <p>
-                    Im a creative Front End JavaScript developer with a passion
-                    for design and creating intuatuive UI. I build web
-                    applications with TypeScript, React & Next.js.
+                    Im a creative Front End JavaScript developer with a passion for design and
+                    creating intuatuive UI. I build web applications with TypeScript, React &
+                    Next.js.
                   </p>
                 </motion.div>
               </motion.div>
@@ -130,16 +122,14 @@ const App = () => {
                 whileInView={"onscreen"}
                 variants={boxAnimate}
                 viewport={{ once: true, amount: 0.1 }}
-                className="about about-center"
-              >
+                className="about about-center">
                 <motion.div>
                   <p>
                     {" "}
-                    My journey started with Haiku Academy's full stack web
-                    development bootcamp, which I completed in October 2022.
-                    since graduating, I have learnt to utilise my
-                    problem-solving skills to create intuative and responsive
-                    web applications in a professional enviroment.
+                    My journey started with Haiku Academy's full stack web development bootcamp,
+                    which I completed in October 2022. since graduating, I have learnt to utilise my
+                    problem-solving skills to create intuative and responsive web applications in a
+                    professional enviroment.
                   </p>
                 </motion.div>
               </motion.div>
@@ -149,39 +139,53 @@ const App = () => {
                 whileInView={"onscreen"}
                 variants={boxAnimate}
                 viewport={{ once: true, amount: 0.1 }}
-                className="about about-center"
-              >
+                className="about about-center">
                 {" "}
                 <div>
                   <p>
-                    I have a creative background, studying print & time based
-                    media at UAL. A passionate photographer & explorer, I have
-                    documented my travels around the world over the last ten
-                    years.
+                    I have a creative background, studying print & time based media at UAL. A
+                    passionate photographer & explorer, I have documented my travels around the
+                    world over the last ten years.
                   </p>
                 </div>
               </motion.div>
             </div>
           </div>
           <div className="my-stack">
+            <div className="skillset">
+              <span>Skillset</span>
+            </div>
             <div>
-              <motion.div
-                initial={"offscreen"}
-                whileInView={"onscreen"}
-                variants={boxAnimate}
-                viewport={{ once: true, amount: 0.3 }}
-                className="icons"
-              >
-                <JsIconComponet />
-                <TsIconComponent />
-                <NextIconComponent />
-                <ReactIconComponent />
-                <NodeIconComponent />
-                <MongoDbIconComponent />
-              </motion.div>
+              <p className="home-technologies">
+                <span className="home-techs">TypeScript </span>{" "}
+                <span className="home-techs">JavaScript</span>{" "}
+                <span className="home-techs">React</span>
+                <span className="home-techs">Next.js</span>
+                <span className="home-techs">Saas</span>
+                <span className="home-techs">Vue </span> <span className="home-techs">Nuxt</span>{" "}
+                <span className="home-techs">Node.js</span>
+                <span className="home-techs">CSS</span>
+                <span className="home-techs">HTML</span>
+                <span className="home-techs">Tailwind</span>
+                <span className="home-techs">Git</span>
+                <span className="home-techs">GitHub</span>
+                <span className="home-techs">Trello</span>
+                <span className="home-techs">Axios</span>
+                <span className="home-techs">MongoDb</span>
+                <span className="home-techs">Styled Components</span>
+                <span className="home-techs">NPM</span>
+                <span className="home-techs">Framer Motion</span>
+                <span className="home-techs">MUI</span>
+                <span className="home-techs">Web Accessability</span>
+                <span className="home-techs">Postman</span>
+              </p>
             </div>
           </div>
-          <div>
+
+          <div className="projects-container">
+            <div>
+              <span className="projects-header">Projects</span>
+            </div>
             <Projects />
           </div>
           <div className="contact">

@@ -243,6 +243,7 @@ body {
   color: white;
   font-family: Inter;
   background-color: rgba(64, 63, 63, 0.033);
+  cursor: pointer;
 }
 
 .project-box:hover {
@@ -264,9 +265,45 @@ body {
   gap: 24px;
 }
 
+.skillset {
+  color: rgb(198, 198, 198);
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+}
+
 .my-stack {
   background-size: cover;
-  padding: 50px 0px 0px 0px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  background-color: rgba(64, 63, 63, 0.033);
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.home-techs {
+  color: rgba(45, 255, 167, 0.764);
+  border: 1px solid rgb(45, 255, 167);
+  background-color: rgba(64, 63, 63, 0.033);
+  padding: 4px;
+  border-radius: 2px;
+  font-size: 13px;
+  gap: 12px;
+  margin: 2px;
+}
+
+.home-technologies {
+  font-size: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0px 60px;
 }
 
 .stack-header {
@@ -347,8 +384,7 @@ body {
   position: relative;
   background-color: rgba(207, 207, 207, 0.128);
   border-radius: 5px;
-  box-shadow: rgba(255, 255, 255, 0.3) 0px 1px 2px 0px,
-    rgba(255, 255, 255, 0.15) 0px 2px 6px 2px;
+  box-shadow: rgba(255, 255, 255, 0.3) 0px 1px 2px 0px, rgba(255, 255, 255, 0.15) 0px 2px 6px 2px;
   background-image: url("/public/images/gradient.webp");
   background-size: contain;
   background-repeat: no-repeat;
@@ -430,11 +466,14 @@ body {
   grid-template-columns: 1fr 1fr;
 }
 
-.project-header {
-  font-size: 80px;
-  font-family: "Rubik", sans-serif;
+.projects-header {
   color: rgb(198, 198, 198);
-  text-shadow: 0 0 6px #cccfcabf;
+  display: flex;
+  justify-content: center;
+}
+
+.projects-container {
+  margin-top: 40px;
 }
 
 .about-project {
@@ -500,14 +539,14 @@ body {
 /* contact form */
 
 textarea {
-  width: 85%;
+  width: 50%;
   height: 190px;
   resize: none;
   outline: none;
   color: white;
   border: 1px solid white;
   border-radius: 8px;
-  margin-top: 80px;
+  margin-top: 40px;
   font-family: Inter;
   padding: 10px;
   font-size: 14px;
@@ -525,7 +564,7 @@ input {
   width: 15rem;
   outline: none;
   padding: 10px;
-  border-radius: 20px;
+  border-radius: 5px;
   color: white;
   border: 1px solid rgba(194, 193, 193, 0.477);
   background-size: cover;
@@ -540,8 +579,7 @@ input {
   flex-direction: column;
   padding-top: 30px;
   gap: 20px;
-  place-items: end center;
-  padding-right: 45px;
+  place-items: center;
 }
 
 ::placeholder {
@@ -550,8 +588,8 @@ input {
 
 .button-container {
   display: flex;
-  justify-content: flex-end;
-  padding-right: 60px;
+  justify-content: center;
+
   margin-top: 20px;
 }
 
@@ -576,49 +614,39 @@ input {
 }
 
 .contact {
-  font-family: PolySans;
-  border-radius: 5px;
-  color: rgb(255, 255, 255);
-  z-index: 2;
   text-align: center;
 }
 
 .contact-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
   z-index: 3;
   overflow: hidden;
   position: sticky;
   position: relative;
-}
-
-.contact-message > p {
-  margin-top: 40px;
-  background-color: rgba(4, 4, 4, 0.1);
-  padding: 4rem;
-  border-radius: 10px;
-  background-size: cover;
-  border: 1px solid rgba(194, 193, 193, 0.477);
-  font-family: Inter;
-  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .contact-message {
-  font-size: 18px;
-  padding: 0px 0px 0px 60px;
   color: rgb(198, 198, 198);
 }
 
 .top-button {
-  padding: 17px;
+  padding: 6px;
   border-radius: 50%;
   cursor: pointer;
-  margin: 27px;
+  margin: 37px 12px;
+  border: 1px solid rgb(37, 43, 44);
+}
+
+.top-button:hover {
+  color: white;
+  border: 1px solid white;
 }
 
 .return-top {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 .return-top-homescreen {
@@ -664,10 +692,6 @@ input {
     padding: 20px;
     margin: 20px;
     text-align: center;
-  }
-
-  p {
-    margin: 0;
   }
 
   .contact-message > p {
@@ -726,7 +750,8 @@ input {
   }
 
   .my-stack {
-    padding: 0px;
+    margin-top: 100px;
+    margin-bottom: 100px;
   }
 
   .icons {
@@ -862,8 +887,8 @@ input {
 
   .top-button {
     font-size: 18px;
-    padding: 6px;
-    margin: 6px;
+    padding: 9px;
+    margin: 6px 0px;
     display: flex;
     justify-content: flex-end;
   }
@@ -888,7 +913,7 @@ input {
   }
 
   .project-box {
-    margin: 6px;
+    margin: 30px;
     gap: 7px;
   }
 
@@ -902,5 +927,9 @@ input {
 
   .hover-underline-animation {
     padding-top: 5px;
+  }
+
+  .skillset {
+    padding: 20px;
   }
 }
