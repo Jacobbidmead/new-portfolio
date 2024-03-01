@@ -843,14 +843,15 @@ input {
     height: 120px;
   }
 
-  .contact-message {
+  age {
     font-size: 20px;
     padding: 22px;
     text-align: center;
   }
 
-  .contact-message > p {
+  .contact-message {
     padding: 3rem;
+    margin-top: 60px;
   }
 
   .contact-container {
@@ -913,7 +914,6 @@ input {
   }
 
   .project-box {
-    margin: 30px;
     gap: 7px;
   }
 
@@ -931,5 +931,11 @@ input {
 
   .skillset {
     padding: 20px;
+  }
+  .home-technologies {
+    padding: 2px;
+  }
+  .project-header {
+    margin-bottom: 14px;
   }
 }
