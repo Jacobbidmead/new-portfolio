@@ -6,7 +6,6 @@ import List from "@mui/joy/List";
 import ListItemButton from "@mui/joy/ListItemButton";
 import ModalClose from "@mui/joy/ModalClose";
 import Menu from "@mui/icons-material/Menu";
-
 import { Link } from "react-router-dom";
 
 export default function Burger() {

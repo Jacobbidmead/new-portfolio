@@ -792,7 +792,7 @@ input {
     background-color: rgba(0, 0, 0, 0);
   }
 
-  .project-header {
+  -header {
     font-size: 2em;
   }
 
@@ -936,6 +936,6 @@ input {
     padding: 2px;
   }
   .project-header {
-    margin-bottom: 14px;
+    margin-bottom: 34px;
   }
 }
