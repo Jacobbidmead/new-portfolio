@@ -915,6 +915,7 @@ input {
 
   .project-box {
     gap: 7px;
+    margin-top: 25px;
   }
 
   .name {
