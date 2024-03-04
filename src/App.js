@@ -6,6 +6,7 @@ import Contact from "./components/Contact";
 import Burger from "./components/Burger";
 import StarsSvg from "./components/Stars";
 import Projects from "./components/Projects";
+import FloatingNav from "./components/FloatingNav";
 
 const isMobile = window.innerWidth < 601;
 
@@ -80,6 +81,7 @@ const App = () => {
     <>
       <div style={{ backgroundColor: backgroundColor }} className="bg">
         <div className="main-page-container">
+          <FloatingNav />
           <img src="images/gradient.webp" alt="" className="hero-img" />
           {isMobile ? (
             <div>
