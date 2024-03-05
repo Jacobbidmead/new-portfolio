@@ -8,6 +8,7 @@ const FloatingNav = ({ scrollToSection }) => {
   const [navBorder, setNavBorder] = useState("none");
 
   const backgroundX = activeButtonIndex !== null ? `${activeButtonIndex * 100}%` : "0%";
+  const buttons = ["About", "Skillset", "Projects", "Contact", "Photo"];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -25,16 +26,14 @@ const FloatingNav = ({ scrollToSection }) => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const handleButtonClick = (index, sectionId) => {
-    if (sectionId === "photo") {
+  const handleButtonClick = (index, label) => {
+    if (label === "Photo") {
       window.location.href = "/Photo";
     } else {
       setActiveButtonIndex(index);
-      scrollToSection(sectionId);
+      scrollToSection(label.toLowerCase());
     }
   };
-
-  const buttons = ["About", "Skillset", "Projects", "Contact", "Photo"];
 
   return (
     <div className="floating-nav-container">
@@ -43,7 +42,7 @@ const FloatingNav = ({ scrollToSection }) => {
           <div
             key={label}
             className="fn-links"
-            onClick={() => handleButtonClick(index, label.toLowerCase())}
+            onClick={() => handleButtonClick(index, label)}
             style={{
               position: "relative",
               width: "20%",
