@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import "../styles/FloatingNav.css";
+import { useHistory } from "react-router-dom";
 
 const FloatingNav = ({ scrollToSection }) => {
   const [activeButtonIndex, setActiveButtonIndex] = useState(null);
   const [navOpacity, setNavOpacity] = useState("rgba(114, 114, 114, 0)");
   const [navBorder, setNavBorder] = useState("none");
+  const history = useHistory();
 
   const backgroundX = activeButtonIndex !== null ? `${activeButtonIndex * 100}%` : "0%";
   const buttons = ["About", "Skillset", "Projects", "Contact", "Photo"];
@@ -28,7 +30,7 @@ const FloatingNav = ({ scrollToSection }) => {
 
   const handleButtonClick = (index, label) => {
     if (label === "Photo") {
-      window.location.href = "/Photo";
+      history.push("/Photo");
     } else {
       setActiveButtonIndex(index);
       scrollToSection(label.toLowerCase());
