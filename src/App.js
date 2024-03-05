@@ -77,11 +77,18 @@ const App = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth", block: "center" });
+    }
+  };
+
   return (
     <>
       <div style={{ backgroundColor: backgroundColor }} className="bg">
         <div className="main-page-container">
-          <FloatingNav />
+          {!isMobile ? <FloatingNav scrollToSection={scrollToSection} /> : null}
           <img src="images/gradient.webp" alt="" className="hero-img" />
           {isMobile ? (
             <div>
@@ -102,7 +109,7 @@ const App = () => {
             className="contents-container"></motion.div>
         </div>
         <div>
-          <div className="welcome-container">
+          <div className="welcome-container" id="about">
             <div className="welcome">
               <motion.div
                 initial={"offscreen"}
@@ -153,7 +160,7 @@ const App = () => {
               </motion.div>
             </div>
           </div>
-          <div className="my-stack">
+          <div className="my-stack" id="skillset">
             <div className="skillset">
               <span>Skillset</span>
             </div>
@@ -184,13 +191,13 @@ const App = () => {
             </div>
           </div>
 
-          <div className="projects-container">
+          <div className="projects-container" id="projects">
             <div>
               <span className="projects-header">Projects</span>
             </div>
             <Projects />
           </div>
-          <div className="contact">
+          <div className="contact" id="contact">
             <Contact />
           </div>
           <Footer />

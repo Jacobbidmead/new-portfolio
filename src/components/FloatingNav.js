@@ -1,31 +1,52 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import "../styles/FloatingNav.css";
 
-const FloatingNav = () => {
+const FloatingNav = ({ scrollToSection }) => {
   const [activeButtonIndex, setActiveButtonIndex] = useState(null);
+  const [navOpacity, setNavOpacity] = useState("rgba(114, 114, 114, 0)");
+  const [navBorder, setNavBorder] = useState("none");
 
-  // Determine background position based on active button index
   const backgroundX = activeButtonIndex !== null ? `${activeButtonIndex * 100}%` : "0%";
 
-  // Function to set the active button index
-  const changeButtonColor = (index) => {
-    setActiveButtonIndex(index);
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 200) {
+        setNavOpacity("rgba(114, 114, 114, 0.2)");
+        setNavBorder("1px solid #404040b5");
+      } else {
+        setNavOpacity("rgba(114, 114, 114, 0)");
+        setNavBorder("none");
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const handleButtonClick = (index, sectionId) => {
+    if (sectionId === "photo") {
+      window.location.href = "/Photo";
+    } else {
+      setActiveButtonIndex(index);
+      scrollToSection(sectionId);
+    }
   };
 
   const buttons = ["About", "Skillset", "Projects", "Contact", "Photo"];
 
   return (
     <div className="floating-nav-container">
-      <div className="floating-nav">
+      <div className="floating-nav" style={{ backgroundColor: navOpacity, border: navBorder }}>
         {buttons.map((label, index) => (
           <div
             key={label}
             className="fn-links"
-            onClick={() => changeButtonColor(index)}
+            onClick={() => handleButtonClick(index, label.toLowerCase())}
             style={{
               position: "relative",
-              width: "20%", // This should match the background block width
+              width: "20%",
               display: "inline-block",
               textAlign: "center",
             }}>
@@ -36,12 +57,13 @@ const FloatingNav = () => {
           className="background-block "
           initial={false}
           animate={{ x: backgroundX }}
-          transition={{ type: "tween", duration: 0.3 }}
+          whileTap={{ scale: 0.9 }}
+          transition={{ type: "spring", stiffness: 250, damping: 25 }}
           style={{
             position: "absolute",
-            width: "19.5%", // Assuming each button is 20% of the container width
+            width: "19.5%",
             height: "64%",
-            backgroundColor: "rgba(114, 114, 114, 0.3)",
+            backgroundColor: "rgba(114, 114, 114, 0.2)",
             borderRadius: "30px",
           }}
         />

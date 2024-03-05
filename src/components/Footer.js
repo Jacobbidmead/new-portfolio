@@ -1,6 +1,5 @@
 import Git from "./Git";
 import SpotifyIconComponent from "./Spotify";
-import CameraIcon from "./Camera";
 
 const Footer = () => {
   return (
@@ -10,18 +9,7 @@ const Footer = () => {
         <div className="name">jacobbidmead.com.</div>
         <div className="nav-icons">
           <div className="photo-link">
-            {" "}
-            <span>
-              <CameraIcon />
-            </span>
-          </div>
-
-          <div className="photo-link">
-            <a
-              href="https://github.com/Jacobbidmead"
-              target="_blank"
-              rel="noreferrer"
-            >
+            <a href="https://github.com/Jacobbidmead" target="_blank" rel="noreferrer">
               <span style={{ color: "rgb(198, 198, 198)" }}>
                 <Git />
               </span>
@@ -32,8 +20,7 @@ const Footer = () => {
             <a
               href="https://open.spotify.com/playlist/3ieBiYfA1DqQMTOq2vpB0u?si=1780efef079247b1"
               target="_blank"
-              rel="noreferrer"
-            >
+              rel="noreferrer">
               <span style={{ color: "rgb(198, 198, 198)" }}>
                 <SpotifyIconComponent />
               </span>
