@@ -93,7 +93,7 @@ body {
 }
 
 .hi {
-  padding-top: 280px;
+  padding-top: 240px;
   font-size: 100px;
   color: rgb(45, 255, 167);
   text-shadow: 0 0 6px rgb(45, 255, 167);
@@ -259,7 +259,7 @@ body {
 .welcome {
   width: 100%;
   box-sizing: border-box;
-  padding: 3em;
+  padding: 2em;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 24px;
@@ -267,9 +267,10 @@ body {
 
 .skillset {
   color: rgb(198, 198, 198);
-  font-size: 20px;
+  font-size: 16px;
   display: flex;
   justify-content: center;
+  padding-bottom: 30px;
 }
 
 .my-stack {
@@ -280,7 +281,7 @@ body {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 100px;
+  margin-top: 30px;
   margin-bottom: 100px;
   background-color: rgba(64, 63, 63, 0.033);
   border-radius: 10px;

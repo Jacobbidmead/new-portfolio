@@ -19,8 +19,7 @@ const Projects = () => {
               alt=""
               target="_blank"
               rel="noreferrer"
-              className="link"
-            >
+              className="link">
               <Link />
             </a>
             <a
@@ -28,8 +27,7 @@ const Projects = () => {
               alt=""
               target="_blank"
               rel="noreferrer"
-              className="link"
-            >
+              className="link">
               <Git />
             </a>
           </div>
@@ -48,8 +46,7 @@ const Projects = () => {
               alt=""
               target="_blank"
               rel="noreferrer"
-              className="link"
-            >
+              className="link">
               <Link />
             </a>
             <a
@@ -57,14 +54,13 @@ const Projects = () => {
               alt=""
               target="_blank"
               rel="noreferrer"
-              className="link"
-            >
+              className="link">
               <Git />
             </a>
           </div>
         </div>
         <div className="project-box">
-          <div>E-store</div>
+          <div>E-comm store</div>
           <p className="technologies">
             <span className="project-techs">TypeScript </span>{" "}
             <span className="project-techs">Next.js </span>{" "}
@@ -78,8 +74,7 @@ const Projects = () => {
               alt=""
               target="_blank"
               rel="noreferrer"
-              className="link"
-            >
+              className="link">
               <Link />
             </a>
             <a
@@ -87,8 +82,7 @@ const Projects = () => {
               alt=""
               target="_blank"
               rel="noreferrer"
-              className="link"
-            >
+              className="link">
               <Git />
             </a>
           </div>
@@ -108,8 +102,7 @@ const Projects = () => {
               alt=""
               target="_blank"
               rel="noreferrer"
-              className="link"
-            >
+              className="link">
               <Link />
             </a>
             <a
@@ -117,8 +110,7 @@ const Projects = () => {
               alt=""
               target="_blank"
               rel="noreferrer"
-              className="link"
-            >
+              className="link">
               <Git />
             </a>
           </div>
