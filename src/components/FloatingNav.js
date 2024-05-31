@@ -7,7 +7,7 @@ const FloatingNav = ({ scrollToSection }) => {
   const [activeButtonIndex, setActiveButtonIndex] = useState(null);
   const [navOpacity, setNavOpacity] = useState("rgba(114, 114, 114, 0)");
   const [navBorder, setNavBorder] = useState("none");
-  const navigate = useNavigate(); // Use the useNavigate hook here
+  const navigate = useNavigate();
 
   const backgroundX = activeButtonIndex !== null ? `${activeButtonIndex * 100}%` : "0%";
   const buttons = ["About", "Skillset", "Projects", "Contact", "Photo"];

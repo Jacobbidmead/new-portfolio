@@ -86,7 +86,7 @@ const Photo = () => {
             Europe
           </motion.div>
         </div>
-        <div className="quote">
+        {/* <div className="quote">
           "Travel changes you, as you move through this life and this world you change things
           slightly, you leave marks behind, however small. And in return, life — and travel — leaves
           marks on you." <p> - Anthony Bourdain</p>{" "}
@@ -100,7 +100,7 @@ const Photo = () => {
             cultures.
           </p>
           <small>Shot on Contax TVS III</small>
-        </div>
+        </div> */}
         <div style={{ display: "flex", justifyContent: "flex-end" }}>
           <ReturnTop />
         </div>
