@@ -42,28 +42,8 @@ const Photo = () => {
   return (
     <>
       <div className="photo-view">
-        <div className="photo-head-container">
-          <ArrowIconComponent />
-          <div className="photo-header">
-            <span>Moments.</span>
-          </div>
-        </div>
-        <div className="container">
-          <div className="photo-container">
-            {allImages.map((el, i) => (
-              <div key={i} onMouseEnter={() => changePic(el)}>
-                <img src={el} alt="" className="photo" />
-              </div>
-            ))}
-          </div>
-          <div className="large-photo-container">
-            <img className="main-photo" src={largePhoto} alt="" />
-            <div>
-              <div className="img-description">{imgDescription}</div>
-            </div>
-          </div>
-        </div>
         <div className="photo-nav">
+          <ArrowIconComponent />
           <motion.div
             whileTap={{ scale: 0.9 }}
             transition={{ type: "spring", stiffness: 400, damping: 17 }}
@@ -86,23 +66,20 @@ const Photo = () => {
             Europe
           </motion.div>
         </div>
-        {/* <div className="quote">
-          "Travel changes you, as you move through this life and this world you change things
-          slightly, you leave marks behind, however small. And in return, life — and travel — leaves
-          marks on you." <p> - Anthony Bourdain</p>{" "}
-          <p className="quote-break">
-            Over the last 10 years, I've been shooting street photography. Capturing moments from my
-            life & travels; cultures, experiences, landscapes and compositions.
-          </p>
-          <p className="quote-break">
-            {" "}
-            Through my work, I attempt to describe my love of anthropology & discovering new
-            cultures.
-          </p>
-          <small>Shot on Contax TVS III</small>
-        </div> */}
-        <div style={{ display: "flex", justifyContent: "flex-end" }}>
-          <ReturnTop />
+        <div className="container">
+          <div className="photo-container">
+            {allImages.map((el, i) => (
+              <div key={i} onMouseEnter={() => changePic(el)}>
+                <img src={el} alt="" className="photo" />
+              </div>
+            ))}
+          </div>
+          <div className="large-photo-container">
+            <img className="main-photo" src={largePhoto} alt="" />
+            <div>
+              <div className="img-description">{imgDescription}</div>
+            </div>
+          </div>
         </div>
       </div>
     </>
